@@ -1,7 +1,7 @@
 # HSSA-journal-LaTeX-stylesheet
 maintenance site for the LaTeX stylesheet for History of Science in South Asia (https://hssa-journal.org)
 
-The most important files here are 
+## The most important files here are 
 
 * hssa.cls
 * hssa.sty
@@ -18,6 +18,6 @@ The file
 
 is the driver file for formatting and printing the documentation for users and hackers (see the output PDF).
 
-To do:
+## To do:
 
 Make a separate, much simpler file for authors.
