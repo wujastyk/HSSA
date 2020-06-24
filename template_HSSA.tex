@@ -1,0 +1,73 @@
+\RequirePackage{snapshot}
+\documentclass{hssa}
+\usepackage{hssa,
+    hssa-reledmac,
+    hssa-biblatex}
+\addbibresource{\jobname.bib} 
+% name your bibliography file the same as this file, with extension .bib
+
+\HSSAissuenum{999}
+\HSSAissuedate{9999}
+\HSSAarticletitle{The Title}
+\HSSAauthorname{The Author}
+\HSSAauthoraddress{University of University}
+\firstpage{88}
+\lastpage{99}
+\DOI{assigned by editor} 
+
+% \usepackage[figuresright]{rotating} % for rotating figures sometimes
+
+\begin{document}
+   %\renewcommand{\q}[1]{\relax }
+    
+    \MSnocite{Pune BORI 220 of 1882--83}
+    \MSnocite{Chennai ARL 75278} 
+
+
+\section*{Introduction}
+
+\lettrine[lines=2,loversize=.1] {I}{n} the contemporary
+global market for wellness, the combining of Yoga and
+
+
+\begin{small}
+    
+\section*{Abbreviations}
+
+\begin{longtable}{ll}
+ms.\ &manuscript\\
+Ed.\ &Edition\\
+\end{longtable}
+
+\nocite{*}
+
+One thing and another.
+
+\newpage
+
+This and that.
+
+\defbibnote{blurb01}{\emph{In English alphabetical order.}}
+    
+\printshorthands
+[title=Acronyms,
+notkeyword=edition,  % not flagged as such in the bib file
+]
+
+\printshorthands 
+[title=Text Editions, 
+prenote=blurb01,
+keyword=edition, % flagged as such in the bib file
+sorting=special,
+]
+
+\printindex[manuscripts]
+
+\printbibliography 
+[title=Secondary Literature,
+sorting=nyt,
+notkeyword=edition] % keep the editions in the Text Editions section only
+
+\end{small}
+
+\end{document}
