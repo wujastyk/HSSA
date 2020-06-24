@@ -1,0 +1,87 @@
+% \section{Style file for HSSA journal: hssa.sty}
+% Style file for the HSSA journal
+% See \url{http://tug.org/pracjourn/2005-3/asknelly/} for a nice statement of the 
+% difference between .cls and .sty files.  Here in hssa.sty, I'm keeping
+% the code that is not part of the core of HSSA's design, including calls to other style
+% files that might or might not be included for different articles.
+%
+%\subsection{Load basic macros for biblatex and reledmac (footnote cols)}
+%    \begin{macrocode}
+\usepackage{hssa-reledmac, % journal home style, two-col footnotes
+% hssa-biblatex is already loaded in hssa.cls; can't imagine not needing it.
+}
+%    \end{macrocode}
+
+%\subsection{Set up the langages and fonts, Polyglossia-style}
+%    \begin{macrocode}
+\setdefaultlanguage[variant=british]{english}
+%\setotherlanguage{japanese} % not supported in polyglossia yet
+\setotherlanguage{greek}
+\setotherlanguage{sanskrit}
+
+
+\setmainfont[Ligatures=TeX,
+  Mapping=tex-text,
+  Numbers=OldStyle]{TeX Gyre Pagella}
+%\setmainfont[Scale=1.05]{Alegreya} % quite nice; superscripts not smaller
+ 
+% Sanskrit in Devanagari script:    
+\newfontfamily\sanskritfont[Script=Devanagari,
+  %Mapping=RomDev,
+  FakeStretch=1.08, % improves Sanskrit 2003
+  ]
+ %  {Murty Sanskrit}
+{Sanskrit 2003} 
+\let\dn\sanskritfont %for legacy Velthuis-encoded documents
+
+% Sanskrit input in IAST
+\newfontfamily\devanagarifont[Script=Devanagari,
+Mapping=RomDev,
+FakeStretch=1.08, % improves Sanskrit 2003
+]
+%  {Murty Sanskrit}
+{Sanskrit 2003} 
+\newcommand{\dev}[1]{{\devanagarifont#1}}
+%\newcommand{\dev}[1]{\textdevanagari{#1}}
+\newcommand{\largesloka}[1]{{\raggedright \devanagarifont\large #1\par}}
+
+%
+% Chinese:
+\newfontfamily\cjk[Script=CJK,Mapping=tex-text,Scale=MatchLowercase]
+%{IPAexMincho} % missing 說
+%{TakaoPGothic}
+{Yu Mincho}
+%
+% Greek
+\newfontfamily\greekfont[Script=Greek,
+    Mapping=tex-text,
+    Scale=MatchUppercase]
+%{Old Standard}
+%{GFS Porson}
+%{GFS Didot}
+%{Galatia SIL}
+{Gentium Plus}
+%{Linux Libertine O}
+%    \end{macrocode}
+% see \url{https://tex.stackexchange.com/questions/127222/fonts-for-polytonic-greek}
+
+% \subsection{Local generic author-facing macros}
+%    \begin{macrocode}
+\def\bce{\textsc{bce}} % I took out the final \xspace 
+									   % because it's behaviour is hard to predict - DW
+\def\ce{\textsc{ce}} % ditto.
+\let\BC\bce \let\BCE\bce \let\AD\ce \let\CE\ce
+%    \end{macrocode}
+
+% \subsection{Math mode with Unicode fonts}
+
+%    \begin{macrocode}
+\usepackage{unicode-math} % must load after amsmath; see manual ch. 3
+%\setmathfont{texgyrepagella-math.otf} % doesn't have old style numerals.
+\setmathfont{Asana Math}[Numbers=OldStyle]
+%    \end{macrocode}
+
+%\newpage
+%\addcontentsline{toc}{section}{Macro index}
+% \Finale \PrintIndex \PrintChanges
+\endinput

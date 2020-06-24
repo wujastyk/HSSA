@@ -1,0 +1,15 @@
+% eledmac settings for use with HSSA
+\RequirePackage[parapparatus,
+	noreledmac]{eledmac}
+\RequirePackage{etoolbox}
+\patchcmd{\twocolfootfmtX}{\raggedright}{\hspace*{1.5em}}{}{}
+\prenotesX{24pt}
+\foottwocolX{A}
+\hsizetwocolX{.485\hsize}
+%\hangindentX{1em}
+\skip\Afootins=24pt plus5pt minus5pt
+\let\footnoteruleA=\relax
+\let\footnoterule=\relax
+
+\renewcommand*{\normalfootfootmarkX}[1]{%
+  \@nameuse{@thefnmark#1}\hspace*{.5em}}

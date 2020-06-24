@@ -1,0 +1,199 @@
+% Biblatex settings to include manuscripts
+
+\usepackage[ %
+tools={manuscripts},
+bibstyle={authoryear},
+]{biblatex-multiple-dm} % for biblatex-manuscripts-philology
+
+
+% Biblatex:
+\usepackage[%
+backend=biber, 
+bibstyle=multiple-dm, % for biblatex-manuscripts-philology
+citestyle=authoryear-comp,
+%ibidtracker=constrict,
+%ibidpage=false,
+%pagetracker=page,
+%idemtracker=constrict,
+sorting=ynt, % see 
+%https://cikitsa.blogspot.co.at/2017/07/biblatex-citations-and-bibliography.html
+sortcites=true,
+backref=false,
+date=comp,
+datecirca=true,
+dateuncertain=true,
+bibencoding=auto,
+hyperref=auto,
+isbn=true,
+doi=true,
+language=auto,
+natbib=true,
+texencoding=auto,
+url=true,
+urldate=long,
+usetranslator=true,
+useprefix=true,
+%refsection=section,
+maxbibnames=10,
+]{biblatex}
+
+
+\AtBeginDocument{\assignrefcontextentries[]{*}}  
+% see 
+%https://cikitsa.blogspot.co.at/2017/07/biblatex-citations-and-bibliography.html
+
+% To avoid saying \newrefcontext[sorting=nyt] before \printbibliography in every 
+%document redefine \printbibliography (from biblatex.sty):
+\renewrobustcmd*{\printbibliography}{%
+    \newrefcontext[sorting=nyt] % added this line
+    \begingroup
+    \delimcontext{bib}%
+    \edef\on@line{\on@line}%
+    \@ifnextchar[%]
+    {\blx@printbibliography}
+    {\blx@printbibliography[]}}
+
+% to make bibtex notes print last, like addendums
+% from http://tex.stackexchange.com/
+%questions/138913/
+%how-to-move-the-field-note-at-the-end-of-the-reference
+\DeclareSourcemap{
+	\maps[datatype=bibtex]{
+		\map{
+			\step[fieldsource=note, final]
+			\step[fieldset=addendum, origfieldval, final]
+			\step[fieldset=note, null]
+		}
+	}
+}
+%tweaks to make the citation form:-  Author date: page
+\DeclareFieldFormat{postnote}{#1}
+\renewcommand{\postnotedelim}{:\,}
+
+\usepackage{csquotes}
+
+% biblatex documentation 4.11. and macros from biblatex.def
+% Enable hot URLs for PDFs at \texttt{}Archive.org and Academia.edu etc.
+
+%% make URLs smaller:
+%\DeclareFieldFormat{url}{\textsc{url:} {\small \href{#1}{\nolinkurl{#1}}}}
+%\DeclareFieldFormat{doi}{\textsc{doi:} {\small \href{#1}{\nolinkurl{#1}}}}
+
+
+% Buddhist Digital Resource Center:
+\DeclareFieldFormat{eprint:tbrc}{%
+    \textsc{TBRC}\space
+    \ifhyperref  
+    {\href{https://www.tbrc.org/\#!rid=#1}{\nolinkurl{#1}}}
+	{\nolinkurl{#1}}}
+%
+
+\DeclareFieldFormat{eprint:archive}{%
+	Internet Archive\addcolon\space
+	\ifhyperref
+	{\href{http://archive.org/#1}{\nolinkurl{#1}}}
+	{\nolinkurl{#1}}}
+\DeclareFieldAlias{eprint:archiveorg}{eprint:archive}
+
+\DeclareFieldFormat{eprint:academia}{%
+	Academia.edu\addcolon\space
+	\ifhyperref
+	{\href{http://www.academia.edu/#1}{\nolinkurl{#1}}}
+	{\nolinkurl{#1}}}
+
+\DeclareFieldFormat{eprint:dli}{%
+	DLI\addcolon\space
+	\ifhyperref
+	{\href{http://www.dli.gov.in/cgi-bin/DBscripts/allmetainfo.cgi?barcode=#1/}{\nolinkurl{#1}}}
+	{\nolinkurl{#1}}}
+\DeclareFieldAlias{eprint:DLI}{eprint:dli}
+
+\DeclareFieldFormat{eprint:jainlibrary}{%
+	Jain eLibrary\addcolon\space
+	\ifhyperrefsloka
+	{\href{http://www.jainlibrary.org/book.php?file=#1}{\nolinkurl{#1}}}
+	{\nolinkurl{#1}}}
+
+\DeclareFieldFormat{doi}{%
+    \textsc{doi}\addcolon\space
+    \ifhyperref
+    {\href{https://doi.org/#1}{\nolinkurl{#1}}}
+    {\nolinkurl{#1}}}
+
+%tweaks to make the citation form:-  Author date: page
+\DeclareFieldFormat{postnote}{#1}
+\renewcommand{\postnotedelim}{:\,}
+\renewcommand{\nameyeardelim}{ }
+
+% Biblatex hacks to get pubstate (“forthcoming” etc.) behaving as it should
+% Biblatex manual 4.5.10
+\DeclareLabeldate{%
+   	\field{date}
+   \field{year}
+   \field{pubstate}
+   \field{eventdate}
+   \field{origdate}
+   \field{urldate}
+   \literal{nodate}
+}
+% redefinition from  bbx/standard.bbx to stop pubstate printing after an addendum
+%\renewbibmacro*{addendum+pubstate}{%
+%    \printfield{addendum}%
+%    %	\newunit\newblock
+%    %	\printfield{pubstate}
+%}
+
+%https://tex.stackexchange.com/questions/384172/bibliography-entries-with-pubstate-and-no-date-in-authortitle-style
+%\renewbibmacro*{date}{%
+%    \ifboolexpr{ test {\iffieldundef{year}} and not test {\iffieldundef{pubstate}} }%
+%    {\printfield{pubstate}}%
+%    {\printdate}}
+%
+%\renewbibmacro*{addendum+pubstate}{%
+%    \printfield{addendum}%
+%    \newunit\newblock
+%    \iffieldundef{year}
+%    {}
+%    {\printfield{pubstate}}}
+
+
+%%https://tex.stackexchange.com/questions/61717/biblatex-strictly-identical-footnote-citations-following-each-other
+%\renewbibmacro*{cite:ibid}{%
+%    \printtext{%
+%        \bibhyperlink{cite\csuse{cbx@lastcite@\thefield{entrykey}}}{%
+%            \ifloccit
+%            {\bibstring[\mkibid]{ibidem}%
+%                \global\toggletrue{cbx:loccit}}
+%            {\bibstring[\mkibid]{idem\thefield{gender}}}
+%        }}}
+%        
+%        \newbibmacro*{cite:ibid}{%
+%            \printtext{%
+%                \bibhyperlink{cite\csuse{cbx@lastcite@\thefield{entrykey}}}
+%                {\bibstring[\mkibid]{ibidem}}}%
+%            \ifloccit
+%            {\global\toggletrue{cbx:loccit}}
+%            {}}
+%        
+%\renewbibmacro*{cite:ibid}{%
+%    \printtext[bibhyperref]{%
+%    \ifloccit
+%    {\bibstring[\mkibid]{ibidem}%
+%          \global\booltrue{cbx:loccit}}
+%    {\bibstring[\mkibid]{idem\thefield{gender}}}}}
+
+% from https://tex.stackexchange.com/questions/194575/altering-date-format-in-references
+%\DeclareFieldFormat{urldate}{%
+%    \thefield{urlday}\adddot\addspace%
+%    \mkbibmonth{\thefield{urlmonth}}\adddot\addspace%
+%    \thefield{urlyear}\isdot}
+
+\DeclareFieldFormat{urldate}{%
+    (on
+    \thefield{urlday}\addspace%
+    \mkbibmonth{\thefield{urlmonth}}\addspace%
+    \thefield{urlyear})\isdot}
+    
+\usepackage{xurl} % get better formatting
+    
+        

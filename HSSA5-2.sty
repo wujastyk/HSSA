@@ -1,0 +1,105 @@
+\usepackage[cover]{stm-hssa}
+
+\HSSAspecialissuedetails{Special issue:\\[1ex]
+    \emph{Transmutations: Rejuvenation, Longevity, and Immortality Practices in 
+South and Inner Asia}\\[1ex]
+    Edited by Dagmar Wujastyk, Suzanne Newcombe, and Christèle Barois}
+
+% from 
+%https://tex.stackexchange.com/questions/124049/applying-options-to-already-loaded-package
+\PassOptionsToPackage{no-math}{fontspec} % so as to avoid a clash with mathspec
+\usepackage{unicode-math}
+%\setmainfont{TeX Gyre Pagella}[Numbers=OldStyle]
+\setmathfont{Asana Math}[Numbers=OldStyle]
+% font tweaks
+% make the math fonts match the Pagella of the main text, 
+% copying the file texgyrepagella-math-1543-doc.tex in the TeX Gyre Pagella Math 
+% distribution; took out the obsolete vargreek option
+%(https://tex.stackexchange.com/questions/351955/compilation-error-option-unknown-can-anyone-help-me):
+%
+%\usepackage{unicode-math}
+%\setmathfont[math-style=TeX,bold-style=TeX]{TeX Gyre Pagella Math}
+% unicode-math doesn't give oldstyle in math mode
+% ... <later> but see https://github.com/wspr/unicode-math/issues/384
+% here, after amsmath but before other things like the symbol packages is critical.
+
+%%\usepackage[MnSymbol]
+%%{mathspec}
+%%\setmathfont(Digits,Latin,Greek)[Numbers={OldStyle,Proportional}]{TeX Gyre Pagella} 
+%%% not TeX Gyre Pagella Math, oddly.
+
+% Biblatex settings:
+\usepackage{stm-biblatex} % biblatex settings; to replace natbib
+\addbibresource
+%[datatype=bibtex]
+{\jobname.bib}  
+
+
+
+%biblatex tweaks to make the citation form:-  Author date: page
+\DeclareFieldFormat{postnote}{#1}
+\renewcommand{\postnotedelim}{:\,}
+\renewcommand{\nameyeardelim}{ }
+
+\providecommand{\AD}{\textsc{ce}}
+\providecommand{\CE}{\textsc{ce}}
+\providecommand{\BC}{\textsc{bce}}
+\providecommand{\BCE}{\textsc{bce}}
+
+
+\AtBeginDocument{%
+    \input{sanskrit-hyphenations}
+    \coverpage
+    \copyrightspage
+    %
+    \ifcover
+    \setcounter{page}{0}\else
+    \setcounter{page}{1}\fi
+    \maketitle
+    \setcounter{page}{\thefirstpage}
+}
+\AtEndDocument{\newpage\coverlastpage }
+
+% DW two-column notes
+% with help from 
+%https://tex.stackexchange.com/questions/134937/split-latex-footnotes-into-two-columns
+\usepackage[nocritical,noend,noeledsec]{reledmac}
+\let\footnoteruleA=\relax
+\def\thempfootnote{{\itshape\@alph\c@mpfootnote}} % from latex.ltx
+\arrangementX[A]{twocol}
+\colalignX{\relax } % looks better.  But should we optimize narrow columns by going 
+%\raggedright?
+\beforenotesX{4em plus 1em minus 2em}
+\renewcommand*{\normalfootfootmarkX}[1]{%
+    \@nameuse{@thefnmark#1}\hspace*{.5em}}
+\let\originalfootnote=\footnote % store this for use in minipages
+\let\footnote=\footnoteA
+%DW
+
+\renewenvironment{sloka}
+    {\begin{quote} 
+              \itshape }
+    {\end{quote}}
+
+\newenvironment{miniedition}
+        {%
+        \addtolength{\textwidth}{-\rightmargin} % width of the quote environment
+        \begin{quote} 
+        \begin{minipage}{.8\textwidth}
+        \itshape 
+        \let\footnoterule\relax
+        \let\footnote=\originalfootnote
+    }
+        {\end{minipage}
+        \end{quote}}
+    
+   \usepackage[colorinlistoftodos,
+   textsize=tiny,
+   shadow,
+   backgroundcolor=yellow]{todonotes}
+   \def\q#1{{}\todo{#1}{}}
+%   \def\q#1{\relax }  % turn notes off
+    
+
+    % Special commands for this article
+    

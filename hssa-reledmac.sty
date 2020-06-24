@@ -1,0 +1,25 @@
+% DW two-column notes
+% with help from 
+%https://tex.stackexchange.com/questions/134937/split-latex-footnotes-into-two-columns
+\usepackage[nocritical,
+    noend,
+    %noeledsec,
+    %noledgroup,
+    series={A,B}]{reledmac}
+\usepackage{setspace}
+%\let\footnoteruleA=\relax % do we want a footnoterule?
+\def\thempfootnote{{\itshape\@alph\c@mpfootnote}} % from latex.ltx
+\arrangementX[A]{twocol}
+\colalignX{\relax } % looks better.  But should we optimize narrow columns 
+%by going 
+%\raggedright?
+\beforenotesX{2em plus 1.5em minus 1.5em} % spacing above notes
+\renewcommand*{\normalfootfootmarkX}[1]{%
+    \@nameuse{@thefnmark#1}\hspace*{.5em}}
+\let\originalfootnote=\footnote % store this for use in minipages
+\let\footnote=\footnoteA
+%
+%https://tex.stackexchange.com/questions/93763/eledmac-and-two-column-footnotes
+\usepackage{microtype}
+%DW
+
