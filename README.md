@@ -33,4 +33,4 @@ of long-term archival integrity.
 
 ## To do:
 
-Make a separate, much simpler file for authors.
+Make a separate, much simpler file of instructions meant for authors.
