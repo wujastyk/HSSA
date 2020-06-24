@@ -33,4 +33,4 @@ of long-term archival integrity.
 
 ## To do:
 
-Make a separate, much simpler file of instructions meant for authors.
+Make a separate, much simpler file of instructions meant for authors.  Or not.  Maybe the best thing is to ask them to use simple LaTeX.
