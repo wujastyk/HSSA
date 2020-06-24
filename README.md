@@ -23,7 +23,7 @@ is the driver file for formatting and printing the documentation for users and h
 The `template_HSSA.tex` file gives a brief example of how an article works.  
 
 ## snapshot and bundledoc 
-Note that it starts by calling `snapshot.sty`.  
+Note that the template starts by calling `snapshot.sty`.  
 This creates a file `foobar.dep` that lists all the files used in a TeX run.  
 After an article is finished and published, I run `bundledoc-dw foobar` and that creates a `foobar.zip` archive file 
 that contains *all* the files needed to compile the document.  This is helpful as the years pass and small changes accumulate
