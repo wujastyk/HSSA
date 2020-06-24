@@ -1,0 +1,3 @@
+#!/bin/bash -x
+echo bundledoc including PDF. Argument is filename, no extension.
+bundledoc --config ~/Dropbox/bin/bundledoc-dw.cfg --include $1.pdf --include $1.bib --verbose $1.dep
