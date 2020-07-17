@@ -31,6 +31,9 @@ in TeXLive, or if one just wants to send someone the whole thing without worryin
 it might be sensible to upload these archive files to the HSSA OJS website, to sit with the original articles, for the sake
 of long-term archival integrity.
 
+## HSSA5.2.sty
+I've put this here just for archival purposes. It was a sui-generis style file for issue 5.2 of the journal.  It calls old-fashioned style files ("STM") that were used for early issues of the journal and should now be ignored.
+
 ## To do:
 
 Make a separate, much simpler file of instructions meant for authors.  Or not.  Maybe the best thing is to ask them to use simple LaTeX.
