@@ -34,3 +34,9 @@ of long-term archival integrity.
 ## To do:
 
 Make a separate, much simpler file of instructions meant for authors.  Or not.  Maybe the best thing is to ask them to use simple LaTeX.
+
+## Copyright and license
+
+These HSSA journal production LaTeX style files are all (C) Copyright Dominik Wujastyk, 2020.
+
+HSSA journal production LaTeX style files by Dominik Wujastyk is licensed under CC BY-SA 4.0. To view a copy of this license, visit [https://creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0).
