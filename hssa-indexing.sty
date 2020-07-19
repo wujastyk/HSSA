@@ -1,20 +1,24 @@
-\usepackage[xindy]{imakeidx} 
+% Formerly used xindy; now updated to use xindex
+%
+\usepackage[imakeidx]{xindex} 
+%\usepackage[xindy]{imakeidx} 
 %useful if there are multiple indexes, and 
 % to make indexing happen during a normal XeTeX run.
 % see https://cikitsa.blogspot.ca/2016/07/getting-xindy-to-work-for-iast-encoded.html
 %
 \makeindex[name=lexical,
 title=Lexical Index,
-program=texindy,
-options =--input-markup xelatex -M iast.xdy -L general,
-%options = --input-markup xelatex -M de-accent
+columns=3,
+%program=texindy,
+%options =--input-markup xelatex -M iast.xdy -L general,
+options=  -c iast -a -n, % nocasesensitive, noheadings
 ]
 %
 \makeindex[name=manuscripts,
 title=Index of Manuscripts,
-program=texindy,
-options =--input-markup xelatex -M iast.xdy -L general,
-%options = --input-markup xelatex -M de-accent
+%program=texindy,
+%options =--input-markup xelatex -M iast.xdy -L general,
+options=  -c iast, 
 columns=1]
 
 \indexsetup{level=\section*,

@@ -645,6 +645,7 @@ backgroundcolor=yellow]{todonotes}
             \item Gudrun Bühnemann, University of Wisconsin-Madison, USA
             \item Anuj Misra, University of Copenhagen, Denmark            
             \item Aditya Kolachana, Indian Institute of Technology, Madras, India
+            \item Dagmar Wujastyk, University of Alberta, Edmonton, Canada
         \end{itemize}
         
         \medskip
