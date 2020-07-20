@@ -1,4 +1,5 @@
--- put this file into ../localtexmf/tex/luatex/xindex
+-- put this file into ../localtexmf/tex/luatex/xindex and then 
+-- re-run the TeX file hash program, mktexlsr, to recreate your kpathsea database
 --
 -- this is the xindex distribution file xindex-cfg.lua, with the alphabet_lower and _upper arrays 
 -- modified to deal with the International Alphabet of Sanskrit Transliteration (IAST, 
