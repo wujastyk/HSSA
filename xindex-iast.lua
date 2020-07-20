@@ -1,4 +1,12 @@
 -- put this file into ../localtexmf/tex/luatex/xindex
+--
+-- this is the xindex distribution file xindex-cfg.lua, with the alphabet_lower and _upper arrays 
+-- modified to deal with the International Alphabet of Sanskrit Transliteration (IAST, 
+-- https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration) character set and 
+-- renamed xindex-iast.lua.  This tells xindex to sort in roman alphabetical order as if accents didn't matter.  
+-- A different array would be necessary to sort in Sanskrit alphabetical order, and it would be quite easy to set up.
+-- Dominik Wujastyk, Edmonton, Canada, July 2020.
+
 
 -----------------------------------------------------------------------
 --         FILE:  xindex-cfg.lua
