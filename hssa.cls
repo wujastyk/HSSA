@@ -636,7 +636,7 @@ backgroundcolor=yellow]{todonotes}
             \leftmargini=1em
             \item Dominik Wujastyk, University of Alberta, Edmonton, Canada
             \item Kim Plofker, Union College, Schenectady, United States
-            \item Dhruv Raina, Jawaharlal Nehru University, New Delhi, India
+           % \item Dhruv Raina, Jawaharlal Nehru University, New Delhi, India
             \item Clemency Montelle, University of Canterbury, 
                 Christchurch, New Zealand
             \item Fabrizio Speziale, School of Advanced Studies in the 
@@ -663,7 +663,7 @@ backgroundcolor=yellow]{todonotes}
         
         \textit{Mailing Address:}\\[4pt]
         History of Science in South Asia,\\
-        Department of History and Classics,\\ 
+        Department of History, Classics and Religion,\\ 
         2--81 HM Tory Building,\\ 
         University of Alberta,\\ 
         Edmonton, AB, T6G 2H4\\
