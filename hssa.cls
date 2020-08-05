@@ -28,6 +28,7 @@
 %\url{https://journals.library.ualberta.ca/hssa/index.php/hssa/latex-users}.
 
 %\newpage
+
 %\section{Documentation for \LaTeX\ hackers converting incoming files to HSSA}
 %
 %\subsection{Prelims}
@@ -42,7 +43,8 @@
 % Note that the article's bibliography should have the same name as the article, with the 
 % extension \verb".bib".
 
-%Next, use the following commands to capture the data for this article:
+%\subsubsection{Metadata}
+%Next, use the following commands to capture the metadata for this article:
 %\begin{verbatim}
 %\HSSAissuenum{999}
 %\HSSAissuedate{2999}
@@ -73,8 +75,9 @@
 %\end{verbatim}
 % Don't forget to handle the space after these macros appropriately.
 
-%\DescribeMacro{\q{}}
-% Use this to make a loud, obnoxious marginal note in bright yellow box.
+%\DescribeMacro{\q\{\}}
+% Use this to make a loud, obnoxious marginal note in bright yellow box. Use it to annotate
+% the PDF proofs for communicating with the author.
 
 % \subsubsection{Environments for ślokas and mini-editions}
 %\DescribeEnv{miniedition}
@@ -90,21 +93,24 @@
 % entry to an alphabetical index of manuscripts that appears at the end of your article.
 % Saying \verb"\MScite{London, Wellcome, $\alpha$999}" will print “MS London, Wellcome 
 % $\alpha$ 999 in your text.
+
 %\DescribeMacro{\MS}
 % \verb"\MS" is a synonym for \verb"\MScite"
+
 %\DescribeMacro{\MSnocite}
 % If you want to put an entry in your index of manuscripts, but you don't want 
 % the entry printed in the main text where you're writing, use \verb"\MSnocite".
+
 %\DescribeMacro{\MSsilent}
 % A synonym for \verb"\MSnocite".
 
 %\subsubsection{Making a lexical index}
 %\DescribeMacro{\saneng{}{}}
-%\DescribeMacro{\ssaneng{}{}}
 % If you say \verb"\saneng{pūpa}{cake}" then you'll get “cake (\emph{pūpa})” printed in 
 % your main text.  Also, an entry will be written to a lexical page index, both Sanskrit-English
 % and English-Sanskrit.
 %
+%\DescribeMacro{\ssaneng{}{}}
 % \verb"\ssaneng" is a silent version of the same macro that writes the index entries but
 % puts nothing in the main text.
 
