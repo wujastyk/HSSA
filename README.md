@@ -1,4 +1,4 @@
-# HSSA-journal-LaTeX-stylesheet
+# HSSA journal LaTeX stylesheet
 Maintenance site for the LaTeX stylesheet for History of Science in South Asia (https://hssa-journal.org)
 
 ## The most important files here are 
