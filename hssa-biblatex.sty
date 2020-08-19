@@ -101,6 +101,12 @@ mvbook]{useeditor=true,usetranslator=true}
 	{\nolinkurl{#1}}}
 %
 
+\DeclareFieldFormat{eprint:ark}{%
+	\textsc{ark:}\space
+	\ifhyperref  
+	{\href{https://n2t.net/#1}{\nolinkurl{#1}}}
+	{\nolinkurl{#1}}}
+%
 \DeclareFieldFormat{eprint:archive}{%
 	Internet Archive\addcolon\space
 	\ifhyperref
@@ -113,6 +119,7 @@ mvbook]{useeditor=true,usetranslator=true}
 	\ifhyperref
 	{\href{http://www.academia.edu/#1}{\nolinkurl{#1}}}
 	{\nolinkurl{#1}}}
+\DeclareFieldAlias{eprint:academia.edu}{eprint:academia}
 
 \DeclareFieldFormat{eprint:dli}{%
 	DLI\addcolon\space
@@ -120,6 +127,10 @@ mvbook]{useeditor=true,usetranslator=true}
 	{\href{http://www.dli.gov.in/cgi-bin/DBscripts/allmetainfo.cgi?barcode=#1/}{\nolinkurl{#1}}}
 	{\nolinkurl{#1}}}
 \DeclareFieldAlias{eprint:DLI}{eprint:dli}
+\DeclareFieldFormat{eprint:jstor}{%
+    \ifhyperref
+    {\href{http://www.jstor.org/stable/#1}{{\small JSTOR}}}
+    {\nolinkurl{#1}}}
 
 \DeclareFieldFormat{eprint:jainlibrary}{%
 	Jain eLibrary\addcolon\space
