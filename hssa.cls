@@ -236,6 +236,7 @@
     wasysym,
     polyglossia,
     hyperref,
+    hyperxmp, % to embed XMP metadata in the PDF
     geometry,
     array,
     longtable,
@@ -245,16 +246,6 @@
     textcase, % to get \MakeTextLowercase for tweaking the running footer
     fancyhdr,
 }
-%    \end{macrocode}
-%  \end{macro}
-
-
-%  \begin{macro}{\hypersetup}
-% Settings for hypertext links, used by \verb''hyperref'':
-%    \begin{macrocode}
-\hypersetup{colorlinks=true, 
-    bookmarksopen=false,
-    pdfpagescrop={39 62 554 759}}
 %    \end{macrocode}
 %  \end{macro}
 
@@ -922,6 +913,34 @@ backgroundcolor=yellow]{todonotes}
 %\CopyrightURL{} \Keywords{}
 %    \end{macrocode}
 
+%  \begin{macro}{\hypersetup}
+% Settings for hypertext links, used by \verb''hyperref''.  These settings also include
+% hyperxmp settings to embed XMP metadata in the PDF.
+% The \verb|\@| macros don't expand at the right time.  A problem for another day.  In 
+% any case, hyperxmp seems to get more or less the right data from \verb|\author| etc.
+%    \begin{macrocode}
+\hypersetup{colorlinks=true, 
+    bookmarksopen=false,
+    pdfpagescrop={39 62 554 759},
+    % now hyperxmp settings:
+%    pdfauthor={\@HSSAauthorname},
+%    pdftitle={\@HSSAarticletitle},
+%    pdfcopyright={\@HSSAauthorname},
+%    pdfdoi={\@DOI },
+%    pdfurl={https://doi.org/\@DOI},
+    pdfissn={2369-775X},
+    pdflicenseurl={https://creativecommons.org/licenses/by-sa/4.0/},
+    pdfpublication={History of Science in South Asia},
+    pdfcaptionwriter={Dominik Wujastyk},
+    pdfurl={https://journals.library.ualberta.ca/hssa/},
+    pdfpublisher={University of Alberta Library},
+    pdfpubtype={journal},
+    pdfpubstatus={VoR}, % Version of Record
+}
+%    \end{macrocode}
+%  \end{macro}
+
+
 % No idea what this was about:
 %    \begin{macrocode}
 %\spaceskip.1em plus .1em minus .1em
@@ -976,16 +995,16 @@ backgroundcolor=yellow]{todonotes}
 % Documented at \\
 % \url{https://cikitsa.blogspot.com/2017/08/mini-edition-environment-for-latex.html}
 %    \begin{macrocode}
-        \newenvironment{miniedition}
-        {\addtolength{\textwidth}{-\rightmargin} % width of the quote environment
-            \begin{quote} 
-                \begin{minipage}{\textwidth}
-                    \let\footnoterule\relax
-                    \let\footnote\originalfootnote % see hssa-reledmac.sty for this
-                }
-                {\end{minipage}
-            \end{quote}
-        }
+\newenvironment{miniedition}
+    {\addtolength{\textwidth}{-\rightmargin} % width of the quote environment
+        \begin{quote} 
+            \begin{minipage}{\textwidth}
+                \let\footnoterule\relax
+                \let\footnote\originalfootnote % see hssa-reledmac.sty for this
+            }
+            {\end{minipage}
+        \end{quote}
+    }
 %    \end{macrocode}
 %	\end{macro}
 
