@@ -493,7 +493,8 @@ backgroundcolor=yellow]{todonotes}
 %    \begin{macrocode}
 \AtEndDocument{%
     \newpage
-    \coverlastpage }
+    \coverlastpage 
+}
 %    \end{macrocode}
 %\end{macro}
 %

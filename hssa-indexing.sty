@@ -2,6 +2,11 @@
 %
 \usepackage[imakeidx]{xindex} 
 %
+\indexsetup{level=\section*,
+    noclearpage,
+    firstpagestyle=fancy
+}
+%
 \makeindex[name=lexical,
 title=Lexical Index,
 columns=3,
@@ -9,14 +14,9 @@ options=  -c iast -a -n, % nocasesensitive, noheadings
 ]
 %
 \makeindex[name=manuscripts,
-title=Page Index of Manuscripts,
+title=Index of Manuscripts,
 options=  -c iast -n, 
 columns=1]
-
-\indexsetup{level=\section*,
-    noclearpage,
-    firstpagestyle=fancy
-}
 
 % Command for English words to be followed by Sanskrit in parentheses, and 
 % both to be sent to the lexical index.
