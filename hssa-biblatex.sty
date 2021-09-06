@@ -1,4 +1,3 @@
-
 % Biblatex settings for HSSA
 %\usepackage[%
 %tools={manuscripts},
@@ -38,8 +37,9 @@ url=true,
 urldate=short,
 useprefix=true,
 %refsection=section,
-maxbibnames=10,
-]{biblatex}
+maxbibnames=10]{biblatex}
+
+
 
 \ExecuteBibliographyOptions[% for biblatex-oxyear
 book,
@@ -50,8 +50,7 @@ incollection,
 inreference,
 collection,
 reference,
-mvreference,
-mvbook]{useeditor=true,usetranslator=true}
+mvreference]{useeditor=true,usetranslator=true}
 
 \AtBeginDocument{\assignrefcontextentries[]{*}}  
 % see 
@@ -219,5 +218,15 @@ mvbook]{useeditor=true,usetranslator=true}
     \thefield{urlyear})\isdot}
     
 %\usepackage{xurl} % get better formatting; no, leave it to biblatex
-    
-        
+   
+% Some magic from “moewe” at 
+%https://tex.stackexchange.com/questions/442749/biblatex-have-hyperref-links-point-to-the-shorthand-list
+% that makes hyperlinks work from citations to a list of abbreviations.
+\DeclareFieldFormat{shorthandwidth}{%
+    \bibhypertarget{shorthand:\thefield{entrykey}}
+    {#1}}
+
+\DeclareFieldFormat{bibhyperref}{%
+    \iffieldundef{shorthand}
+    {\bibhyperref{#1}}
+    {\bibhyperlink{shorthand:\thefield{entrykey}}{#1}}}

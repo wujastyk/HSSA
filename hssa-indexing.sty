@@ -1,6 +1,7 @@
 % Formerly used xindy; now updated to use xindex
 %
-\usepackage[imakeidx]{xindex} 
+\usepackage[imakeidx] {xindex} 
+%\PassOptionsToPackage{nonewpage}{imakeidx}
 %
 \indexsetup{level=\section*,
     noclearpage,
@@ -10,13 +11,18 @@
 \makeindex[name=lexical,
 title=Lexical Index,
 columns=3,
-options=  -c iast -a -n, % nocasesensitive, noheadings
+options=  --config iast --no_casesensitive --noheadings, % nocasesensitive, 
+%noheadings
 ]
 %
 \makeindex[name=manuscripts,
 title=Index of Manuscripts,
-options=  -c iast -n, 
+options=  --config iast --no_casesensitive --noheadings,
 columns=1]
+
+% before the \printindex command say 
+% “\indexprologue{References are to page numbers.}”
+
 
 % Command for English words to be followed by Sanskrit in parentheses, and 
 % both to be sent to the lexical index.

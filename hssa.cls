@@ -235,9 +235,9 @@
     textcomp, % arcane LaTeX/NFSS system for subsetting encodings.  Needed for Sigma.
     wasysym,
     polyglossia,
-    hyperref,
-    hyperxmp, % to embed XMP metadata in the PDF
-    geometry,
+     hyperxmp, % to embed XMP metadata in the PDF
+     hyperref, 
+     geometry,
     array,
     longtable,
     polyglossia,  % polyglossia calls fontspec
@@ -792,11 +792,11 @@ backgroundcolor=yellow]{todonotes}
 \HSSAissuenum{999}
 %
 % Provide user command \HSSAarticletitle
-\def\HSSAarticletitle#1{\gdef\@HSSAarticletitle{#1}}
+\def\HSSAarticletitle#1{\gdef\@HSSAarticletitle{#1}\hypersetup{pdftitle=#1}}
 \HSSAarticletitle{My Life}
 %
 % Provide user command \HSSAauthorname
-\def\HSSAauthorname#1{\gdef\@HSSAauthorname{#1}}
+\def\HSSAauthorname#1{\gdef\@HSSAauthorname{#1}\hypersetup{pdfauthor=#1}}
 \HSSAauthorname{Joe Bloggs}
 %
 % Provide user command \HSSAissuedate
@@ -926,7 +926,7 @@ backgroundcolor=yellow]{todonotes}
     % now hyperxmp settings:
 %    pdfauthor={\@HSSAauthorname},
 %    pdftitle={\@HSSAarticletitle},
-%    pdfcopyright={\@HSSAauthorname},
+    pdfcopyright={\copyright\ The Author},
 %    pdfdoi={\@DOI },
 %    pdfurl={https://doi.org/\@DOI},
     pdfissn={2369-775X},

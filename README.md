@@ -9,7 +9,8 @@ Maintenance site for the LaTeX stylesheet for History of Science in South Asia (
 These two contain the formatting instructions for the journal's articles.  They call the other files, like
 
 * `hssa-biblatex.sty`
-* `hssa-indexing.sty`
+* `hssa-indexing.sty` 
+    * `xindex-iast.lua` goes in ../localtexmf/tex/luatex/xindex and adds IAST alphabetical order and xindex tweaks.
 * `hssa-reledmac.sty`  (for two-column footnotes and for critical editions)
 
 The file 
