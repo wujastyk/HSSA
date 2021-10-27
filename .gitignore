@@ -1,0 +1,9 @@
+archive/*
+tests/*
+*aux
+*bcf
+*blg
+*log
+*out
+*run.xml
+
