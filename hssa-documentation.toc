@@ -1,0 +1,45 @@
+\selectlanguage *{latex}
+\contentsline {section}{\numberline {1}Documentation for authors using \LaTeX }{3}{section.1}%
+\contentsline {section}{\numberline {2}Documentation for \LaTeX \ hackers converting incoming files to HSSA}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Prelims}{4}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Metadata}{4}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}User macros}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}AD, BC, etc.}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Environments for ślokas and mini-editions}{5}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Citing manuscripts}{5}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Making a lexical index}{5}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Language-switching}{5}{subsubsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.6}Citation commands}{6}{subsubsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.7}Bibliography and index outputs}{6}{subsubsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.8}Miscellaneous}{6}{subsubsection.2.2.8}%
+\contentsline {subsection}{\numberline {2.3}What you get for nothing}{7}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Macros in the class file for the HSSA journal: hssa.cls}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Set the geometry for the pages}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Front matter}{10}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Running headers and footers}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Fancy-plus-DOI style}{11}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Output the preliminary matter}{12}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Output the pages that come after the article}{12}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Arrange the appendix}{13}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Set up the alignment and fonts of title and author names}{13}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}The content of the cover page}{13}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}The the content of the copyright page}{15}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}The content of the back cover page}{17}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Tweak captions $\rightarrow $ footnotesize}{17}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Page layout dimensions}{18}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}Misc layout settings}{18}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}Journal-specific user-facing macros}{18}{subsection.3.15}%
+\contentsline {subsection}{\numberline {3.16}Creative Commons logo}{20}{subsection.3.16}%
+\contentsline {subsection}{\numberline {3.17}Tweak tabular layout}{20}{subsection.3.17}%
+\contentsline {subsection}{\numberline {3.18}Not used?}{20}{subsection.3.18}%
+\contentsline {subsection}{\numberline {3.19}PDF metadata}{21}{subsection.3.19}%
+\contentsline {subsection}{\numberline {3.20}Simple indented, environment for Sanskrit verses}{22}{subsection.3.20}%
+\contentsline {subsection}{\numberline {3.21}Diatop}{22}{subsection.3.21}%
+\contentsline {subsection}{\numberline {3.22}Mini edition environment}{22}{subsection.3.22}%
+\contentsline {subsection}{\numberline {3.23}Index of Manuscripts}{23}{subsection.3.23}%
+\contentsline {section}{\numberline {4}Style file for HSSA journal: hssa.sty}{24}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Load basic macros for biblatex and reledmac (footnote cols)}{24}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Set up the langages and fonts, Polyglossia-style}{24}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Local generic author-facing macros}{25}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Math mode with Unicode fonts}{25}{subsection.4.4}%
+\contentsline {section}{Macro index}{26}{subsection.4.4}%

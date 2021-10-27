@@ -1,0 +1,403 @@
+
+ \begin{theindex} 
+ \makeatletter\scan@allowedfalse
+{\bfseries\hfil Symbols\hfil}\nopagebreak
+
+  \item \verb*+\@DOI+\pfill 111, 112, 394, 395, 397, 400, 451
+  \item \verb*+\@HSSAarticletitle+\pfill 77, 86, 205, 377, 406, 445
+  \item \verb*+\@HSSAauthoraddress+\pfill 79, 211, 389
+  \item \verb*+\@HSSAauthorname+\pfill 78, 88, 208, 381, 406, 446
+  \item \verb*+\@HSSAfooter+\pfill 51, 100, 113
+  \item \verb*+\@HSSAheaderfooterfont+\pfill \main{89}, 95, 96, 100, 
+		107, 108, 111, 113
+  \item \verb*+\@HSSAissuedate+\pfill 91, 385, 407
+  \item \verb*+\@HSSAissuenum+\pfill 90, 373, 407
+  \item \verb*+\@HSSArecto+\pfill 83, 85, 95, 107
+  \item \verb*+\@HSSAspecialissuedetails+\pfill 197, 369
+  \item \verb*+\@HSSAtitle+\pfill \main{52}, 90, 407
+  \item \verb*+\@HSSAverso+\pfill 82, 84, 96, 108
+  \item \verb*+\@LastPage+\pfill 155
+  \item \verb*+\@anchorcolor+\pfill 133
+  \item \verb*+\@arraycr+\pfill 433
+  \item \verb*+\@aualign+\pfill 159, 160
+  \item \verb*+\@aufont+\pfill 162, 164
+  \item \verb*+\@centercr+\pfill 463
+  \item \verb*+\@citecolor+\pfill 134
+  \item \verb*+\@empty+\pfill 84, 85, 174
+  \item \verb*+\@filecolor+\pfill 135
+  \item \verb*+\@footeraddress+\pfill 173, 174
+  \item \verb*+\@footerfont+\pfill 168
+  \item \verb*+\@ifpackageloaded+\pfill 131
+  \item \verb*+\@linkcolor+\pfill 132
+  \item \verb*+\@makecaption+\pfill \main{337}
+  \item \verb*+\@menucolor+\pfill 137
+  \item \verb*+\@minipagefalse+\pfill 345
+  \item \verb*+\@minus+\pfill 54, 55, 58, 59, 62, 413, 414, 417, 418, 
+		422
+  \item \verb*+\@pagecolor+\pfill 138
+  \item \verb*+\@plus+\pfill 54, 55, 58, 59, 62, 413, 414, 417, 418, 
+		422
+  \item \verb*+\@startsection+\pfill 53, 57, 61, 412, 416, 421
+  \item \verb*+\@tempboxa+\pfill 341, 342, 346
+  \item \verb*+\@temppdfauthor+\pfill 446, 450
+  \item \verb*+\@temppdftitle+\pfill 445, 449
+  \item \verb*+\@titlealign+\pfill 157, 158
+  \item \verb*+\@titlefont+\pfill 161, 163
+  \item \verb*+\@urlcolor+\pfill 136, 222, 399
+  \item \verb*+\\+\pfill 78, 221, 237, 248, 263, 268, 269, 274--279, 
+		326, 433, 463
+
+  \indexspace
+{\bfseries\hfil  \hfil}\nopagebreak
+
+  \item \verb*+\ +\pfill 90, 330, 407
+
+  \indexspace
+{\bfseries\hfil A\hfil}\nopagebreak
+
+  \item \verb*+\abovecaptionskip+\pfill 339
+  \item \verb*+\AD+\pfill 538
+  \item \verb*+\addfontfeature+\pfill 89, 236, 327, 410
+  \item \verb*+\addtocontents+\pfill 153
+  \item \verb*+\addtolength+\pfill 481
+  \item \verb*+\advance+\pfill 467--469, 475
+  \item \verb*+\Appendix+\pfill \main{146}
+  \item \verb*+\appendix+\pfill 149
+  \item \verb*+\appendixname+\pfill 148
+  \item \verb*+\arraybslash+\pfill 433
+  \item \verb*+\arraystretch+\pfill 435
+  \item \verb*+\AtBeginDocument+\pfill \main{121}
+  \item \verb*+\AtEndDocument+\pfill \main{143}
+  \item \verb*+\aualign+\pfill 159
+  \item \verb*+\aufont+\pfill 162
+  \item \verb*+\Author+\pfill 455
+  \item \verb*+\author+\pfill \main{78}
+
+  \indexspace
+{\bfseries\hfil B\hfil}\nopagebreak
+
+  \item \verb*+\baselineskip+\pfill 209
+  \item \verb*+\BC+\pfill 538
+  \item \verb*+\BCE+\pfill 538
+  \item \verb*+\bce+\pfill 535, 538
+  \item \verb*+\begin+\pfill 182, 194, 202, 218, 235, 249, 482, 483
+  \item \verb*+\begingroup+\pfill 177, 230
+  \item \verb*+\begin{sloka}+\pfill \main{458}
+  \item \verb*+\belowcaptionskip+\pfill 348
+  \item \verb*+\bfseries+\pfill 56, 236
+  \item \verb*+\boldmath+\pfill 56
+  \item \verb*+\bottomfraction+\pfill 350, 356
+  \item \verb*+\box+\pfill 346, 477
+
+  \indexspace
+{\bfseries\hfil C\hfil}\nopagebreak
+
+  \item \verb*+\cclogobox+\pfill 111, 430, 431
+  \item \verb*+\CE+\pfill 538
+  \item \verb*+\ce+\pfill 537, 538
+  \item \verb*+\centering+\pfill 79, 158, 160, 415, 419, 420, 424
+  \item \verb*+\cjk+\pfill 520
+  \item \verb*+\color+\pfill 180, 320, 325, 329
+  \item \verb*+\colorlet+\pfill 321, 440--444
+  \item \verb*+\columnwidth+\pfill 437
+  \item \verb*+\copy+\pfill 111
+  \item \verb*+\Copyright+\pfill 455
+  \item \verb*+\copyrightpage+\pfill 312
+  \item \verb*+\copyrightspage+\pfill 124, \main{229}
+  \item \verb*+\CopyrightURL+\pfill 456
+  \item \verb*+\covercitation+\pfill \main{404}
+  \item \verb*+\coverlastpage+\pfill 145, \main{313}
+  \item \verb*+\coverpage+\pfill 123, \main{175}
+
+  \indexspace
+{\bfseries\hfil D\hfil}\nopagebreak
+
+  \item \verb*+\date+\pfill \main{81}
+  \item \verb*+\dblfloatpagefraction+\pfill 354
+  \item \verb*+\dbltopfraction+\pfill 353
+  \item \verb*+\def+\pfill 41, 43, 50, 82, 83, 89, 132--138, 148, 155, 
+		157, 159, 161--164, 168, 173, 175, 222, 229, 313, 338, 
+		369, 373, 377, 381, 385, 389, 394, 399, 404, 410, 
+		425, 426, 473, 535, 537
+  \item \verb*+\definecolor+\pfill \main{118}, 439
+  \item \verb*+\dev+\pfill 516
+  \item \verb*+\diatop+\pfill \main{473}
+  \item \verb*+\dimen+\pfill 474--478
+  \item \verb*+\dn+\pfill 515
+  \item \verb*+\DOI+\pfill 394, 396, 402
+
+  \indexspace
+{\bfseries\hfil E\hfil}\nopagebreak
+
+  \item \verb*+\else+\pfill 344, 398, 474
+  \item \verb*+\emergencystretch+\pfill 437
+  \item \verb*+\emph+\pfill 79, 211, 407
+  \item \verb*+\empty+\pfill 370, 395, 397
+  \item \verb*+\end+\pfill 191, 198, 213, 224, 259, 307, 487, 488
+  \item \verb*+\endgroup+\pfill 225, 308
+  \item \verb*+\endlist+\pfill 461
+  \item \verb*+\enumitem+\pfill \main{29}
+
+  \indexspace
+{\bfseries\hfil F\hfil}\nopagebreak
+
+  \item \verb*+\fancyfoot+\pfill 99--101, 111, 113, 114
+  \item \verb*+\fancyhead+\pfill 94--98, 105--110
+  \item \verb*+\fancypage+\pfill \main{104}
+  \item \verb*+\fancypagestyle+\pfill 104
+  \item \verb*+\fi+\pfill 347, 400, 474
+  \item \verb*+\floatpagefraction+\pfill 352, 358
+  \item \verb*+\fontsize+\pfill 163, 164, 169, 186
+  \item \verb*+\footeraddress+\pfill 173
+  \item \verb*+\footerfont+\pfill 168, 169
+  \item \verb*+\footins+\pfill 48
+  \item \verb*+\footnote+\pfill 485
+  \item \verb*+\footnotemargin+\pfill 362
+  \item \verb*+\footnoterule+\pfill 484
+  \item \verb*+\footnotesize+\pfill 188, 220, 234, 340, 419
+  \item \verb*+\footnotetext+\pfill 44
+  \item \verb*+\footrulewidth+\pfill 103, 116
+  \item \verb*+\fspace+\pfill 410, 415, 419, 420
+
+  \indexspace
+{\bfseries\hfil G\hfil}\nopagebreak
+
+  \item \verb*+\gdef+\pfill 51, 82, 83, 155, 157, 159, 161, 162, 168, 
+		173, 369, 373, 377, 381, 385, 389, 394, 395, 404, 
+		425, 426
+  \item \verb*+\geometry+\pfill 66, \main{66}, 364
+  \item \verb*+\global+\pfill 345, 431
+  \item \verb*+\greekfont+\pfill 526
+
+  \indexspace
+{\bfseries\hfil H\hfil}\nopagebreak
+
+  \item \verb*+\hangfootnotes+\pfill 44
+  \item \verb*+\hb@xt@+\pfill 346
+  \item \verb*+\hbox+\pfill 431, 473, 476, 478
+  \item \verb*+\headrulewidth+\pfill 102, 115
+  \item \verb*+\hfil+\pfill 346
+  \item \verb*+\href+\pfill 111, 223, 240, 292, 298, 300, 301, 303, 305, 
+		324, 328, 400
+  \item \verb*+\hsize+\pfill 342, 346
+  \item \verb*+\hskip+\pfill 465
+  \item \verb*+\hspace+\pfill 44, 181, 217
+  \item \verb*+\hss+\pfill 476, 478
+  \item \verb*+\HSSAarticletitle+\pfill 376--378
+  \item \verb*+\HSSAauthoraddress+\pfill 388--390
+  \item \verb*+\HSSAauthorname+\pfill 380--382
+  \item \verb*+\HSSAfirstpage+\pfill 425, 428
+  \item \verb*+\HSSAfooter+\pfill \main{50}, \main{90}
+  \item \verb*+\HSSAissuedate+\pfill 384--386
+  \item \verb*+\HSSAissuenum+\pfill 372--374
+  \item \verb*+\HSSAjournalAbbrev+\pfill 438
+  \item \verb*+\HSSAlastpage+\pfill 426, 429
+  \item \verb*+\HSSArecto+\pfill \main{83}, 88
+  \item \verb*+\HSSAshorttitle+\pfill 87
+  \item \verb*+\HSSAspecialissuedetails+\pfill 369, 370
+  \item \verb*+\HSSAverso+\pfill \main{82}, 86, 87
+  \item \verb*+\ht+\pfill 475
+  \item \verb*+\hypersetup+\pfill \main{21}
+
+  \indexspace
+{\bfseries\hfil I\hfil}\nopagebreak
+
+  \item \verb*+\ifdim+\pfill 342, 474
+  \item \verb*+\ifx+\pfill 397
+  \item \verb*+\includegraphics+\pfill 184, 432
+  \item \verb*+\input+\pfill 141
+  \item \verb*+\item+\pfill 251--254, 256, 258, 460
+  \item \verb*+\itshape+\pfill 60, 64, 188, 424
+
+  \indexspace
+{\bfseries\hfil J\hfil}\nopagebreak
+
+  \item \verb*+\jobname+\pfill 455
+
+  \indexspace
+{\bfseries\hfil K\hfil}\nopagebreak
+
+  \item \verb*+\Keywords+\pfill 456
+
+  \indexspace
+{\bfseries\hfil L\hfil}\nopagebreak
+
+  \item \verb*+\langle+\pfill 270, 325
+  \item \verb*+\LARGE+\pfill 77, 196, 204
+  \item \verb*+\large+\pfill 207, 420, 517
+  \item \verb*+\largesloka+\pfill 517
+  \item \verb*+\Last page+\pfill \main{155}
+  \item \verb*+\LastPage+\pfill 155, 156
+  \item \verb*+\LaTeX+\pfill 298
+  \item \verb*+\leavevmode+\pfill 465, 473
+  \item \verb*+\lefthyphenmin+\pfill 359
+  \item \verb*+\leftmargin+\pfill 459, 466, 467
+  \item \verb*+\leftmargini+\pfill 250
+  \item \verb*+\leftskip+\pfill 468
+  \item \verb*+\let+\pfill 84, 85, 87, 153, 158, 160, 174, 433, 463, 
+		484, 485, 515, 538
+  \item \verb*+\lettergroup+\pfill 479
+  \item \verb*+\linewidth+\pfill 181, 182, 194, 202, 217--219, 235
+  \item \verb*+\list+\pfill 459
+  \item \verb*+\LoadClass+\pfill \main{2}
+  \item \verb*+\long+\pfill 175, 229, 313, 338
+
+  \indexspace
+{\bfseries\hfil M\hfil}\nopagebreak
+
+  \item \verb*+\MakeLowercase+\pfill 420
+  \item \verb*+\MakeTextLowercase+\pfill 18, 90, 95, 96
+  \item \verb*+\maketitle+\pfill 127
+  \item \verb*+\MakeUppercase+\pfill 415, 419
+  \item \verb*+\marginparwidth+\pfill 34
+  \item \verb*+\mbox+\pfill 317
+  \item \verb*+\medskip+\pfill 187, 261, 266, 272, 282, 288, 295
+  \item \verb*+\miniedition+\pfill \main{480}
+  \item \verb*+\MScite+\pfill \main{490}
+
+  \indexspace
+{\bfseries\hfil N\hfil}\nopagebreak
+
+  \item \verb*+\narrower+\pfill 470
+  \item \verb*+\NeedsTeXFormat+\pfill \main{1}
+  \item \verb*+\newbox+\pfill 430
+  \item \verb*+\newcommand+\pfill 42, 52, 397, 433, 479, 516, 517
+  \item \verb*+\newenvironment+\pfill 458, 462, 480
+  \item \verb*+\newfontfamily+\pfill 509, 520, 526
+  \item \verb*+\newpage+\pfill 144, 227, 313
+  \item \verb*+\newtoks+\pfill 396
+  \item \verb*+\normalcolor+\pfill 232, 311
+  \item \verb*+\normalfont+\pfill 60, 64, 323, 419, 420, 424
+  \item \verb*+\normalsize+\pfill 56, 60, 64, 210, 415, 424
+  \item \verb*+\numberline+\pfill 153
+
+  \indexspace
+{\bfseries\hfil O\hfil}\nopagebreak
+
+  \item \verb*+\originalfootnote+\pfill 485
+
+  \indexspace
+{\bfseries\hfil P\hfil}\nopagebreak
+
+  \item \verb*+\p@+\pfill 54, 55, 58, 59, 62, 63, 413, 414, 417, 418, 
+		422, 423
+  \item \verb*+\pagecolor+\pfill 179, 231, 310, 315
+  \item \verb*+\pagelayout+\pfill \main{349}
+  \item \verb*+\pagestyle+\pfill 93
+  \item \verb*+\par+\pfill 149, 184, 187, 190, 192, 199, 201, 206, 208, 
+		212, 214, 216, 319, 343, 517
+  \item \verb*+\parbox+\pfill 79
+  \item \verb*+\parindent+\pfill 31, 178, 313, 464
+  \item \verb*+\parskip+\pfill 316
+  \item \verb*+\pdfinfo+\pfill 447
+  \item \verb*+\pdfstringdef+\pfill 445, 446
+  \item \verb*+\PreliminaryNote+\pfill \main{42}
+  \item \verb*+\printDOI+\pfill 397, 402, 408
+  \item \verb*+\printindex+\pfill 494
+
+  \indexspace
+{\bfseries\hfil Q\hfil}\nopagebreak
+
+  \item \verb*+\q+\pfill \main{34}
+
+  \indexspace
+{\bfseries\hfil R\hfil}\nopagebreak
+
+  \item \verb*+\raggedright+\pfill 195, 203, 323, 517
+  \item \verb*+\raise+\pfill 477
+  \item \verb*+\rangle+\pfill 270, 325
+  \item \verb*+\relax+\pfill 43, 81, 397, 460, 472, 484
+  \item \verb*+\renewcommand+\pfill 53, 57, 61, 102, 103, 115, 116, 149, 
+		349--358, 412, 416, 421, 435
+  \item \verb*+\RequirePackage+\pfill \main{3}, 24, 146, 361, 366, 367, 
+		436
+  \item \verb*+\righthyphenmin+\pfill 360
+  \item \verb*+\rightmargin+\pfill 459, 466, 481
+  \item \verb*+\rightskip+\pfill 469
+  \item \verb*+\rlap+\pfill 477
+  \item \verb*+\rule+\pfill 219, 322
+
+  \indexspace
+{\bfseries\hfil S\hfil}\nopagebreak
+
+  \item \verb*+\sanskritfont+\pfill 509, 515, 517
+  \item \verb*+\sbox+\pfill 341
+  \item \verb*+\scriptsize+\pfill 323
+  \item \verb*+\scshape+\pfill 89, 420
+  \item \verb*+\section+\pfill \main{53}, 412
+  \item \verb*+\selectbackgroundlanguage+\pfill 140
+  \item \verb*+\selectfont+\pfill 186
+  \item \verb*+\setbox+\pfill 431, 473, 476
+  \item \verb*+\setcounter+\pfill 126, 129, 150--152, 411
+  \item \verb*+\setdefaultlanguage+\pfill 498
+  \item \verb*+\setlength+\pfill 34, 362, 434
+  \item \verb*+\setlist+\pfill 30
+  \item \verb*+\setmainfont+\pfill 503, 506
+  \item \verb*+\setmathfont+\pfill 540, 541
+  \item \verb*+\setotherlanguage+\pfill 499--501
+  \item \verb*+\skip+\pfill 48
+  \item \verb*+\small+\pfill 79
+  \item \verb*+\smallskip+\pfill 479
+  \item \verb*+\spaceskip+\pfill 457
+  \item \verb*+\string+\pfill 153
+  \item \verb*+\subsection+\pfill 57, 416
+  \item \verb*+\subsubsection+\pfill 61, 421
+
+  \indexspace
+{\bfseries\hfil T\hfil}\nopagebreak
+
+  \item \verb*+\tabcolsep+\pfill 434
+  \item \verb*+\TeX+\pfill 301, 303, 306
+  \item \verb*+\textbullet+\pfill 330
+  \item \verb*+\textfraction+\pfill 351, 357
+  \item \verb*+\textheight+\pfill 235
+  \item \verb*+\textit+\pfill 248, 263, 268, 274
+  \item \verb*+\textsanskrit+\pfill 516
+  \item \verb*+\textsc+\pfill 299, 305, 400, 535, 537
+  \item \verb*+\textwidth+\pfill 79, 322, 481, 483
+  \item \verb*+\thecovercitation+\pfill 221, 404
+  \item \verb*+\thefirstpage+\pfill 91, 129, 408, 425
+  \item \verb*+\thefootnote+\pfill 43
+  \item \verb*+\thelastpage+\pfill 91, 408, 426
+  \item \verb*+\thepage+\pfill 97, 98, 109, 110
+  \item \verb*+\thispagestyle+\pfill 128, 176, 233, 314
+  \item \verb*+\tiny+\pfill 111, 221
+  \item \verb*+\Title+\pfill 455
+  \item \verb*+\title+\pfill \main{77}
+  \item \verb*+\titlealign+\pfill \main{157}
+  \item \verb*+\titlefont+\pfill 161
+  \item \verb*+\tmptocnumberline+\pfill 153
+  \item \verb*+\todo+\pfill 41
+  \item \verb*+\topfraction+\pfill 349, 355
+  \item \verb*+\toprule+\pfill 17
+
+  \indexspace
+{\bfseries\hfil U\hfil}\nopagebreak
+
+  \item \verb*+\usepackage+\pfill 29, 35, 92, 119, 454, 490, 495, 539
+
+  \indexspace
+{\bfseries\hfil V\hfil}\nopagebreak
+
+  \item \verb*+\vfill+\pfill 193, 200, 215, 242, 246, 318
+  \item \verb*+\vskip+\pfill 185, 339, 348
+  \item \verb*+\vspace+\pfill 183, 206, 209, 212, 226, 335
+
+  \indexspace
+{\bfseries\hfil W\hfil}\nopagebreak
+
+  \item \verb*+\wd+\pfill 342, 474
+
+  \indexspace
+{\bfseries\hfil X\hfil}\nopagebreak
+
+  \item \verb*+\xcolor+\pfill \main{24}
+  \item \verb*+\XeTeX+\pfill 300
+  \item \verb*+\xspace+\pfill 535
+
+  \indexspace
+{\bfseries\hfil Z\hfil}\nopagebreak
+
+  \item \verb*+\z@+\pfill 53, 57, 61, 412, 416, 421
+
+ \end{theindex}
