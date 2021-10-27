@@ -1,5 +1,7 @@
 # HSSA journal LaTeX stylesheet
-Maintenance site for the LaTeX stylesheet for History of Science in South Asia (https://hssa-journal.org)
+Maintenance site for the LaTeX stylesheet for History of Science in South Asia (https://hssa-journal.org).
+
+These files assume that you have installed the [TeXLive distribution](https://www.tug.org/texlive/) (or similar).
 
 ## The most important files here are 
 
