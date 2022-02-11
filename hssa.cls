@@ -282,6 +282,7 @@
 textsize=tiny,
 shadow,
 backgroundcolor=yellow]{todonotes}
+\setuptodonotes{fancyline} 
 %
 \def\q#1{{}\todo{#1}{}}
 %    \end{macrocode}
