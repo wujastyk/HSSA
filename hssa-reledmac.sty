@@ -16,7 +16,13 @@
 \beforenotesX{2em plus 1.5em minus 1.5em} % spacing above notes
 \renewcommand*{\normalfootfootmarkX}[1]{%
     \@nameuse{@thefnmark#1}\hspace*{.5em}}
+%
+% \footnote is not going to be the standard LaTeX footnote.  
+% So store the standard version.
 \let\originalfootnote=\footnote % store this for use in minipages
+\def\@minipagerestore{\let\footnote\originalfootnote} % restore standard LaTeX 
+%footnotes inside minipages
+% Now change \footnote to the reledmac version:
 \let\footnote=\footnoteA
 %
 %https://tex.stackexchange.com/questions/93763/eledmac-and-two-column-footnotes

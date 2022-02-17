@@ -1002,7 +1002,9 @@ backgroundcolor=yellow]{todonotes}
         \begin{quote} 
             \begin{minipage}{\textwidth}
                 \let\footnoterule\relax
-                \let\footnote\originalfootnote % see hssa-reledmac.sty for this
+                % \let\footnote\originalfootnote % No longer needed. 7
+                % Standard LaTeX footnotes are now 
+                % restored by the \@minipagerestore hook in hssa-reledmac.sty
             }
             {\end{minipage}
         \end{quote}
