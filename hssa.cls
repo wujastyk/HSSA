@@ -12,8 +12,8 @@
 %\href{http://ctan.mirror.colo-serv.net/info/latex-veryshortguide/veryshortguide-A4-imposed.pdf}{CTAN}).
 %\item Use logical markup, not presentational markup. That means you mark things as 
 %\verb"\chapter{xxx}", \verb"\footnote{xxx}", \verb"\sanskrit{xxx}", \verb"\title{xxx}", etc., 
-%rather than \verb"\textbf{xxx}", 
-%\verb"\vspace{5ex}", or \verb"\emph{xxx}".
+% and not \verb"\textbf{xxx}", 
+%\verb"\vspace{5ex}".
 %\item Do not use \verb"\newcommand" or \verb"\def" to make private commands. If this 
 %appears to be 
 %unavoidable, please contact the journal editor before proceeding.
@@ -24,8 +24,8 @@
 %\item If you have tables, keep them simple and don't spend time putting in many horizontal 
 %and vertical lines. They will be reformatted for the journal, in any case.
 %\end{itemize}
-%The above advice is also given on the HSSA website,\\ 
-%\url{https://journals.library.ualberta.ca/hssa/index.php/hssa/latex-users}.
+%The above advice is also given on the \href{https://hssa-journal.org}{HSSA 
+%website}.
 
 %\newpage
 
@@ -115,6 +115,9 @@
 % puts nothing in the main text.
 
 %\subsubsection{Language-switching}
+% See the documentation for
+% \href{https://ctan.org/pkg/polyglossia?lang=en}{Polyglossia} for details of how 
+% these are used.
 %\DescribeMacro{\textgreek{}}
 %\DescribeMacro{\textenglish{}}
 %\DescribeMacro{\textsanskrit{}}
@@ -138,13 +141,19 @@
 %
 %Here are examples from the end of Speziale's 2019 paper that do more 
 %elaborate things.
+% \paragraph{Index prologue}
 %\begin{verbatim}
 %\setlength{\shorthandwidth}{.25\textwidth}
 %
 %\indexprologue{\centering\emph{References are to page numbers in this 
 % article.}} 
 %
-%\printindex[manuscripts] % ditto for lexical
+%\end{verbatim}
+
+% \paragraph{Index of manuscripts}
+% As indexed using \verb|\MScite| etc.
+%\begin{verbatim}
+%\printindex[manuscripts] % ditto for manuscripts
 %
 %\printshorthands % uses features of biblatex-manuscripts-philology
 %[title=Primary Sources in Manuscripts,
@@ -152,7 +161,10 @@
 %%  env=details,
 %%sorting=special,
 %]
-%
+%\end{verbatim}
+
+% \paragraph{Index of editions}
+%\begin{verbatim}
 %\printshorthands %
 %[title=Primary Sources in Printed Editions,
 %keyword=edition, % flagged as such in the bib file
@@ -160,6 +172,10 @@
 %%sorting=special,
 %]
 %
+%\end{verbatim}
+
+% \paragraph{Index of references}
+%\begin{verbatim}
 %\printbibliography
 %[title=Secondary Sources and Translations,
 %sorting=nyt,
@@ -203,10 +219,10 @@
 % This is \verb|hssa.cls| by Dominik Wujastyk, a class file for the HSSA journal.
 %
 % This documentation is created by running \verb|hssa-documentation.dtx|, which 
-% calls \verb|hssa.cls| and \verb|hssa.sty|.
+% calls \verb|hssa.cls| and \verb|hssa.sty|, etc.
 %
 % See \url{http://tug.org/pracjourn/2005-3/asknelly/} for a nice statement of the 
-% difference between .cls and .sty files.  Here in hssa.cls, I'm keeping
+% difference between .cls and .sty files.  Here in \verb|hssa.cls|, I'm keeping
 % the code that is part of the core of HSSA's design.  I would not expect to 
 % change things here much after 2019.  
 
@@ -783,18 +799,29 @@ backgroundcolor=yellow]{todonotes}
 %    \end{macrocode}
 
 % \subsection{Journal-specific user-facing macros}
+
+% \begin{macro}{\HSSAspecialissuedetails}
+% Only for for guest-edited single-theme issues.
 %    \begin{macrocode}
-%DW
 \def\HSSAspecialissuedetails#1{\gdef\@HSSAspecialissuedetails{#1}}
 \HSSAspecialissuedetails{\empty }
+%    \end{macrocode}
+% \end{macro}
 %
-% Provide user command \HSSAissuenum
+% \begin{macro}{\HSSAissuenum}
+% Provide user command \verb|\HSSAissuenum|.
+%    \begin{macrocode}
 \def\HSSAissuenum#1{\gdef\@HSSAissuenum{#1}}
 \HSSAissuenum{999}
+%    \end{macrocode}
+% \end{macro}
 %
+% \begin{macro}{\HSSAarticletitle}
 % Provide user command \HSSAarticletitle
 \def\HSSAarticletitle#1{\gdef\@HSSAarticletitle{#1}\hypersetup{pdftitle=#1}}
 \HSSAarticletitle{My Life}
+%    \end{macrocode}
+% \end{macro}
 %
 % Provide user command \HSSAauthorname
 \def\HSSAauthorname#1{\gdef\@HSSAauthorname{#1}\hypersetup{pdfauthor=#1}}
@@ -908,16 +935,18 @@ backgroundcolor=yellow]{todonotes}
 %    }
 %}
 %    \end{macrocode}
-% pdfx clashes with using \verb|\hypersetup| to embed XMP data. Commented out.
+% The \verb|pdfx| package clashes with using \verb|\hypersetup| to embed XMP 
+%data. Commented out.
 %    \begin{macrocode}
 %\usepackage[a-1b]{pdfx} % get an archival PDF
 % optionally, create a file \jobname.xmpdata with \Author{} \Title{} \Copyright{} 
-%\CopyrightURL{} \Keywords{}
+% \CopyrightURL{} \Keywords{}
 %    \end{macrocode}
 
+% \subsection{Hypertext links}
 %  \begin{macro}{\hypersetup}
-% Settings for hypertext links, used by \verb''hyperref''.  These settings also include
-% hyperxmp settings to embed XMP metadata in the PDF.
+% Settings for hypertext links, used by \verb|hyperref|.  These settings also include
+% \verb|hyperxmp| settings to embed XMP metadata in the PDF.
 % The \verb|\@| macros don't expand at the right time.  A problem for another day.  In 
 % any case, hyperxmp seems to get more or less the right data from \verb|\author| etc.
 %    \begin{macrocode}
@@ -942,12 +971,6 @@ backgroundcolor=yellow]{todonotes}
 %    \end{macrocode}
 %  \end{macro}
 
-
-% No idea what this was about:
-%    \begin{macrocode}
-%\spaceskip.1em plus .1em minus .1em
-%    \end{macrocode}
-
 % \subsection{Simple indented, environment for Sanskrit verses}
 %	\begin{macro}{\begin{sloka}}
 %    \begin{macrocode}
@@ -955,6 +978,7 @@ backgroundcolor=yellow]{todonotes}
 % {\list{}{\rightmargin\leftmargin}%
 %    \item\relax}
 %{\endlist}
+%
 \newenvironment{sloka} % tweaked from verse
 {\let\\\@centercr
     \parindent 1em
@@ -981,10 +1005,11 @@ backgroundcolor=yellow]{todonotes}
         \rlap{\raise1\dimen1\box1}%
         \hbox to1\dimen0{\hss#2\hss}}}%
 %    \end{macrocode}
-%E.g. of use: \verb/\diatop[\'|{\=o}]/ gives u macron acute.
+%E.g. of use: \verb/\diatop[\'|{\=o}]/ gives o macron acute.
 %	\end{macro}
 %
 
+% \subsubsection{Unknown}
 % Again, what's this?
 % ``get rid of the alphabetic headers''?
 %    \begin{macrocode}
@@ -994,22 +1019,25 @@ backgroundcolor=yellow]{todonotes}
 % \subsection{Mini edition environment}
 %
 %	\begin{macro}{miniedition}
-% Documented at \\
-% \url{https://cikitsa.blogspot.com/2017/08/mini-edition-environment-for-latex.html}
+% Documented at 
+%\href{https://cikitsa.blogspot.com/2017/08/mini-edition-environment-for-latex.html}{the
+% Cikitsā blog.}
 %    \begin{macrocode}
 \newenvironment{miniedition}
     {\addtolength{\textwidth}{-\rightmargin} % width of the quote environment
         \begin{quote} 
-            \begin{minipage}{\textwidth}
+            \begin{ }{\textwidth}
                 \let\footnoterule\relax
-                % \let\footnote\originalfootnote % No longer needed. 7
-                % Standard LaTeX footnotes are now 
-                % restored by the \@minipagerestore hook in hssa-reledmac.sty
+                % \let\footnote\originalfootnote 
             }
             {\end{minipage}
         \end{quote}
     }
 %    \end{macrocode}
+% Resetting \verb|\footnote| to \verb|\originalfootnote| is no longer needed. 
+% Standard non-reledmac \LaTeX\ footnotes are now 
+% restored by the \verb|\@minipagerestore| hook in the file 
+% \verb|hssa-reledmac.sty|.
 %	\end{macro}
 
 %  \subsection{Index of Manuscripts}

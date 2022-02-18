@@ -1,7 +1,9 @@
+% \section{Indexing for HSSA}
 % Formerly used xindy; now updated to use xindex
 %
+%    \begin{macrocode}
 \usepackage[imakeidx] {xindex} 
-%\PassOptionsToPackage{nonewpage}{imakeidx}
+% \PassOptionsToPackage{nonewpage}{imakeidx}
 %
 \indexsetup{level=\section*,
     noclearpage,
@@ -19,31 +21,52 @@ options=  --config iast --no_casesensitive --noheadings, % nocasesensitive,
 title=Index of Manuscripts,
 options=  --config iast --no_casesensitive --noheadings,
 columns=1]
+%
+%    \end{macrocode}
 
-% before the \printindex command say 
-% “\indexprologue{References are to page numbers.}”
+% Before the \verb|\printindex| command say 
+% “\verb|\indexprologue{References are to page numbers.}|”
 
-
+% \subsection{English-Sanskrit indexes}
 % Command for English words to be followed by Sanskrit in parentheses, and 
 % both to be sent to the lexical index.
+% \begin{macro}{\saneng}
+%    \begin{macrocode}
 \newcommand{\saneng}[2]
 % #1 = Sanskrit
 % #2 = English
 {#2 (\sansk{#1})%
      \index[lexical]{#2!#1@\emph{#1}}%
     \index[lexical]{#1@\emph{#1}!#2}}
+%    \end{macrocode}
+% \end{macro}
 
+% \begin{macro}{\ssaneng}
+% A “silent” version of \verb|\saneng| that sends items to the index but prints 
+%nothing in the main text.
+%    \begin{macrocode}
 \providecommand{\ssaneng}[2]% silent index entry
 % #1 = Sanskrit
 % #2 = English
 {\index[lexical]{#2!#1@\emph{#1}}%
     \index[lexical]{#1@\emph{#1}!#2}}
+%    \end{macrocode}
+% \end{macro}
 
+% Tidy up the index spacing:
+%    \begin{macrocode}
 \renewcommand\@idxitem{\par\hangindent 15\p@ }% from sanmed.sty
+%    \end{macrocode}
 
-% commands for citing and indexing manuscripts:
+% \section{Commands for citing and indexing manuscripts}
+% \begin{macro}{\MS}
+%    \begin{macrocode}
 \newcommand{\MS}[1]{MS #1\index[manuscripts]{#1}} 
     \let\MScite=\MS
+%    \end{macrocode}    
+% And a silent version (data to index; nothing in text):
+%    \begin{macrocode}
 \newcommand{\MSsilent}[1]{\index[manuscripts]{#1}} 
     \let\MSnocite=\MSsilent
-    
+%    \end{macrocode}    
+% \end{macro}

@@ -2,6 +2,7 @@
 % hssa LaTeX macro documentation driver file
 \documentclass[11pt]{ltxdoc}
 \usepackage{doc,hyperref,polyglossia}
+\setmainfont{TeX Gyre Pagella}
 \EnableCrossrefs
 %\DisableCrossrefs % use this if the index is ready
 \CodelineIndex
@@ -22,11 +23,20 @@
         \hbox to1\dimen0{\hss#2\hss}}}
 
 \begin{document}
+    \sloppypar
     \maketitle
     \tableofcontents
     \newpage
     \DocInput {hssa.cls}
     \newpage
     \DocInput {hssa.sty}
+    \newpage
+    \DocInput {hssa-reledmac.sty}
+    \newpage
+    \DocInput {hssa-biblatex.sty}
+    \newpage
+    \DocInput {hssa-indexing.sty}
+    \newpage
+    \DocInput {hssa-documentation-index.tex}
     \end{document}
 %</driver>

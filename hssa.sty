@@ -66,15 +66,20 @@ FakeStretch=1.08, % improves Sanskrit 2003
 %{Galatia SIL}
 %{Linux Libertine O}
 %    \end{macrocode}
-% see \url{https://tex.stackexchange.com/questions/127222/fonts-for-polytonic-greek}
+% See 
+%\href{https://tex.stackexchange.com/questions/127222/fonts-for-polytonic-greek}{Stackexchange
+% about Greek fonts}.
+%
 
 % \subsection{Local generic author-facing macros}
+% \begin{macro}{\bce, \ce, \BCE, \CE}
 %    \begin{macrocode}
 \def\bce{\textsc{bce}} % I took out the final \xspace 
 									   % because it's behaviour is hard to predict - DW
 \def\ce{\textsc{ce}} % ditto.
 \let\BC\bce \let\BCE\bce \let\AD\ce \let\CE\ce
 %    \end{macrocode}
+% \end{macro}
 
 % \subsection{Math mode with Unicode fonts}
 
@@ -84,7 +89,4 @@ FakeStretch=1.08, % improves Sanskrit 2003
 \setmathfont{Asana Math}[Numbers=OldStyle]
 %    \end{macrocode}
 
-%\newpage
-%\addcontentsline{toc}{section}{Macro index}
-% \Finale \PrintIndex \PrintChanges
 \endinput
