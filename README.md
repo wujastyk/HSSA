@@ -1,4 +1,6 @@
 # HSSA journal LaTeX stylesheet
+[![DOI](https://zenodo.org/badge/274784375.svg)](https://zenodo.org/badge/latestdoi/274784375)
+
 Maintenance site for the LaTeX stylesheet for History of Science in South Asia (https://hssa-journal.org).
 
 These files assume that you have installed the [TeXLive distribution](https://www.tug.org/texlive/) (or similar).
