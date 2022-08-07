@@ -16,13 +16,13 @@ if not modules then modules = { } end modules ['xindex-cfg'] = {
       license = "LPPL 1.3"
 }
 
-itemPageDelimiter = ""     -- Hello: 14
+itemPageDelimiter = ":"     -- Hello: 14
 compressPages     = true    -- something like 12--15, instead of 12,13,14,15. the |( ... |) syntax is still valid
 fCompress	  = true    -- 3f -> page 3, 4 and 3ff -> page 3, 4, 5
 minCompress       = 3       -- 14--17 or 
 rangeSymbol       = "--"
 numericPage       = true    -- for non numerical pagenumbers, like "VI-17"
-sublabels         = {"", "", "--\\,", "---\\,"} -- for the (sub(sub(sub-items  first one is for item
+sublabels         = {"", "-\\,", "--\\,", "---\\,"} -- for the (sub(sub(sub-items  first one is for item
 pageNoPrefixDel   = ""     -- a delimiter for page numbers like "VI-17"  -- not used !!!
 indexOpening      = ""     -- commands after envStart
 idxnewletter      = "\\textbf"  -- Only valid if -n is not set

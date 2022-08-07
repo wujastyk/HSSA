@@ -456,9 +456,8 @@ backgroundcolor=yellow]{todonotes}
 %\fancyhead[CE]{\@HSSAheaderfooterfont\@HSSAverso}
 %\fancyhead[RO]{\thepage}
 %\fancyhead[LE]{\thepage}
-\fancyfoot[L]{\copy\cclogobox\tiny\textenglish{\@HSSAheaderfooterfont 
-\href{http://doi.org/\@DOI}
-    {doi: \@DOI}}}
+\fancyfoot[L]{\copy\cclogobox\\ \tiny\textenglish{\@HSSAheaderfooterfont 
+    \href{http://doi.org/\@DOI}{doi: \@DOI}}}
 \fancyfoot[C]{\textenglish{\@HSSAheaderfooterfont\@HSSAfooter}}
 \fancyfoot[R]{}
 %\renewcommand{\headrulewidth}{0pt}
