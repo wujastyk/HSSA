@@ -16,6 +16,7 @@
 \contentsline {paragraph}{Index of editions}{7}{section*.4}%
 \contentsline {paragraph}{Index of references}{8}{section*.5}%
 \contentsline {subsubsection}{\numberline {2.2.8}Miscellaneous}{8}{subsubsection.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.9}Rotating pages for big tables and figures}{8}{subsubsection.2.2.9}%
 \contentsline {subsection}{\numberline {2.3}Standard \LaTeX \ sectioning and similar commands}{8}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}What you get for nothing}{9}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Macros in the class file for the HSSA journal: hssa.cls}{10}{section.3}%
@@ -34,16 +35,18 @@
 \contentsline {subsection}{\numberline {3.13}Page layout dimensions}{19}{subsection.3.13}%
 \contentsline {subsection}{\numberline {3.14}Misc layout settings}{19}{subsection.3.14}%
 \contentsline {subsection}{\numberline {3.15}Journal-specific user-facing macros}{20}{subsection.3.15}%
-\contentsline {subsection}{\numberline {3.16}Creative Commons logo}{21}{subsection.3.16}%
-\contentsline {subsection}{\numberline {3.17}Tweak tabular layout}{21}{subsection.3.17}%
-\contentsline {subsection}{\numberline {3.18}Not used?}{21}{subsection.3.18}%
-\contentsline {subsection}{\numberline {3.19}PDF metadata}{21}{subsection.3.19}%
-\contentsline {subsection}{\numberline {3.20}Hypertext links}{22}{subsection.3.20}%
-\contentsline {subsection}{\numberline {3.21}Simple indented, environment for Sanskrit verses}{22}{subsection.3.21}%
-\contentsline {subsection}{\numberline {3.22}Diatop}{23}{subsection.3.22}%
-\contentsline {subsubsection}{\numberline {3.22.1}Unknown}{23}{subsubsection.3.22.1}%
-\contentsline {subsection}{\numberline {3.23}Mini edition environment}{23}{subsection.3.23}%
-\contentsline {subsection}{\numberline {3.24}Index of Manuscripts}{24}{subsection.3.24}%
+\contentsline {subsection}{\numberline {3.16}Customizing the sectioning commands}{21}{subsection.3.16}%
+\contentsline {subsection}{\numberline {3.17}Collecting the page-number information}{21}{subsection.3.17}%
+\contentsline {subsection}{\numberline {3.18}Creative Commons logo}{21}{subsection.3.18}%
+\contentsline {subsection}{\numberline {3.19}Tweak tabular layout}{21}{subsection.3.19}%
+\contentsline {subsection}{\numberline {3.20}Not used}{21}{subsection.3.20}%
+\contentsline {subsection}{\numberline {3.21}PDF metadata}{22}{subsection.3.21}%
+\contentsline {subsection}{\numberline {3.22}Hypertext links}{22}{subsection.3.22}%
+\contentsline {subsection}{\numberline {3.23}Simple indented, environment for Sanskrit verses}{22}{subsection.3.23}%
+\contentsline {subsection}{\numberline {3.24}Diatop}{23}{subsection.3.24}%
+\contentsline {subsubsection}{\numberline {3.24.1}Unknown}{23}{subsubsection.3.24.1}%
+\contentsline {subsection}{\numberline {3.25}Mini edition environment}{23}{subsection.3.25}%
+\contentsline {subsection}{\numberline {3.26}Index of Manuscripts}{24}{subsection.3.26}%
 \contentsline {section}{\numberline {4}Style file for HSSA journal: hssa.sty}{25}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Load basic macros for reledmac (footnote cols)}{25}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Set up the langages and fonts, Polyglossia-style}{25}{subsection.4.2}%
@@ -69,15 +72,13 @@
 \contentsline {subsubsection}{\numberline {5.6.4}Academia.edu}{30}{subsubsection.5.6.4}%
 \contentsline {subsubsection}{\numberline {5.6.5}Digital Library of India}{30}{subsubsection.5.6.5}%
 \contentsline {subsubsection}{\numberline {5.6.6}JSTOR}{30}{subsubsection.5.6.6}%
-\contentsline {subsubsection}{\numberline {5.6.7}Jainelibrary}{31}{subsubsection.5.6.7}%
+\contentsline {subsubsection}{\numberline {5.6.7}Jainelibrary}{30}{subsubsection.5.6.7}%
 \contentsline {subsubsection}{\numberline {5.6.8}DOI}{31}{subsubsection.5.6.8}%
 \contentsline {subsection}{\numberline {5.7}Tweaks to make the citation form:- Author date: page}{31}{subsection.5.7}%
 \contentsline {subsection}{\numberline {5.8}”Forthcoming” hacks}{31}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Old code now not needed}{31}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Tighten up URL date}{32}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}More unused code}{33}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}Hyperlink magic}{33}{subsection.5.12}%
-\contentsline {section}{\numberline {6}Indexing for HSSA}{34}{section.6}%
-\contentsline {subsection}{\numberline {6.1}English-Sanskrit indexes}{34}{subsection.6.1}%
-\contentsline {section}{\numberline {7}Commands for citing and indexing manuscripts}{35}{section.7}%
-\contentsline {section}{Macro index}{36}{section.7}%
+\contentsline {subsection}{\numberline {5.9}Tighten up URL date}{31}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Hyperlink magic}{31}{subsection.5.10}%
+\contentsline {section}{\numberline {6}Indexing for HSSA}{33}{section.6}%
+\contentsline {subsection}{\numberline {6.1}English-Sanskrit indexes}{33}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Commands for citing and indexing manuscripts}{34}{section.7}%
+\contentsline {section}{Index of macro definitions}{35}{section.7}%

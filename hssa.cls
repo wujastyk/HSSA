@@ -127,20 +127,20 @@
 % puts nothing in the main text.
 
 %\subsubsection{Language-switching}
-% See the documentation for
-% \href{https://ctan.org/pkg/polyglossia?lang=en}{Polyglossia} for details of how 
-% these are used.
 %\DescribeMacro{\textgreek}
 %\DescribeMacro{\textenglish}
 %\DescribeMacro{\textsanskrit}
-% These macros switch to the respective languages and scripts (Devanagari for
+% See the documentation for
+% \href{https://ctan.org/pkg/polyglossia?lang=en}{Polyglossia} for details of how 
+% these are used.
+% These macros switch to the respective languages and scripts (e.g., Devanagari for
 % \verb"\textsanskrit{}").
-
-%\DescribeMacro{\dev}
-% An abbreviation for \verb"\textsanskrit"
-
-%\DescribeMacro{\cjk}
-% This is just a switch, so say \verb”{\cjk X}” where X is a Chinese character.
+%
+% \DescribeMacro{\dev}
+%  \verb"\dev" is just an abbreviation for the \verb"\textsanskrit" macro.
+% 
+% \DescribeMacro{\cjk}
+%  This is just a switch, so say \verb”{\cjk X}” where X is a Chinese character.
 
 %\subsubsection{Citation commands}
 %HSSA uses the Bib\LaTeX\ macros, and the Oxref style for formatting according to the 
@@ -207,7 +207,8 @@
 % For that zeroth footnote at the beginning of an article that gives acknowledgments or 
 % abbreviations.  I prefer to put this material at the end of an article, in a section called
 % “Acknowledgements.”
-
+%
+% \subsubsection{Rotating pages for big tables and figures}
 %\DescribeEnv{rotating}
 % That's pretty much it.\\
 %  You might want to add \verb"\usepackage[figuresright]{rotating}" 
@@ -218,7 +219,7 @@
 %\DescribeMacro{\section}
 % Just use the normal \verb"\section{}" commands, down to \verb"\paragraph".
 %
-%\DescribeMacro{lettrine}
+%\DescribeMacro{\lettrine}
 % The first line after a \verb"section" is formatted with an initial drop-cap and small caps, 
 % using \verb"\lettrine".  The three arguments are 1.\ line-drop and over height (always the 
 % same), 2.\ the drop-capital itself, and  3.\ the remaining letters of the word and some more 
@@ -905,6 +906,7 @@ backgroundcolor=yellow]{todonotes}
 \def\fspace#1{\addfontfeature{LetterSpace=#1}}
 %    \end{macrocode}
 
+% \subsection{Customizing the sectioning commands}
 % \begin{macro}{\section}
 %    \begin{macrocode}
 \setcounter{secnumdepth}{1}
@@ -924,6 +926,7 @@ backgroundcolor=yellow]{todonotes}
 %    \end{macrocode}
 %\end{macro}
 
+% \subsection{Collecting the page-number information}
 %    \begin{macrocode}
 \def\HSSAfirstpage#1{\gdef\thefirstpage{#1}}
 \def\HSSAlastpage#1{\gdef\thelastpage{#1}}
@@ -951,7 +954,8 @@ backgroundcolor=yellow]{todonotes}
 \emergencystretch=.1\columnwidth 
 %    \end{macrocode}
 
-% \subsection{Not used?}
+% \subsection{Not used}
+% Legacy code to be thought about and probably weeded out.
 %    \begin{macrocode}
 %\HSSAjournalAbbrev{Hist.~Sci.~South Asia} 
 \definecolor{bg}{HTML}{600000}
@@ -987,8 +991,9 @@ backgroundcolor=yellow]{todonotes}
 %  \begin{macro}{\hypersetup}
 % Settings for hypertext links, used by \verb"hyperref".  These settings also include
 % \verb"hyperxmp" settings to embed XMP metadata in the PDF.
-% The \verb"\@" macros don't expand at the right time.  A problem for another day.  In 
-% any case, hyperxmp seems to get more or less the right data from \verb"\author" etc.
+% The \verb"\@" macros don't expand at the right time.  A problem for another day.  
+% In any case, hyperxmp seems to get more or less the right data 
+% from \verb"\author" etc.
 %    \begin{macrocode}
 \hypersetup{colorlinks=true, 
     bookmarksopen=false,

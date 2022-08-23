@@ -24,9 +24,10 @@ usetranslator=true,% see oxref documentation para 2.1.10
 %idemtracker=constrict,
 sorting=ynt, 
 %    \end{macrocode}
-% see  
+% (on \verb|ynt|, see  
 %\href{https://cikitsa.blogspot.co.at/2017/07/biblatex-citations-and-bibliography.html}{Cikitsā
-% blog post}.
+% blog post}.)
+% \medskip
 %    \begin{macrocode}
 sortcites=true,
 backref=false,
@@ -64,7 +65,7 @@ mvreference]{useeditor=true,usetranslator=true}
 %    \end{macrocode}
 % See 
 %\href{https://cikitsa.blogspot.co.at/2017/07/biblatex-citations-and-bibliography.html}{Cikitsā
-% blog post}.
+% blog post} for further explanation of the above.
 
 % \subsection{Bibliography sorting}
 
@@ -80,7 +81,8 @@ mvreference]{useeditor=true,usetranslator=true}
     \edef\on@line{\on@line}%
     \@ifnextchar[%]
     {\blx@printbibliography}
-    {\blx@printbibliography[]}}
+    {\blx@printbibliography[]}
+}
 %    \end{macrocode}
 
 % \subsection{Positioning of the notes}
@@ -89,13 +91,13 @@ mvreference]{useeditor=true,usetranslator=true}
 %\href{http://tex.stackexchange.com/questions/138913/how-to-move-the-field-note-at-the-end-of-the-reference}{Stackexchange}.
 %    \begin{macrocode}
 \DeclareSourcemap{
-	\maps[datatype=bibtex]{
-		\map{
-			\step[fieldsource=note, final]
-			\step[fieldset=addendum, origfieldval, final]
-			\step[fieldset=note, null]
-		}
-	}
+    \maps[datatype=bibtex]{
+        \map{
+            \step[fieldsource=note, final]
+            \step[fieldset=addendum, origfieldval, final]
+            \step[fieldset=note, null]
+        }
+    }
 }
 %    \end{macrocode}
 
@@ -121,7 +123,6 @@ mvreference]{useeditor=true,usetranslator=true}
     \ifhyperref  
     {\href{https://www.tbrc.org/\#!rid=#1}{\nolinkurl{#1}}}
 	{\nolinkurl{#1}}}
-%
 %    \end{macrocode}
 %
 % \subsubsection{ARK}
@@ -131,8 +132,8 @@ mvreference]{useeditor=true,usetranslator=true}
 	\ifhyperref  
 	{\href{https://n2t.net/#1}{\nolinkurl{#1}}}
 	{\nolinkurl{#1}}}
-%
 %    \end{macrocode}
+%
 % \subsubsection{Archive.org}
 %    \begin{macrocode}
 \DeclareFieldFormat{eprint:archive}{%
@@ -141,8 +142,6 @@ mvreference]{useeditor=true,usetranslator=true}
 	{\href{http://archive.org/#1}{\nolinkurl{#1}}}
 	{\nolinkurl{#1}}}
 \DeclareFieldAlias{eprint:archiveorg}{eprint:archive}
-
-%
 %    \end{macrocode}
 % \subsubsection{Academia.edu}
 %    \begin{macrocode}
@@ -152,7 +151,6 @@ mvreference]{useeditor=true,usetranslator=true}
 	{\href{http://www.academia.edu/#1}{\nolinkurl{#1}}}
 	{\nolinkurl{#1}}}
 \DeclareFieldAlias{eprint:academia.edu}{eprint:academia}
-%
 %    \end{macrocode}
 % \subsubsection{Digital Library of India}
 %    \begin{macrocode}
@@ -162,17 +160,16 @@ mvreference]{useeditor=true,usetranslator=true}
 	{\href{http://www.dli.gov.in/cgi-bin/DBscripts/allmetainfo.cgi?barcode=#1/}{\nolinkurl{#1}}}
 	{\nolinkurl{#1}}}
 \DeclareFieldAlias{eprint:DLI}{eprint:dli}
-%
 %    \end{macrocode}
+%
 % \subsubsection{JSTOR}
 %    \begin{macrocode}
 \DeclareFieldFormat{eprint:jstor}{%
     \ifhyperref
     {\href{http://www.jstor.org/stable/#1}{{\small JSTOR}}}
     {\nolinkurl{#1}}}
-
-%
 %    \end{macrocode}
+%
 % \subsubsection{Jainelibrary}
 %    \begin{macrocode}
 \DeclareFieldFormat{eprint:jainlibrary}{%
@@ -180,8 +177,8 @@ mvreference]{useeditor=true,usetranslator=true}
 	\ifhyperrefsloka
 	{\href{http://www.jainlibrary.org/book.php?file=#1}{\nolinkurl{#1}}}
 	{\nolinkurl{#1}}}
-%
 %    \end{macrocode}
+%
 % \subsubsection{DOI}
 %    \begin{macrocode}
 \DeclareFieldFormat{doi}{%
@@ -213,6 +210,34 @@ mvreference]{useeditor=true,usetranslator=true}
    \literal{nodate}
 }
 %    \end{macrocode}
+
+% \subsection{Tighten up URL date}
+%    \begin{macrocode}
+\DeclareFieldFormat{urldate}{%
+    (on
+    \thefield{urlday}\addspace%
+    \mkbibmonth{\thefield{urlmonth}}\addspace%
+    \thefield{urlyear})\isdot}
+%    \end{macrocode}
+
+
+
+% \subsection{Hyperlink magic}   
+% Some magic from “moewe” at 
+%\href{https://tex.stackexchange.com/questions/442749/biblatex-have-hyperref-links-point-to-the-shorthand-list}{Stackexchange}
+% that makes hyperlinks work from citations to a list of abbreviations.
+%    \begin{macrocode}
+\DeclareFieldFormat{shorthandwidth}{%
+    \bibhypertarget{shorthand:\thefield{entrykey}}
+    {#1}}
+
+\DeclareFieldFormat{bibhyperref}{%
+    \iffieldundef{shorthand}
+    {\bibhyperref{#1}}
+    {\bibhyperlink{shorthand:\thefield{entrykey}}{#1}}}
+%    \end{macrocode}
+
+\endinput
 
 % \subsection{Old code now not needed}
 % Redefinition from  bbx/standard.bbx to stop pubstate printing after an 
@@ -276,32 +301,8 @@ mvreference]{useeditor=true,usetranslator=true}
 %    \thefield{urlyear}\isdot}
 %    \end{macrocode}
 
-% \subsection{Tighten up URL date}
-%    \begin{macrocode}
-\DeclareFieldFormat{urldate}{%
-    (on
-    \thefield{urlday}\addspace%
-    \mkbibmonth{\thefield{urlmonth}}\addspace%
-    \thefield{urlyear})\isdot}
-%    \end{macrocode}
-
 % \subsection{More unused code}
 %    \begin{macrocode}
-  
 %\usepackage{xurl} % get better formatting; no, leave it to biblatex
 %    \end{macrocode}
 
-% \subsection{Hyperlink magic}   
-% Some magic from “moewe” at 
-%\href{https://tex.stackexchange.com/questions/442749/biblatex-have-hyperref-links-point-to-the-shorthand-list}{Stackexchange}
-% that makes hyperlinks work from citations to a list of abbreviations.
-%    \begin{macrocode}
-\DeclareFieldFormat{shorthandwidth}{%
-    \bibhypertarget{shorthand:\thefield{entrykey}}
-    {#1}}
-
-\DeclareFieldFormat{bibhyperref}{%
-    \iffieldundef{shorthand}
-    {\bibhyperref{#1}}
-    {\bibhyperlink{shorthand:\thefield{entrykey}}{#1}}}
-%    \end{macrocode}

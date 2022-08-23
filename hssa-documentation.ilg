@@ -1,12 +1,5 @@
 This is makeindex, version 2.16 [TeX Live 2022] (kpathsea + Thai support).
-Scanning style file /usr/local/texlive/2022/texmf-dist/makeindex/latex/gind.ist..........
-** Input style error (file = /usr/local/texlive/2022/texmf-dist/makeindex/latex/gind.ist, line = 75):
-   -- Unknown specifier lethead_prefix.
-** Input style error (file = /usr/local/texlive/2022/texmf-dist/makeindex/latex/gind.ist, line = 76):
-   -- Unknown specifier lethead_suffix.
-** Input style error (file = /usr/local/texlive/2022/texmf-dist/makeindex/latex/gind.ist, line = 77):
-   -- Unknown specifier lethead_flag.
-...done (13 attributes redefined, 3 ignored).
+Scanning style file /home/dom/Dropbox/localtexmf/makeindex/gind.ist.............done (13 attributes redefined, 0 ignored).
 Scanning input file hssa-documentation.idx...
 !! Input index error (file = hssa-documentation.idx, line = 1):
    -- Extra `|' at position 36 of first argument.
@@ -66,11 +59,11 @@ Scanning input file hssa-documentation.idx...
 
 !! Input index error (file = hssa-documentation.idx, line = 876):
    -- Extra `|' at position 68 of first argument.
-.done (1036 entries accepted, 28 rejected).
-Sorting entries...........done (11229 comparisons).
+done (972 entries accepted, 28 rejected).
+Sorting entries...........done (10751 comparisons).
 Generating output file hssa-documentation.ind....
-## Warning (input = hssa-documentation.idx, line = 60; output = hssa-documentation.ind, line = 352):
+## Warning (input = hssa-documentation.idx, line = 60; output = hssa-documentation.ind, line = 342):
    -- Conflicting entries: multiple encaps for the same page under same key.
-.done (843 lines written, 1 warning).
+done (801 lines written, 1 warning).
 Output written in hssa-documentation.ind.
 Transcript written in hssa-documentation.ilg.
