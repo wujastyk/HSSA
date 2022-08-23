@@ -71,6 +71,7 @@ mvreference]{useeditor=true,usetranslator=true}
 % To avoid saying \verb|\newrefcontext[sorting=nyt]| before 
 % \verb|\printbibliography| in every 
 % document redefine \verb|\printbibliography| (from biblatex.sty):
+% \DescribeMacro{\printbibliography}
 %    \begin{macrocode}
 \renewrobustcmd*{\printbibliography}{%
     \newrefcontext[sorting=nyt] % added this line
@@ -107,9 +108,11 @@ mvreference]{useeditor=true,usetranslator=true}
 % Enable hot URLs for PDFs at Archive.org and Academia.edu etc.
 
 % Make URLs smaller:
+%    \begin{macrocode}
 %\DeclareFieldFormat{url}{\textsc{url:} {\small \href{#1}{\nolinkurl{#1}}}}
 %\DeclareFieldFormat{doi}{\textsc{doi:} {\small \href{#1}{\nolinkurl{#1}}}}
-
+%    \end{macrocode}
+%
 % \subsection{URL formatting in the bibliography}
 % \subsubsection{Buddhist Digital Resource Center}
 %    \begin{macrocode}
@@ -120,6 +123,7 @@ mvreference]{useeditor=true,usetranslator=true}
 	{\nolinkurl{#1}}}
 %
 %    \end{macrocode}
+%
 % \subsubsection{ARK}
 %    \begin{macrocode}
 \DeclareFieldFormat{eprint:ark}{%

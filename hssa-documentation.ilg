@@ -1,69 +1,76 @@
-This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
-Scanning style file /usr/local/texlive/2019/texmf-dist/makeindex/latex/gind.ist..........
-** Input style error (file = /usr/local/texlive/2019/texmf-dist/makeindex/latex/gind.ist, line = 70):
+This is makeindex, version 2.16 [TeX Live 2022] (kpathsea + Thai support).
+Scanning style file /usr/local/texlive/2022/texmf-dist/makeindex/latex/gind.ist..........
+** Input style error (file = /usr/local/texlive/2022/texmf-dist/makeindex/latex/gind.ist, line = 75):
    -- Unknown specifier lethead_prefix.
-** Input style error (file = /usr/local/texlive/2019/texmf-dist/makeindex/latex/gind.ist, line = 71):
+** Input style error (file = /usr/local/texlive/2022/texmf-dist/makeindex/latex/gind.ist, line = 76):
    -- Unknown specifier lethead_suffix.
-** Input style error (file = /usr/local/texlive/2019/texmf-dist/makeindex/latex/gind.ist, line = 72):
+** Input style error (file = /usr/local/texlive/2022/texmf-dist/makeindex/latex/gind.ist, line = 77):
    -- Unknown specifier lethead_flag.
 ...done (13 attributes redefined, 3 ignored).
 Scanning input file hssa-documentation.idx...
 !! Input index error (file = hssa-documentation.idx, line = 1):
-   -- Extra `|' at position 22 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 2):
-   -- Extra `|' at position 24 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 3):
-   -- Extra `|' at position 23 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 4):
-   -- Extra `|' at position 56 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 5):
-   -- Extra `|' at position 56 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 6):
-   -- Extra `|' at position 44 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 7):
-   -- Extra `|' at position 44 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 8):
-   -- Extra `|' at position 30 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 9):
-   -- Extra `|' at position 22 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 10):
-   -- Extra `|' at position 34 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 11):
-   -- Extra `|' at position 34 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 12):
-   -- Extra `|' at position 38 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 13):
-   -- Extra `|' at position 40 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 14):
    -- Extra `|' at position 36 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 2):
+   -- Extra `|' at position 38 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 3):
+   -- Extra `|' at position 34 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 4):
+   -- Extra `|' at position 63 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 5):
+   -- Extra `|' at position 70 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 6):
+   -- Extra `|' at position 52 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 7):
+   -- Extra `|' at position 59 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 8):
+   -- Extra `|' at position 45 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 9):
+   -- Extra `|' at position 37 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 10):
+   -- Extra `|' at position 49 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 11):
+   -- Extra `|' at position 49 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 12):
+   -- Extra `|' at position 45 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 13):
+   -- Extra `|' at position 47 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 14):
+   -- Extra `|' at position 51 of first argument.
 !! Input index error (file = hssa-documentation.idx, line = 15):
-   -- Extra `|' at position 40 of first argument.
+   -- Extra `|' at position 55 of first argument.
 !! Input index error (file = hssa-documentation.idx, line = 16):
-   -- Extra `|' at position 42 of first argument.
+   -- Extra `|' at position 57 of first argument.
 !! Input index error (file = hssa-documentation.idx, line = 17):
-   -- Extra `|' at position 24 of first argument.
+   -- Extra `|' at position 39 of first argument.
 !! Input index error (file = hssa-documentation.idx, line = 18):
-   -- Extra `|' at position 24 of first argument.
+   -- Extra `|' at position 39 of first argument.
 !! Input index error (file = hssa-documentation.idx, line = 19):
-   -- Extra `|' at position 30 of first argument.
+   -- Extra `|' at position 45 of first argument.
 !! Input index error (file = hssa-documentation.idx, line = 20):
-   -- Extra `|' at position 48 of first argument.
+   -- Extra `|' at position 63 of first argument.
 !! Input index error (file = hssa-documentation.idx, line = 21):
-   -- Extra `|' at position 50 of first argument.
+   -- Extra `|' at position 58 of first argument.
 !! Input index error (file = hssa-documentation.idx, line = 22):
-   -- Extra `|' at position 50 of first argument.
+   -- Extra `|' at position 65 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 23):
+   -- Extra `|' at position 47 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 24):
+   -- Extra `|' at position 49 of first argument.
 .
-!! Input index error (file = hssa-documentation.idx, line = 118):
-   -- Extra `|' at position 28 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 119):
-   -- Extra `|' at position 30 of first argument.
-!! Input index error (file = hssa-documentation.idx, line = 120):
-   -- Extra `|' at position 26 of first argument.
-done (818 entries accepted, 25 rejected).
-Sorting entries.........done (8439 comparisons).
+!! Input index error (file = hssa-documentation.idx, line = 101):
+   -- Extra `|' at position 44 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 102):
+   -- Extra `|' at position 46 of first argument.
+!! Input index error (file = hssa-documentation.idx, line = 103):
+   -- Extra `|' at position 42 of first argument.
+
+!! Input index error (file = hssa-documentation.idx, line = 876):
+   -- Extra `|' at position 68 of first argument.
+.done (1036 entries accepted, 28 rejected).
+Sorting entries...........done (11229 comparisons).
 Generating output file hssa-documentation.ind....
-## Warning (input = hssa-documentation.idx, line = 104; output = hssa-documentation.ind, line = 168):
+## Warning (input = hssa-documentation.idx, line = 60; output = hssa-documentation.ind, line = 352):
    -- Conflicting entries: multiple encaps for the same page under same key.
-done (403 lines written, 1 warning).
+.done (843 lines written, 1 warning).
 Output written in hssa-documentation.ind.
 Transcript written in hssa-documentation.ilg.

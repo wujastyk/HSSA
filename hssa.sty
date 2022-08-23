@@ -1,41 +1,49 @@
 % \section{Style file for HSSA journal: hssa.sty}
-% Style file for the HSSA journal
-% See \url{http://tug.org/pracjourn/2005-3/asknelly/} for a nice statement of the 
-% difference between .cls and .sty files.  Here in hssa.sty, I'm keeping
+% Style file for the HSSA journal.\footnote{See \url{http://tug.org/pracjourn/2005-3/asknelly/} 
+% for a nice statement of the 
+% difference between .cls and .sty files.}  Here in hssa.sty, I'm keeping
 % the code that is not part of the core of HSSA's design, including calls to other style
 % files that might or might not be included for different articles.
 %
-%\subsection{Load basic macros for biblatex and reledmac (footnote cols)}
+%\subsection{Load basic macros for reledmac (footnote cols)}
 %    \begin{macrocode}
-\usepackage{hssa-reledmac, % journal home style, two-col footnotes
-% hssa-biblatex is already loaded in hssa.cls; can't imagine not needing it.
-}
+\usepackage{hssa-reledmac} % journal home style, two-col footnotes
 %    \end{macrocode}
-
+% We don't load  \verb"hssa-biblatex" as an option here because it is 
+% already loaded in \verb"hssa.cls"; it's a permanent feature of HSSA. 
+%
 %\subsection{Set up the langages and fonts, Polyglossia-style}
+%
+% \subsubsection{British English, Greek, Sanskrit}
 %    \begin{macrocode}
 \setdefaultlanguage[variant=british]{english}
-%\setotherlanguage{japanese} % not supported in polyglossia yet
+%\setotherlanguage{japanese} % still experimental in Polyglossia
 \setotherlanguage{greek}
 \setotherlanguage{sanskrit}
-
-
+%    \end{macrocode}
+%
+% \subsubsection{\TeX\ Gyre Pagella, the default roman font for HSSA}
+%    \begin{macrocode}
 \setmainfont[Ligatures=TeX,
   Mapping=tex-text,
   Numbers=OldStyle]{TeX Gyre Pagella}
 %\setmainfont[Scale=1.05]{Alegreya} % quite nice; superscripts not smaller
 %\setmainfont{Libertinus Serif} % looks good; does math
- 
-% Sanskrit in Devanagari script:    
+%    \end{macrocode}
+%
+% \subsubsection{Sanskrit input in Devanagari script}
+%    \begin{macrocode}
 \newfontfamily\sanskritfont[Script=Devanagari,
   %Mapping=RomDev,
   FakeStretch=1.08, % improves Sanskrit 2003
   ]
- %  {Murty Sanskrit}
 {Sanskrit 2003} 
+ %  {Murty Sanskrit}
 \let\dn\sanskritfont %for legacy Velthuis-encoded documents
-
-% Sanskrit input in IAST
+%    \end{macrocode}
+%
+% \subsubsection{Sanskrit input in IAST script, output in Devanagari}
+%    \begin{macrocode}% Sanskrit input in IAST
 \newfontfamily\devanagarifont[Script=Devanagari,
 Mapping=RomDev,
 FakeStretch=1.08, % improves Sanskrit 2003
@@ -45,21 +53,23 @@ FakeStretch=1.08, % improves Sanskrit 2003
 \newcommand{\dev}[1]{{\devanagarifont#1}}
 %\newcommand{\dev}[1]{\textdevanagari{#1}}
 \newcommand{\largesloka}[1]{{\raggedright \devanagarifont\large #1\par}}
-
-
-
+%    \end{macrocode}
 %
-% Chinese:
+% \subsubsection{Chinese}
+%    \begin{macrocode}
 \newfontfamily\cjk[Script=CJK,Mapping=tex-text,Scale=MatchLowercase]
 %{IPAexMincho} % missing 說
 %{TakaoPGothic}
 {Yu Mincho}
 %
-% Greek
+%    \end{macrocode}
+%
+% \subsubsection{Greek font}
+%    \begin{macrocode}% Greek
 \newfontfamily\greekfont{Gentium Plus}[Script=Greek,
     Mapping=tex-text,
     Scale=MatchUppercase]
-    
+%     
 %{Old Standard}
 %{GFS Porson}
 %{GFS Didot}

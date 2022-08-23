@@ -1,6 +1,5 @@
 % \subsection{Two-column footnote formatting} 
-% With help from 
-% 
+% With help from \href{https://doi.org/10.5281/zenodo.6471660}{EDMAC} and 
 %\href{https://tex.stackexchange.com/questions/134937/split-latex-footnotes-into-two-columns}{Stackexchange}.
 %    \begin{macrocode}
 \usepackage[nocritical,
@@ -13,21 +12,26 @@
 \def\thempfootnote{{\itshape\@alph\c@mpfootnote}} % from latex.ltx
 \arrangementX[A]{twocol}
 \colalignX{\relax } % looks better.  But should we optimize narrow columns 
-%by going  \verb|\raggedright|?
+%by going  \verb"\raggedright"?
 \beforenotesX{2em plus 1.5em minus 1.5em} % spacing above notes
 \renewcommand*{\normalfootfootmarkX}[1]{%
     \@nameuse{@thefnmark#1}\hspace*{.5em}}
 %    \end{macrocode}
 %
-% \verb|\footnote| is not going to be the standard \LaTeX footnote.  
-% So store the standard version.
+% \begin{macro}{\footnote}
+% \verb"\footnote" is not going to be the standard \LaTeX\ footnote.  
+% So store the standard version.  Then restore the standard \verb"\footnote"
+% when inside \verb"minipage" environment.
+%
+% Finally, make the command \verb"\footnote" into the reledmac two-column command.
+%
 %    \begin{macrocode}
 \let\originalfootnote=\footnote % store this for use in minipages
-\def\@minipagerestore{\let\footnote\originalfootnote} % restore standard LaTeX 
-%footnotes inside minipages
-% Now change \verb|\footnote| to the reledmac version:
+\def\@minipagerestore{\let\footnote\originalfootnote} % restore standard \footnote
+% Now change \verb"\footnote" to the reledmac version:
 \let\footnote=\footnoteA
 %    \end{macrocode}
+% \end{macro}
 %
 %\href{https://tex.stackexchange.com/questions/93763/eledmac-and-two-column-footnotes}{Stackexchange
 % help}.

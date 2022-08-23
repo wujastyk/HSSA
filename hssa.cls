@@ -55,8 +55,16 @@
 %\HSSAlastpage{999}
 %\DOI{1.2/3.4.5} 
 %\end{verbatim}
+%
+% These commands generate the right text for the front page, the copyright page and 
+% the article's title and running header.  
+% 
+% If the running header is too long (author's love long titles), use
+% \begin{verbatim}
+% \HSSAshortarticletitle{An abbreviated title}
+% \end{verbatim}
 
-%\subsection{User macros}
+%\subsection{HSSA user macros}
 % Here follow various commands for use in HSSA articles that aren't part of standard
 % \LaTeX.
 %\subsubsection{AD, BC, etc.}
@@ -75,9 +83,13 @@
 %\end{verbatim}
 % Don't forget to handle the space after these macros appropriately.
 
-%\DescribeMacro{\q\{\}}
+%\DescribeMacro{\q}
 % Use this to make a loud, obnoxious marginal note in bright yellow box. Use it to annotate
 % the PDF proofs for communicating with the author.
+%
+% \verb"\q{}" stands for “query,” and is a tailord version of \verb"todonotes".  In addition 
+% to the yellow box in the margin, it can also build a page index of the notes that you can 
+% print at the end of the article with \verb"\listoftodos".
 
 % \subsubsection{Environments for ślokas and mini-editions}
 %\DescribeEnv{miniedition}
@@ -105,12 +117,12 @@
 % A synonym for \verb"\MSnocite".
 
 %\subsubsection{Making a lexical index}
-%\DescribeMacro{\saneng{}{}}
+%\DescribeMacro{\saneng}
 % If you say \verb"\saneng{pūpa}{cake}" then you'll get “cake (\emph{pūpa})” printed in 
 % your main text.  Also, an entry will be written to a lexical page index, both Sanskrit-English
 % and English-Sanskrit.
 %
-%\DescribeMacro{\ssaneng{}{}}
+%\DescribeMacro{\ssaneng}
 % \verb"\ssaneng" is a silent version of the same macro that writes the index entries but
 % puts nothing in the main text.
 
@@ -118,13 +130,13 @@
 % See the documentation for
 % \href{https://ctan.org/pkg/polyglossia?lang=en}{Polyglossia} for details of how 
 % these are used.
-%\DescribeMacro{\textgreek{}}
-%\DescribeMacro{\textenglish{}}
-%\DescribeMacro{\textsanskrit{}}
+%\DescribeMacro{\textgreek}
+%\DescribeMacro{\textenglish}
+%\DescribeMacro{\textsanskrit}
 % These macros switch to the respective languages and scripts (Devanagari for
 % \verb"\textsanskrit{}").
 
-%\DescribeMacro{\dev{}}
+%\DescribeMacro{\dev}
 % An abbreviation for \verb"\textsanskrit"
 
 %\DescribeMacro{\cjk}
@@ -151,7 +163,7 @@
 %\end{verbatim}
 
 % \paragraph{Index of manuscripts}
-% As indexed using \verb|\MScite| etc.
+% As indexed using \verb"\MScite" etc.
 %\begin{verbatim}
 %\printindex[manuscripts] % ditto for manuscripts
 %
@@ -186,12 +198,12 @@
 %\end{verbatim}
 
 %\subsubsection{Miscellaneous}
-%\DescribeMacro{\diatop{}}
+%\DescribeMacro{\diatop}
 % Puts more than one accent over a letter.  This isn't available in standard \LaTeX, but we 
 % philologists sometimes need it.  Say, for example, \verb”\diatop[\'|{ō}]” to 
 % get \diatop[\'+ō].
 %
-%\DescribeMacro{\PreliminaryNote{}}
+%\DescribeMacro{\PreliminaryNote}
 % For that zeroth footnote at the beginning of an article that gives acknowledgments or 
 % abbreviations.  I prefer to put this material at the end of an article, in a section called
 % “Acknowledgements.”
@@ -200,6 +212,30 @@
 % That's pretty much it.\\
 %  You might want to add \verb"\usepackage[figuresright]{rotating}" 
 % if you have some tables to go sideways.  
+
+%\subsection{Standard \LaTeX\ sectioning and similar commands}
+%
+%\DescribeMacro{\section}
+% Just use the normal \verb"\section{}" commands, down to \verb"\paragraph".
+%
+%\DescribeMacro{lettrine}
+% The first line after a \verb"section" is formatted with an initial drop-cap and small caps, 
+% using \verb"\lettrine".  The three arguments are 1.\ line-drop and over height (always the 
+% same), 2.\ the drop-capital itself, and  3.\ the remaining letters of the word and some more 
+% words up to the end of a phrase.  For example
+% \begin{verbatim}
+% \lettrine[lines=2,loversize=.1]{T}{he} object of this contribution is ...
+% \end{verbatim}
+% How much you include in the phrase is up to you. E.g., 
+% \begin{verbatim}
+% \lettrine[lines=2,loversize=.1]{T}{he object of this contribution} is ...
+% \end{verbatim}
+% Note that \emph{all} the letters of the phrase should be lowercase.  They will be turned 
+% into small caps, and uppercase letters won't look right.  E.g.,
+% \begin{verbatim}
+% \lettrine[lines=2,loversize=.1]{T}{he mahābhārata and the rāmāyana both feature kṛṣṇa 
+%%% ... 
+% \end{verbatim}
 
 
 %\subsection{What you get for nothing}
@@ -216,13 +252,13 @@
 % \newpage
 
 % \section{Macros in the class file for the HSSA journal: hssa.cls}
-% This is \verb|hssa.cls| by Dominik Wujastyk, a class file for the HSSA journal.
+% This is \verb"hssa.cls" by Dominik Wujastyk, a class file for the HSSA journal.
 %
-% This documentation is created by running \verb|hssa-documentation.dtx|, which 
-% calls \verb|hssa.cls| and \verb|hssa.sty|, etc.
+% This documentation is created by running \verb"hssa-documentation.dtx", which 
+% calls \verb"hssa.cls" and \verb"hssa.sty", etc.
 %
 % See \url{http://tug.org/pracjourn/2005-3/asknelly/} for a nice statement of the 
-% difference between .cls and .sty files.  Here in \verb|hssa.cls|, I'm keeping
+% difference between .cls and .sty files.  Here in \verb"hssa.cls", I'm keeping
 % the code that is part of the core of HSSA's design.  I would not expect to 
 % change things here much after 2019.  
 
@@ -287,9 +323,9 @@
 %  \end{macro}
 
 % \begin{macro}{\q}
-% issue notes to the author in page proofs.  Define \verb|\q| to be \verb|\empty| for the final 
+% issue notes to the author in page proofs.  Define \verb"\q" to be \verb"\empty" for the final 
 %run.
-% Put a \verb|\newpage| \verb|\listoftodos| just before \verb|\end{document}| to help the 
+% Put a \verb"\newpage" \verb"\listoftodos" just before \verb"\end{document}" to help the 
 %author.
 %    \begin{macrocode}
 \setlength{\marginparwidth}{2cm} %todonotes manual, section 1.6.5
@@ -356,11 +392,11 @@ backgroundcolor=yellow]{todonotes}
 %\end{macro}
 
 % 	\subsection{Front matter}
-% 	\DescribeMacro\title
-% 	\DescribeMacro\author
-% 	\DescribeMacro\date
+% 	\DescribeMacro{\title}
+% 	\DescribeMacro{\author}
+% 	\DescribeMacro{\date}
 % I thought about doing something like this:\\
-% \verb|\newenvironment{frontmatter}{}{\maketitle}|\\
+% \verb"\newenvironment{frontmatter}{}{\maketitle}"\\
 % but then gave that up.
 %\begin{macro}{\title}
 %    \begin{macrocode}
@@ -369,13 +405,14 @@ backgroundcolor=yellow]{todonotes}
 %\end{macro}
 %\begin{macro}{\author}
 % Put the author's address in a parbox because it may have hard linebreaks
-% (\verb|\\|) that can cause trouble.  This happened in Speziale 2019.  I still don't know
+% (\verb"\\") that can cause trouble.  This happened in Speziale 2019.  I still don't know
 % why the linebreak is allowed after the authorname but not in the address.
 %    \begin{macrocode}
 \author{\@HSSAauthorname\\ [1ex]
     \parbox{\textwidth}{\small\centering\emph{\@HSSAauthoraddress}}
 }
 %    \end{macrocode}
+%
 %\begin{macro}{\date}
 %No date.
 %    \begin{macrocode}
@@ -401,7 +438,7 @@ backgroundcolor=yellow]{todonotes}
 %\end{macro}
 
 % Now the HSSA journal running headers, footers and cover citation.
-% Set the shorttitle to be the same as \verb|\HSSAverso| unless the author
+% Set the shorttitle to be the same as \verb"\HSSAverso" unless the author
 % redefines it in the document preamble.
 %    \begin{macrocode}
 \HSSAverso{\@HSSAarticletitle }
@@ -412,7 +449,7 @@ backgroundcolor=yellow]{todonotes}
 
 %\begin{macro}{\@HSSAheaderfooterfont}
 % Set up the font that will be used for running headers and footers.  Small caps,
-% and a bit of extra space, 7\ % of the font's point size, 
+% and a bit of extra space, 7\%, of the font's point size, 
 % between each letter (LetterSpace is from fontspec).
 %    \begin{macrocode}
 \def\@HSSAheaderfooterfont{\scshape\addfontfeature{LetterSpace=7}}
@@ -420,7 +457,7 @@ backgroundcolor=yellow]{todonotes}
 %\end{macro}
 
 %\begin{macro}{\HSSAfooter}
-% Use the \verb|\MakeTextLowercase| macro from the \verb|textcase| package 
+% Use the \verb"\MakeTextLowercase" macro from the \verb"textcase" package 
 %and construct the running footer for each page.
 %    \begin{macrocode}
 \HSSAfooter{\MakeTextLowercase{\@HSSAtitle}\ \@HSSAissuenum\ 
@@ -808,7 +845,7 @@ backgroundcolor=yellow]{todonotes}
 % \end{macro}
 %
 % \begin{macro}{\HSSAissuenum}
-% Provide user command \verb|\HSSAissuenum|.
+% Provide user command \verb"\HSSAissuenum".
 %    \begin{macrocode}
 \def\HSSAissuenum#1{\gdef\@HSSAissuenum{#1}}
 \HSSAissuenum{999}
@@ -816,27 +853,32 @@ backgroundcolor=yellow]{todonotes}
 % \end{macro}
 %
 % \begin{macro}{\HSSAarticletitle}
-% Provide user command \HSSAarticletitle
+% Provide user command \verb"\HSSAarticletitle"
+%    \begin{macrocode}
 \def\HSSAarticletitle#1{\gdef\@HSSAarticletitle{#1}\hypersetup{pdftitle=#1}}
 \HSSAarticletitle{My Life}
 %    \end{macrocode}
 % \end{macro}
 %
-% Provide user command \HSSAauthorname
+% Provide user command \verb"\HSSAauthorname"
+%    \begin{macrocode}
 \def\HSSAauthorname#1{\gdef\@HSSAauthorname{#1}\hypersetup{pdfauthor=#1}}
 \HSSAauthorname{Joe Bloggs}
+%    \end{macrocode}
 %
-% Provide user command \HSSAissuedate
+% Provide user command \verb"\HSSAissuedate"
+%    \begin{macrocode}
 \def\HSSAissuedate#1{\gdef\@HSSAissuedate{#1}}
 \HSSAissuedate{1900}
+%    \end{macrocode}
 %
-% Provide user command \HSSAauthoraddress
-\def\HSSAauthoraddress#1{\gdef\@HSSAauthoraddress{#1}}
+% Provide user command \verb"\HSSAauthoraddress"
+%    \begin{macrocode}\def\HSSAauthoraddress#1{\gdef\@HSSAauthoraddress{#1}}
 \HSSAauthoraddress{Timbuktu}
-
+%    \end{macrocode}
 % Collect DOI info when ready and print it in covercitation
 % Provide DOI when we have it.
-\def\DOI#1{\gdef\@DOI{#1}}
+%    \begin{macrocode}\def\DOI#1{\gdef\@DOI{#1}}
 \gdef\@DOI{\empty}
 %%\newtoks\DOI 
 \newcommand{\printDOI}{\ifx\@DOI\empty\relax
@@ -844,10 +886,9 @@ backgroundcolor=yellow]{todonotes}
     {\def\@urlcolor{Maroon!20}
         \textsc{doi:} \href{https://doi.org/\@DOI}{\@DOI}.\fi }
 }
-% Say \DOI{xxx}, and then later \printDOI where you want it printed.
+%    \end{macrocode} 
+% Say \verb"\DOI{xxx}", and then later \verb"\printDOI" where you want it printed.
 %
-%    \end{macrocode}
-
 %	\begin{macro}{\covercitation}
 % Gather the required information for the MLA cover citation and format it for output
 %    \begin{macrocode}
@@ -934,7 +975,7 @@ backgroundcolor=yellow]{todonotes}
 %    }
 %}
 %    \end{macrocode}
-% The \verb|pdfx| package clashes with using \verb|\hypersetup| to embed XMP 
+% The \verb"pdfx" package clashes with using \verb"\hypersetup" to embed XMP 
 %data. Commented out.
 %    \begin{macrocode}
 %\usepackage[a-1b]{pdfx} % get an archival PDF
@@ -944,10 +985,10 @@ backgroundcolor=yellow]{todonotes}
 
 % \subsection{Hypertext links}
 %  \begin{macro}{\hypersetup}
-% Settings for hypertext links, used by \verb|hyperref|.  These settings also include
-% \verb|hyperxmp| settings to embed XMP metadata in the PDF.
-% The \verb|\@| macros don't expand at the right time.  A problem for another day.  In 
-% any case, hyperxmp seems to get more or less the right data from \verb|\author| etc.
+% Settings for hypertext links, used by \verb"hyperref".  These settings also include
+% \verb"hyperxmp" settings to embed XMP metadata in the PDF.
+% The \verb"\@" macros don't expand at the right time.  A problem for another day.  In 
+% any case, hyperxmp seems to get more or less the right data from \verb"\author" etc.
 %    \begin{macrocode}
 \hypersetup{colorlinks=true, 
     bookmarksopen=false,
@@ -994,7 +1035,7 @@ backgroundcolor=yellow]{todonotes}
 
 %\subsection{Diatop}
 % \begin{macro}{\diatop}
-% \verb|\diatop|, used for r underdot overbar (ṝ, F6, 246)
+% \verb"\diatop", used for r underdot overbar (ṝ, F6, 246)
 % See Conference Proceedings, \emph{TeXniques} no.\,5, p.\,11.
 %    \begin{macrocode}
     \def\diatop[#1|#2]{\leavevmode{\setbox1=\hbox{{#1{}}}\setbox2=\hbox{{#2{}}}%
@@ -1033,16 +1074,16 @@ backgroundcolor=yellow]{todonotes}
         \end{quote}
     }
 %    \end{macrocode}
-% Resetting \verb|\footnote| to \verb|\originalfootnote| is no longer needed. 
+% Resetting \verb"\footnote" to \verb"\originalfootnote" is no longer needed. 
 % Standard non-reledmac \LaTeX\ footnotes are now 
-% restored by the \verb|\@minipagerestore| hook in the file 
-% \verb|hssa-reledmac.sty|.
+% restored by the \verb"\@minipagerestore" hook in the file 
+% \verb"hssa-reledmac.sty".
 %	\end{macro}
 
 %  \subsection{Index of Manuscripts}
 %
 %    \begin{macro}{\MScite} 
-% The command \verb|\MScite| is defined in \verb|hssa-indexing.sty|
+% The command \verb"\MScite" is defined in \verb"hssa-indexing.sty"
 % 
 %    \begin{macrocode}
         \usepackage{hssa-indexing}
