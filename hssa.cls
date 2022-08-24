@@ -874,12 +874,14 @@ backgroundcolor=yellow]{todonotes}
 %    \end{macrocode}
 %
 % Provide user command \verb"\HSSAauthoraddress"
-%    \begin{macrocode}\def\HSSAauthoraddress#1{\gdef\@HSSAauthoraddress{#1}}
+%    \begin{macrocode}
+\def\HSSAauthoraddress#1{\gdef\@HSSAauthoraddress{#1}}
 \HSSAauthoraddress{Timbuktu}
 %    \end{macrocode}
 % Collect DOI info when ready and print it in covercitation
 % Provide DOI when we have it.
-%    \begin{macrocode}\def\DOI#1{\gdef\@DOI{#1}}
+%    \begin{macrocode}
+\def\DOI#1{\gdef\@DOI{#1}}
 \gdef\@DOI{\empty}
 %%\newtoks\DOI 
 \newcommand{\printDOI}{\ifx\@DOI\empty\relax
