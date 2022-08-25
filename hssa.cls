@@ -314,6 +314,7 @@
 %  \end{macro}
 
 %  \begin{macro}{enumitem}
+% To control the spacing around itemized lists.
 %    \begin{macrocode}
 \usepackage{enumitem} 		% supersedes mdwlist: does it globally
 \setlist{noitemsep,
@@ -324,10 +325,13 @@
 %  \end{macro}
 
 % \begin{macro}{\q}
-% issue notes to the author in page proofs.  Define \verb"\q" to be \verb"\empty" for the final 
-%run.
-% Put a \verb"\newpage" \verb"\listoftodos" just before \verb"\end{document}" to help the 
-%author.
+% Issue notes to the author in the margins of the page proofs.  
+%  It uses the \verb|todonotes| package.
+%
+% Define \verb"\q" to be \verb"\empty" for the final run 
+% to suppress the display of notes.
+% Put a \verb"\newpage" \verb"\listoftodos" just before \verb"\end{document}" 
+% to help the author with an indexed list to the marginal notes.
 %    \begin{macrocode}
 \setlength{\marginparwidth}{2cm} %todonotes manual, section 1.6.5
 \usepackage[colorinlistoftodos,
@@ -342,37 +346,24 @@ backgroundcolor=yellow]{todonotes}
 % \end{macro}
 
 %\begin{macro}{\PreliminaryNote}
-% Preliminary numberless "footnote" for abbreviations,
+% A preliminary numberless "footnote" for abbreviations,
 % grant references, and other general initial statements.
 % But commonly, put this in a little ``Acknowledgements'' 
 % section at the end of the paper.
-%DW
 %
 %    \begin{macrocode}
 \newcommand{\PreliminaryNote}[1]{%
     {\def\thefootnote{\relax }%
         \footnotetext{\hspace*{-2.3em} %only if not using \hangfootnotes
             #1}}}
-
+%
 %DW ?
 \skip\footins=24pt
 %DW ?
 %    \end{macrocode}
 %\end{macro}
-
-%\begin{macro}{\HSSAfooter}
-%    \begin{macrocode}
-\def\HSSAfooter#1 %*%
-      {\gdef\@HSSAfooter{#1}}
-%    \end{macrocode}
-%\end{macro}
-%\begin{macro}{\@HSSAtitle}
 %
-%    \begin{macrocode}
-\newcommand{\@HSSAtitle}{History of Science in South Asia}
-%    \end{macrocode}
-%\end{macro}
-
+%
 % \subsection{Set the geometry for the pages}
 %\begin{macro}{geometry}
 % Set the geometry for the pages
@@ -393,6 +384,7 @@ backgroundcolor=yellow]{todonotes}
 %\end{macro}
 
 % 	\subsection{Front matter}
+%
 % 	\DescribeMacro{\title}
 % 	\DescribeMacro{\author}
 % 	\DescribeMacro{\date}
@@ -422,8 +414,24 @@ backgroundcolor=yellow]{todonotes}
 %\end{macro}
 
 %	\subsection{Running headers and footers}
+%
+%\begin{macro}{\HSSAfooter}
+% Variable that collects the text for the footer. 
+%    \begin{macrocode}
+\def\HSSAfooter#1 %*%
+    {\gdef\@HSSAfooter{#1}}
+%    \end{macrocode}
+%\end{macro}
+% 
+%\begin{macro}{\@HSSAtitle}
+% Define the title for use on the title page. 
+%    \begin{macrocode}
+\newcommand{\@HSSAtitle}{History of Science in South Asia}
+%    \end{macrocode}
+%\end{macro}
+
 %\begin{macro}{\HSSAverso}
-% Variable that collect the page header of the verso pages.
+% Variable that collects the page header of the verso pages.
 %    \begin{macrocode}
 \def\HSSAverso#1{\gdef\@HSSAverso{#1}}
 %    \end{macrocode}
@@ -465,7 +473,7 @@ backgroundcolor=yellow]{todonotes}
     (\@HSSAissuedate) \thefirstpage--\thelastpage}
 %    \end{macrocode}
 
-
+% \subsection{Fancy headers and footers}
 % Now the fancy header setup, which should be done after the geometry setup.
 %    \begin{macrocode}
 %\usepackage{fancyhdr} % after the geometry setup
@@ -504,11 +512,11 @@ backgroundcolor=yellow]{todonotes}
 %    \end{macrocode}
 %\end{macro}
 
+% \subsection{Link colours}
 %\begin{macro}{\definecolor}
 % This is the colour that will be used for the URL links; it's dark, so that it
 % doesn't disturb the reading as much as the standard blue would do.
 %    \begin{macrocode}
-%DW
 \usepackage{color}
 \definecolor{darkbrown}{rgb}{0.4, 0.26, 0.13} % from http://latexcolor.com/
 %    \end{macrocode}
@@ -517,7 +525,6 @@ backgroundcolor=yellow]{todonotes}
 %  \subsection{Output the preliminary matter}
 %\begin{macro}{\AtBeginDocument}
 %    \begin{macrocode}
-%DW
 \AtBeginDocument{%
     \coverpage
     \copyrightspage
@@ -542,7 +549,7 @@ backgroundcolor=yellow]{todonotes}
 %    \end{macrocode}
 %\end{macro}
 
-%  \subsection{Output the pages that come after the article}
+%  \subsection{Output the final pages that come after the article}
 %\begin{macro}{\AtEndDocument}
 %    \begin{macrocode}
 \AtEndDocument{%
@@ -577,7 +584,7 @@ backgroundcolor=yellow]{todonotes}
 %\end{macro}
 
 %  \subsection{Set up the alignment and fonts of title and author names}
-%\begin{macro}{\titlealign}
+%\begin{macro}{\aufont,\titlefont,\footerfont,\footeraddress}
 %    \begin{macrocode}
 \def\titlealign#1{\gdef\@titlealign{#1}}
 \let\@titlealign\centering
