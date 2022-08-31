@@ -1076,13 +1076,28 @@ backgroundcolor=yellow]{todonotes}
 % Documented at 
 %\href{https://cikitsa.blogspot.com/2017/08/mini-edition-environment-for-latex.html}{the
 % Cikitsā blog.}
+% 
+% First make a hanging footnote setup to use for these minipage notes:
+%    \begin{macrocode}
+% nice hanging-indent footnotes.  LaTeX Companion, p.73:
+\def\hangfootnotes{%
+    \renewcommand{\@makefntext}[1]{\setlength{\parindent}{0pt}%
+              \begin{list}{}{\setlength{\labelwidth}{1.5em}%
+                \setlength{\leftmargin}{\labelwidth}%
+                \setlength{\labelsep}{3pt}\setlength{\itemsep}{0pt}%
+                \setlength{\parsep}{0pt}\setlength{\topsep}{0pt}%
+                \footnotesize}\item[\hfill\@makefnmark]##1%
+    \end{list}}%
+}
+%    \end{macrocode}
 %    \begin{macrocode}
 \newenvironment{miniedition}
-    {\addtolength{\textwidth}{-\rightmargin} % width of the quote environment
-        \begin{quote} 
-            \begin{ }{\textwidth}
-                \let\footnoterule\relax
-                % \let\footnote\originalfootnote 
+    {\begin{quote} 
+            \addtolength{\textwidth}{-2\rightmargin} % width of the quote environment
+            \begin{minipage}{\textwidth}
+                \let\footnoterule\relax  % if you want a rule, comment out this line.
+                \hangfootnotes
+               % \let\footnote\originalfootnote 
             }
             {\end{minipage}
         \end{quote}
