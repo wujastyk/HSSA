@@ -280,6 +280,7 @@
 %  \begin{macro}{\RequirePackage}
 % Here come the packages that HSSA assumes are present.
 %    \begin{macrocode}
+\usepackage{hssa-indexing} % has to be loaded before hyperref
 \RequirePackage{ %
     graphicx,
     amsmath,
@@ -1112,14 +1113,13 @@ backgroundcolor=yellow]{todonotes}
 %  \subsection{Index of Manuscripts}
 %
 %    \begin{macro}{\MScite} 
-% The command \verb"\MScite" is defined in \verb"hssa-indexing.sty"
+% The command \verb"\MScite" is defined in \verb"hssa-indexing.sty" that
+% is loaded earlier in this file.
 % 
-%    \begin{macrocode}
-        \usepackage{hssa-indexing}
-%    \end{macrocode}
 %Usage:
 %
 %\begin{verbatim}
+% \MScite{City Library Accession no.}
 % \MScite{London Wellcome Indic alpha 23}            
 % \printindex[manuscripts]
 %\end{verbatim}
