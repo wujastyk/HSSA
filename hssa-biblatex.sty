@@ -105,6 +105,16 @@ mvreference]{useeditor=true,usetranslator=true}
 \usepackage{csquotes}
 %    \end{macrocode}
 
+% \subsection{Tweak the citation style}
+% Remove the ``p.'' and ``pp." from, for example, \verb|\volcite| :
+%    \begin{macrocode}
+\DefineBibliographyStrings{english}{%
+    page             = {},
+    pages            = {},
+} 
+%    \end{macrocode}
+
+
 % \subsection{Unused code}
 % Biblatex documentation 4.11. and macros from biblatex.def
 % Enable hot URLs for PDFs at Archive.org and Academia.edu etc.
