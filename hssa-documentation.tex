@@ -1,0 +1,45 @@
+%<*driver>
+% hssa LaTeX macro documentation driver file
+\documentclass[11pt]{article}
+\usepackage{doc,
+    hyperref, 
+    polyglossia
+}
+\setmainfont{TeX Gyre Pagella}
+\CodelineIndex
+%\PageIndex
+\RecordChanges
+%
+\setlength\hfuzz{15pt}
+\hbadness = 7000
+
+% \diatop lets one stack multiple accents on a letter
+\def\diatop[#1+#2]{\leavevmode{\setbox1=\hbox{{#1{}}}\setbox2=\hbox{{#2{}}}%
+        \dimen0=\ifdim\wd1>\wd2\wd1\else\wd2\fi
+        \dimen1=\ht2\advance\dimen1by-1ex%
+        \setbox1=\hbox to1\dimen0{\hss#1\hss}%
+        \rlap{\raise1\dimen1\box1}%
+        \hbox to1\dimen0{\hss#2\hss}}}
+    
+\author{Dominik Wujastyk}
+\title{\LaTeX\ class and style files for papers published in the journal HSSA}
+\date{\today }
+
+\begin{document}
+    \sloppypar
+    \maketitle
+    \tableofcontents
+    \newpage
+    \DocInput {hssa.cls}
+    \newpage
+    \DocInput {hssa.sty}
+    \newpage
+    \DocInput {hssa-reledmac.sty}
+    \newpage
+    \DocInput {hssa-biblatex.sty}
+    \newpage
+    \DocInput {hssa-indexing.sty}
+    \newpage
+    \DocInput {hssa-documentation-index.tex}
+    \end{document}
+%</driver>
