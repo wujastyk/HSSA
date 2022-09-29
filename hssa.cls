@@ -289,27 +289,28 @@
     textcomp, % arcane LaTeX/NFSS system for subsetting encodings.  Needed for Sigma.
     wasysym,
     polyglossia,
-     hyperxmp, % to embed XMP metadata in the PDF
-     hyperref, 
-     geometry,
+    hyperxmp, % to embed XMP metadata in the PDF
+    hyperref, 
+    geometry,
     array,
     longtable,
     polyglossia,  % polyglossia calls fontspec
     multicol,
-    booktabs, %professional tables \toprule etc.
+    booktabs, % better table spacing, \toprule etc.
     textcase, % to get \MakeTextLowercase for tweaking the running footer
-    fancyhdr,
+    fancyhdr
 }
 %    \end{macrocode}
 %  \end{macro}
 
-%  \begin{macro}{\xcolor}
+%  \begin{macro}{xcolor}
 % Settings for the \verb"xcolor" package
 %    \begin{macrocode}
 \RequirePackage[xetex,
     dvipdfmx,
     hyperref,
-    svgnames]
+    svgnames,
+    table]
     {xcolor}
 %    \end{macrocode}
 %  \end{macro}
@@ -338,11 +339,12 @@
 \usepackage[colorinlistoftodos,
 %    disable,
 textsize=tiny,
+loadshadowlibrary,
 shadow,
 backgroundcolor=yellow]{todonotes}
 \setuptodonotes{fancyline} 
 %
-\def\q#1{{}\todo{#1}{}}
+\newcommand{\q}[1]{{}\todo{#1}{}}
 %    \end{macrocode}
 % \end{macro}
 
@@ -499,16 +501,10 @@ backgroundcolor=yellow]{todonotes}
 \fancypagestyle{fancy-plus-DOI}{%
 \fancyhead{}
 \fancyhead[R]{}
-%\fancyhead[CO]{\@HSSAheaderfooterfont\@HSSArecto}
-%\fancyhead[CE]{\@HSSAheaderfooterfont\@HSSAverso}
-%\fancyhead[RO]{\thepage}
-%\fancyhead[LE]{\thepage}
 \fancyfoot[L]{\copy\cclogobox\\ \tiny\textenglish{\@HSSAheaderfooterfont 
     \href{http://doi.org/\@DOI}{doi: \@DOI}}}
 \fancyfoot[C]{\textenglish{\@HSSAheaderfooterfont\@HSSAfooter}}
 \fancyfoot[R]{}
-%\renewcommand{\headrulewidth}{0pt}
-%\renewcommand{\footrulewidth}{0pt}%
 }
 %    \end{macrocode}
 %\end{macro}
@@ -517,13 +513,15 @@ backgroundcolor=yellow]{todonotes}
 %\begin{macro}{\definecolor}
 % This is the colour that will be used for the URL links; it's dark, so that it
 % doesn't disturb the reading as much as the standard blue would do.
+% It depends on the \verb|xcolor| package.
 %    \begin{macrocode}
-\usepackage{color}
 \definecolor{darkbrown}{rgb}{0.4, 0.26, 0.13} % from http://latexcolor.com/
 %    \end{macrocode}
 %\end{macro}
 
 %  \subsection{Output the preliminary matter}
+% These commands depend on \verb|hyperref|, but that is always loaded
+% so there's no need to check.
 %\begin{macro}{\AtBeginDocument}
 %    \begin{macrocode}
 \AtBeginDocument{%
@@ -535,7 +533,6 @@ backgroundcolor=yellow]{todonotes}
     \thispagestyle{fancy-plus-DOI}
     \setcounter{page}{\thefirstpage}
 %
-%\@ifpackageloaded{hyperref}
     \def\@linkcolor{darkbrown}
     \def\@anchorcolor{darkbrown}
     \def\@citecolor{darkbrown}
@@ -545,9 +542,11 @@ backgroundcolor=yellow]{todonotes}
     \def\@pagecolor{darkbrown}
 %
     \selectbackgroundlanguage{english}
-    \input{sanskrit-hyphenations}    % for some reason this doesn't work
 }
 %    \end{macrocode}
+%    It would have been convenient to \verb|\input{sanskrit-hyphenations}| at this 
+%  too, but for some reason this doesn't work. 
+%  These hyphenations have to be \verb|\input| after \verb|\begin{document}|.
 %\end{macro}
 
 %  \subsection{Output the final pages that come after the article}
@@ -561,7 +560,7 @@ backgroundcolor=yellow]{todonotes}
 %\end{macro}
 %
 %  \subsection{Arrange the appendix}
-%\begin{macro}{Appendix}
+%\begin{macro}{appendix}
 %    \begin{macrocode}
 % Consider using \RequirePackage[title]{appendix}
 %
