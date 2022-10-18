@@ -67,6 +67,13 @@ mvreference]{useeditor=true,usetranslator=true}
 %\href{https://cikitsa.blogspot.co.at/2017/07/biblatex-citations-and-bibliography.html}{Cikitsā
 % blog post} for further explanation of the above.
 
+% \subsection{Bibliography punctuation}
+% Following sections 3.10 and 4.7.5 of the Bib\LaTeX\ manual, 
+% put the comma \emph{inside} the quotation marks of the title.
+%    \begin{macrocode}
+\DefineBibliographyExtras{british}{\DeclareQuotePunctuation{.,}}
+%    \end{macrocode}
+
 % \subsection{Bibliography sorting}
 
 % To avoid saying \verb|\newrefcontext[sorting=nyt]| before 
@@ -105,7 +112,7 @@ mvreference]{useeditor=true,usetranslator=true}
 % The \verb|american| option with \verb|csquotes| gives double quotes 
 % in article titles in the bibliography.
 %    \begin{macrocode}
-\usepackage[american]{csquotes}
+\usepackage[style=american]{csquotes}
 %    \end{macrocode}
 
 % \subsection{Tweak the citation style}
