@@ -1,0 +1,93 @@
+@Book{wujad-2022,
+  author           = {Wujastyk, Dagmar},
+  location         = {Groningen},
+  publisher        = {Barkhuis \& Groningen University Library},
+  title            = {The Usman Report (1923): Translations of Regional Submissions},
+  isbn             = {9789493194489},
+  creationdate     = {2022-01-26T07:14:18},
+  date             = {2022},
+  doi              = {10.21827/61e814114457b},
+  modificationdate = {2022-01-26T07:14:40},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+\RequirePackage{snapshot}
+% This is the template file for articles to appear in the journal HSSA (hssa-journal.org).
+% The class and style files mentioned below are maintained at 
+% https://github.com/wujastyk/HSSA
+% where they are publicly available. There is also simple documentation available 
+% there for journal authors and for typesetters. 
+% -- Dominik Wujastyk, 2021-01-01
+\documentclass{hssa}
+\usepackage{hssa,
+    hssa-reledmac,
+    hssa-biblatex}
+\addbibresource{\jobname.bib} 
+% name your bibliography file the same as this file, with extension .bib
+
+\HSSAissuenum{999}
+\HSSAissuedate{9999}
+\HSSAarticletitle{The Title}
+\HSSAauthorname{The Author}
+\HSSAauthoraddress{University of University}
+\HSSAfirstpage{88}
+\HSSAlastpage{99}
+\DOI{to be assigned by the editor} 
+
+% \usepackage[figuresright]{rotating} % for rotating figures sometimes
+
+\begin{document}
+   %\renewcommand{\q}[1]{\relax }
+    
+    \MSnocite{Pune BORI 220 of 1882--83}
+    \MSnocite{Chennai ARL 75278} 
+
+
+\section*{Introduction}
+
+\lettrine[lines=2,loversize=.1] {I}{n} the contemporary
+global market for wellness, the combining of Yoga and
+
+
+\begin{small}
+    
+\section*{Abbreviations}
+
+\begin{longtable}{ll}
+ms.\ &manuscript\\
+Ed.\ &Edition\\
+\end{longtable}
+
+\nocite{*}
+
+One thing and another.
+
+\newpage
+
+This and that.
+
+\defbibnote{blurb01}{\emph{In English alphabetical order.}}
+    
+\printshorthands
+[title=Acronyms,
+notkeyword=edition,  % not flagged as such in the bib file
+]
+
+\printshorthands 
+[title=Text Editions, 
+prenote=blurb01,
+keyword=edition, % flagged as such in the bib file
+sorting=special,
+]
+
+\printindex[manuscripts]
+
+\printbibliography 
+[title=Secondary Literature,
+sorting=nyt,
+notkeyword=edition] % keep the editions in the Text Editions section only
+
+\end{small}
+
+\end{document}
