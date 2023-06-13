@@ -45,6 +45,7 @@ url=true,
 urldate=short,
 useprefix=true,
 %refsection=section,
+giveninits=false,
 maxbibnames=10]{biblatex}
 %    \end{macrocode}
 % \subsection{Settings for oxyear}
@@ -121,8 +122,8 @@ mvreference]{useeditor=true,usetranslator=true}
 \DefineBibliographyStrings{english}{%
     page             = {},
     pages            = {},
-    volume = {},
-    volumes = {},
+    volume = {vol},
+    volumes = {vols},
 } 
 %    \end{macrocode}
 
@@ -255,6 +256,32 @@ mvreference]{useeditor=true,usetranslator=true}
     \iffieldundef{shorthand}
     {\bibhyperref{#1}}
     {\bibhyperlink{shorthand:\thefield{entrykey}}{#1}}}
+%    \end{macrocode}
+
+
+% Patch so that date-abbreviations aren't just one digit.
+% Kindly supplied by Alex Ball, 
+% \url{https://github.com/alex-ball/biblatex-oxref/issues/19}
+%    \begin{macrocode}
+\renewcommand{\blx@ox@compyear}[2]{%
+    \def\num@one{#1}%
+    \def\num@two{#2}%
+    \StrLen{\num@one}[\num@one@len]%
+    \StrLen{\num@two}[\num@two@len]%
+    \ifboolexpr{
+        test {\ifnumequal{\num@one@len}{\num@two@len}}
+        and
+        test {\ifnumless{\num@one}{\num@two}}
+    }{%
+        \StrCompare{\num@one}{\num@two}[\Result]%
+        \ifnum\num@two@len>3%
+        \IfStrEq{\Result}{2}{\def\Result{1}}{}%
+        \fi
+        %%% Extend the legal date compression behaviour to all entries
+        \IfStrEq{\Result}{4}{\def\Result{3}}{}%
+        %%% End of changes
+        \StrGobbleLeft{0\num@two}{\Result}%
+    }{\num@two}}
 %    \end{macrocode}
 
 \endinput % TeX stops reading here. 
