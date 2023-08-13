@@ -922,7 +922,7 @@ backgroundcolor=yellow]{todonotes}
 \renewcommand\section{\@startsection {section}{1}{\z@}%
     {-18\p@ \@plus 6\p@ \@minus 3\p@}%
     {9\p@ \@plus 6\p@ \@minus 3\p@}%
-    {\normalsize\centering\fspace{10}\MakeUppercase}}
+    {\normalfont\centering\fspace{10}\MakeUppercase}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
     {-15\p@ \@plus 6\p@ \@minus 3\p@}%
     {6\p@ \@plus 6\p@ \@minus 3\p@}%
