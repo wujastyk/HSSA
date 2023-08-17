@@ -948,7 +948,7 @@ backgroundcolor=yellow]{todonotes}
 %    \begin{macrocode}
 \newbox\cclogobox
 \global\setbox\cclogobox=\hbox{%
-    \includegraphics[width=10mm]{/home/dom/Dropbox/localtexmf/tex/HSSA/cc-by-sa.eps}}
+    \includegraphics[width=10mm]{cc-by-sa.eps}}
 %    \end{macrocode}
 
 % \subsection{Tweak tabular layout}
