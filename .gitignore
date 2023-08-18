@@ -8,5 +8,9 @@ tests/*
 *run.xml
 hssa-documentation-index.tex
 hssa-documentation.synctex.gz
+hssa-biblatex-older.sty
+hssa-biblatex.bbl
+hssa-documentation.glg
+hssa-documentation.hd
 
 
