@@ -1,5 +1,11 @@
 % \section{Biblatex settings for HSSA}
-% Don't need this at present:
+% This code is in the file \verb|hssa-biblatex.sty|.
+%
+% \subsection{Manuscript-oriented Bib\LaTeX\ macros}
+% We don't need this at present.
+% It's only here as a place-keeper, as a starting point in case 
+% we have a document that requires lots of specialized bibliographies
+% for manuscripts, e.g., perhaps a manuscript catalogue. 
 %    \begin{macrocode}
 % \usepackage[%
 % tools={manuscripts},
@@ -8,13 +14,16 @@
 %    \end{macrocode}
 
 % \subsection{Load Biblatex}
+% Here are the macros for our bibliographies.  HSSA uses 
+% \emph{New Hart's Rules} (Oxford University Press, 2014) as its 
+% formatting style guide.  These Rules are comprehensively 
+% implemented for Bib\LaTeX\ through the \verb|oxref| and \verb|oxyear|
+% packages.  See also section \ref{oxyear} below.
 %    \begin{macrocode}
 \usepackage[%
 backend=biber, 
 %bibstyle=multiple-dm, % for biblatex-manuscripts-philology
-%citestyle=authoryear-comp,
-%
-% now oxref:
+% oxref:
 style=oxyear,
 dashed=true,
 usetranslator=true,% see oxref documentation para 2.1.10
@@ -48,7 +57,10 @@ useprefix=true,
 giveninits=false,
 maxbibnames=10]{biblatex}
 %    \end{macrocode}
+%
 % \subsection{Settings for oxyear}
+% \label{oxyear}
+%
 %    \begin{macrocode}
 \ExecuteBibliographyOptions[% for biblatex-oxyear
 book,
@@ -64,19 +76,21 @@ mvreference]{useeditor=true,usetranslator=true}
 %    \begin{macrocode}
 \AtBeginDocument{\assignrefcontextentries[]{*}}  
 %    \end{macrocode}
+%
 % See 
 %\href{https://cikitsa.blogspot.co.at/2017/07/biblatex-citations-and-bibliography.html}{Cikitsā
 % blog post} for further explanation of the above.
-
+% 
+%\bigskip 
 % \subsection{Bibliography punctuation}
 % Following sections 3.10 and 4.7.5 of the Bib\LaTeX\ manual, 
 % put the comma \emph{inside} the quotation marks of the title.
 %    \begin{macrocode}
 \DefineBibliographyExtras{british}{\DeclareQuotePunctuation{.,}}
 %    \end{macrocode}
-
+%
 % \subsection{Bibliography sorting}
-
+%
 % To avoid saying \verb|\newrefcontext[sorting=nyt]| before 
 % \verb|\printbibliography| in every 
 % document redefine \verb|\printbibliography| (from biblatex.sty):
@@ -174,15 +188,6 @@ mvreference]{useeditor=true,usetranslator=true}
 	{\href{http://www.academia.edu/#1}{\nolinkurl{#1}}}
 	{\nolinkurl{#1}}}
 \DeclareFieldAlias{eprint:academia.edu}{eprint:academia}
-%    \end{macrocode}
-% \subsubsection{Digital Library of India}
-%    \begin{macrocode}
-\DeclareFieldFormat{eprint:dli}{%
-	DLI\addcolon\space
-	\ifhyperref
-	{\href{http://www.dli.gov.in/cgi-bin/DBscripts/allmetainfo.cgi?barcode=#1/}{\nolinkurl{#1}}}
-	{\nolinkurl{#1}}}
-\DeclareFieldAlias{eprint:DLI}{eprint:dli}
 %    \end{macrocode}
 %
 % \subsubsection{JSTOR}

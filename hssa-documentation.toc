@@ -5,10 +5,10 @@
 \contentsline {subsection}{\numberline {2.1}Prelims}{5}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Metadata}{5}{subsubsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.2}HSSA user macros}{5}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}AD, BC, etc.}{6}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1}AD, BC, etc.}{5}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Environments for ślokas and mini-editions}{6}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}Citing manuscripts}{6}{subsubsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.4}Making a lexical index}{7}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4}Making a lexical index}{6}{subsubsection.2.2.4}%
 \contentsline {subsubsection}{\numberline {2.2.5}Language-switching}{7}{subsubsection.2.2.5}%
 \contentsline {subsubsection}{\numberline {2.2.6}Citation commands}{7}{subsubsection.2.2.6}%
 \contentsline {subsubsection}{\numberline {2.2.7}Bibliography and index outputs}{7}{subsubsection.2.2.7}%
@@ -18,7 +18,7 @@
 \contentsline {paragraph}{Index of references}{8}{section*.5}%
 \contentsline {subsubsection}{\numberline {2.2.8}Miscellaneous}{8}{subsubsection.2.2.8}%
 \contentsline {subsubsection}{\numberline {2.2.9}Rotating pages for big tables and figures}{8}{subsubsection.2.2.9}%
-\contentsline {subsection}{\numberline {2.3}Standard \LaTeX \ sectioning and similar commands}{9}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Standard \LaTeX \ sectioning and similar commands}{8}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}What you get for nothing}{9}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Macros in the class file for the HSSA journal: hssa.cls}{10}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Set the geometry for the pages}{11}{subsection.3.1}%
@@ -63,27 +63,27 @@
 \contentsline {subsection}{\numberline {4.4}Math mode with Unicode fonts}{28}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Two-column footnote formatting}{29}{subsection.4.5}%
 \contentsline {section}{\numberline {5}Biblatex settings for HSSA}{30}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Load Biblatex}{30}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Settings for oxyear}{31}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Bibliography punctuation}{31}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Bibliography sorting}{31}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Positioning of the notes}{31}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}csquotes}{32}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Tweak the citation style}{32}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Unused code}{32}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}URL formatting in the bibliography}{32}{subsection.5.9}%
-\contentsline {subsubsection}{\numberline {5.9.1}Buddhist Digital Resource Center}{32}{subsubsection.5.9.1}%
-\contentsline {subsubsection}{\numberline {5.9.2}ARK}{32}{subsubsection.5.9.2}%
-\contentsline {subsubsection}{\numberline {5.9.3}Archive.org}{33}{subsubsection.5.9.3}%
-\contentsline {subsubsection}{\numberline {5.9.4}Academia.edu}{33}{subsubsection.5.9.4}%
-\contentsline {subsubsection}{\numberline {5.9.5}Digital Library of India}{33}{subsubsection.5.9.5}%
-\contentsline {subsubsection}{\numberline {5.9.6}JSTOR}{33}{subsubsection.5.9.6}%
-\contentsline {subsubsection}{\numberline {5.9.7}Jainelibrary}{33}{subsubsection.5.9.7}%
-\contentsline {subsubsection}{\numberline {5.9.8}DOI}{33}{subsubsection.5.9.8}%
-\contentsline {subsection}{\numberline {5.10}Tweaks to make the citation form:- Author date: page}{34}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}”Forthcoming” hacks}{34}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}Tighten up URL date}{34}{subsection.5.12}%
-\contentsline {subsection}{\numberline {5.13}Hyperlink magic}{34}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.1}Manuscript-oriented Bib\LaTeX \ macros}{30}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Load Biblatex}{30}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Settings for oxyear}{31}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Bibliography punctuation}{31}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Bibliography sorting}{31}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Positioning of the notes}{32}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}csquotes}{32}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Tweak the citation style}{32}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Unused code}{32}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}URL formatting in the bibliography}{33}{subsection.5.10}%
+\contentsline {subsubsection}{\numberline {5.10.1}Buddhist Digital Resource Center}{33}{subsubsection.5.10.1}%
+\contentsline {subsubsection}{\numberline {5.10.2}ARK}{33}{subsubsection.5.10.2}%
+\contentsline {subsubsection}{\numberline {5.10.3}Archive.org}{33}{subsubsection.5.10.3}%
+\contentsline {subsubsection}{\numberline {5.10.4}Academia.edu}{33}{subsubsection.5.10.4}%
+\contentsline {subsubsection}{\numberline {5.10.5}JSTOR}{33}{subsubsection.5.10.5}%
+\contentsline {subsubsection}{\numberline {5.10.6}Jainelibrary}{33}{subsubsection.5.10.6}%
+\contentsline {subsubsection}{\numberline {5.10.7}DOI}{34}{subsubsection.5.10.7}%
+\contentsline {subsection}{\numberline {5.11}Tweaks to make the citation form:- Author date: page}{34}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}”Forthcoming” hacks}{34}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}Tighten up URL date}{34}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}Hyperlink magic}{34}{subsection.5.14}%
 \contentsline {section}{\numberline {6}Indexing for HSSA}{36}{section.6}%
 \contentsline {subsection}{\numberline {6.1}English-Sanskrit indexes}{36}{subsection.6.1}%
 \contentsline {section}{\numberline {7}Commands for citing and indexing manuscripts}{37}{section.7}%

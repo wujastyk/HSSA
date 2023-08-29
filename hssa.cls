@@ -36,8 +36,7 @@
 %\begin{verbatim}
 %\RequirePackage{snapshot}
 %\documentclass{hssa}
-%\usepackage{hssa,
-%	hssa-biblatex}
+%\usepackage{hssa}
 %\addbibresource{\jobname.bib} 
 %\end{verbatim}
 % Note that the article's bibliography should have the same name as the article, with the 
@@ -255,8 +254,8 @@
 % \section{Macros in the class file for the HSSA journal: hssa.cls}
 % This is \verb"hssa.cls" by Dominik Wujastyk, a class file for the HSSA journal.
 %
-% This documentation is created by running \verb"hssa-documentation.dtx", which 
-% calls \verb"hssa.cls" and \verb"hssa.sty", etc.
+% The documentation is created by running \verb"hssa-documentation.dtx", 
+% which calls \verb"hssa.cls" and \verb"hssa.sty", etc.
 %
 % See \url{http://tug.org/pracjourn/2005-3/asknelly/} for a nice statement of the 
 % difference between .cls and .sty files.  Here in \verb"hssa.cls", I'm keeping
@@ -298,7 +297,8 @@
     multicol,
     booktabs, % better table spacing, \toprule etc.
     textcase, % to get \MakeTextLowercase for tweaking the running footer
-    fancyhdr
+    fancyhdr,
+    hssa-biblatex, % bibliography management and formatting
 }
 %    \end{macrocode}
 %  \end{macro}
