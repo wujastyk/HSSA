@@ -1,4 +1,14 @@
-%\section{Documentation for authors using \LaTeX } 
+% \section{\texttt{hssa.cls}: HSSA class file, user documentation}
+% This code is in the file \verb|hssa.cls|.
+%
+% The documentation is created by running \verb"hssa-documentation.dtx", 
+% which calls \verb"hssa.cls" and \verb"hssa.sty", etc.
+%
+% Class file for the HSSA journal.\footnote{See 
+%\url{http://tug.org/pracjourn/2005-3/asknelly/} 
+% for a nice statement of the difference between .cls and .sty files.}
+%
+%\subsection{Documentation for authors} 
 %
 % If you are writing with \LaTeX\ please observe 
 % the following guidelines:
@@ -29,9 +39,10 @@
 
 %\newpage
 
-%\section{Documentation for \LaTeX\ hackers converting incoming files to HSSA}
+%\subsection{Documentation for \LaTeX\ hackers converting incoming files to 
+%HSSA}
 %
-%\subsection{Prelims}
+%\subsubsection{Prelims}
 % Start off each HSSA article \LaTeX\ file with the following macros:
 %\begin{verbatim}
 %\RequirePackage{snapshot}
@@ -63,10 +74,10 @@
 % \HSSAshortarticletitle{An abbreviated title}
 % \end{verbatim}
 
-%\subsection{HSSA user macros}
+%\subsubsection{HSSA user macros}
 % Here follow various commands for use in HSSA articles that aren't part of standard
 % \LaTeX.
-%\subsubsection{AD, BC, etc.}
+%\paragraph{AD, BC, etc.}
 %\DescribeMacro{\CE}
 %\DescribeMacro{\BCE}
 %There are shortcuts for expressing the eras CE and BCE.  These macros also get the fonts 
@@ -90,14 +101,14 @@
 % to the yellow box in the margin, it can also build a page index of the notes that you can 
 % print at the end of the article with \verb"\listoftodos".
 
-% \subsubsection{Environments for ślokas and mini-editions}
+% \paragraph{Environments for ślokas and mini-editions}
 %\DescribeEnv{miniedition}
 % An environment for making apparatus notes to a single śloka or two.
 
 %\DescribeEnv{sloka}
 % An environment for typesetting Sanskrit verses; pretty much the same as \verb”verse”.
 
-% \subsubsection{Citing manuscripts}
+% \paragraph{Citing manuscripts}
 %\DescribeMacro{\MScite}
 % Cite your manuscripts using the pattern “City, Library, accession number.”  The
 % \verb"\MScite" macro will print the right thing in your text, while also writing an 
@@ -115,7 +126,7 @@
 %\DescribeMacro{\MSsilent}
 % A synonym for \verb"\MSnocite".
 
-%\subsubsection{Making a lexical index}
+%\paragraph{Making a lexical index}
 %\DescribeMacro{\saneng}
 % If you say \verb"\saneng{pūpa}{cake}" then you'll get “cake (\emph{pūpa})” printed in 
 % your main text.  Also, an entry will be written to a lexical page index, both Sanskrit-English
@@ -147,7 +158,7 @@
 %\verb"\cite", \verb"\citep" \verb"\citet" in the standard ways, as well as Bib\LaTeX's 
 %\verb"\footcite", \verb"\cites", \verb"\parencites", etc.
 
-%\subsubsection{Bibliography and index outputs}
+%\paragraph{Bibliography and index outputs}
 %Say \verb"\printbibliography" at the end of the document.  
 %
 %Here are examples from the end of Speziale's 2019 paper that do more 
@@ -196,7 +207,7 @@
 %] % keep the editions in the Text Editions section only
 %\end{verbatim}
 
-%\subsubsection{Miscellaneous}
+%\paragraph{Miscellaneous}
 %\DescribeMacro{\diatop}
 % Puts more than one accent over a letter.  This isn't available in standard \LaTeX, but we 
 % philologists sometimes need it.  Say, for example, \verb”\diatop[\'|{ō}]” to 
@@ -207,13 +218,13 @@
 % abbreviations.  I prefer to put this material at the end of an article, in a section called
 % “Acknowledgements.”
 %
-% \subsubsection{Rotating pages for big tables and figures}
+% \paragraph{Rotating pages for big tables and figures}
 %\DescribeEnv{rotating}
 % That's pretty much it.\\
 %  You might want to add \verb"\usepackage[figuresright]{rotating}" 
 % if you have some tables to go sideways.  
 
-%\subsection{Standard \LaTeX\ sectioning and similar commands}
+%\paragraph{Standard \LaTeX\ sectioning and similar commands}
 %
 %\DescribeMacro{\section}
 % Just use the normal \verb"\section{}" commands, down to \verb"\paragraph".
@@ -238,7 +249,7 @@
 % \end{verbatim}
 
 
-%\subsection{What you get for nothing}
+%\subsubsection{What you get for nothing}
 %In addition to setting up the above commands, 
 % the class and style files below will handle the 
 %\begin{itemize}
@@ -251,11 +262,8 @@
 
 % \newpage
 
-% \section{Macros in the class file for the HSSA journal: hssa.cls}
-% This is \verb"hssa.cls" by Dominik Wujastyk, a class file for the HSSA journal.
-%
-% The documentation is created by running \verb"hssa-documentation.dtx", 
-% which calls \verb"hssa.cls" and \verb"hssa.sty", etc.
+% \section{\texttt{hssa.cls}: HSSA class file, macro definitions}
+% This code is in the file \verb|hssa.cls|.
 %
 % See \url{http://tug.org/pracjourn/2005-3/asknelly/} for a nice statement of the 
 % difference between .cls and .sty files.  Here in \verb"hssa.cls", I'm keeping

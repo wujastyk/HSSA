@@ -430,8 +430,8 @@
 		\hdclindex{485}{code}{400}
   \item \verb*+\index+\pfill \hdclindex{833}{code}{735}, 
 		\hdclindex{834}{code}{736}, \hdclindex{839}{code}{740}, 
-		\hdclindex{840}{code}{741}, \hdclindex{843}{code}{743}, 
-		\hdclindex{845}{code}{745}
+		\hdclindex{840}{code}{741}, \hdclindex{844}{code}{743}, 
+		\hdclindex{848}{code}{745}
   \item \verb*+\indexsetup+\pfill \hdclindex{811}{code}{714}
   \item \verb*+\isdot+\pfill \hdclindex{780}{code}{683}
   \item \verb*+\item+\pfill \hdclindex{308}{code}{231}, 
@@ -489,7 +489,7 @@
 		\hdclindex{594}{code}{504}, \hdclindex{628}{code}{534}, 
 		\hdclindex{638}{code}{544}, \hdclindex{648}{code}{553}, 
 		\hdclindex{649}{code}{554}, \hdclindex{651}{code}{556}, 
-		\hdclindex{844}{code}{744}, \hdclindex{846}{code}{746}
+		\hdclindex{845}{code}{744}, \hdclindex{849}{code}{746}
   \item \verb*+\lettergroup+\pfill \hdclindex{553}{code}{465}
   \item \verb*+\linewidth+\pfill \hdclindex{237}{code}{161}, 
 		\hdclindex{238}{code}{162}, \hdclindex{250}{code}{174}, 
@@ -527,10 +527,9 @@
   \item \verb*+\mkbibmonth+\pfill \hdclindex{779}{code}{682}
   \item \verb*+\MS+\pfill \hdclindex{842}{main}{743}
   \item \verb*+\MScite+\pfill \hdclindex{576}{main}{487}, 
-		\hdclindex{844}{code}{744}
-  \item \verb*+\MSnocite+\pfill \hdclindex{846}{code}{746}
-  \item \verb*+\MSsilent+\pfill \hdclindex{845}{code}{745}, 
-		\hdclindex{846}{code}{746}
+		\hdclindex{843}{main}{743}
+  \item \verb*+\MSnocite+\pfill \hdclindex{846}{main}{745}
+  \item \verb*+\MSsilent+\pfill \hdclindex{847}{main}{745}
 
   \indexspace
 {\bfseries\hfil N\hfil}\nopagebreak
@@ -544,8 +543,8 @@
 		\hdclindex{450}{code}{367}, \hdclindex{486}{code}{401}, 
 		\hdclindex{553}{code}{465}, \hdclindex{603}{code}{513}, 
 		\hdclindex{604}{code}{514}, \hdclindex{605}{code}{515}, 
-		\hdclindex{829}{code}{731}, \hdclindex{843}{code}{743}, 
-		\hdclindex{845}{code}{745}
+		\hdclindex{829}{code}{731}, \hdclindex{844}{code}{743}, 
+		\hdclindex{848}{code}{745}
   \item \verb*+\newenvironment+\pfill \hdclindex{530}{code}{443}, 
 		\hdclindex{535}{code}{448}, \hdclindex{565}{code}{476}
   \item \verb*+\newfontfamily+\pfill \hdclindex{587}{code}{497}, 

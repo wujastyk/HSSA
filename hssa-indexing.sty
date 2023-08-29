@@ -1,4 +1,4 @@
-% \section{Indexing for HSSA}
+% \section{\texttt{hssa-indexing.sty}: indexing for HSSA}
 % This code is in the file \verb|hssa-indexing.sty|.
 %
 % Formerly used xindy; now updated to use xindex
@@ -60,15 +60,34 @@ columns=1]
 \renewcommand\@idxitem{\par\hangindent 15\p@ }% from sanmed.sty
 %    \end{macrocode}
 
-% \section{Commands for citing and indexing manuscripts}
-% \begin{macro}{\MS}
+% \subsection{Commands for citing and indexing manuscripts}
+%
+% \begin{macro}{\MS, \MScite}
+% To cite manuscripts in canonical form,
+% use the following structure\\ 
+% \verb|\MScite{<City> <Library> <Shelf number>}|. 
+%\\ E.g., 
+% 
+%\begin{quote}
+% \verb|\MS{London Wellcome| $\beta$ \verb|33}|
+%\end{quote}
+% (\verb|\MS| is shorthand for \verb|\MScite|.)
+% This prints “MS London Wellcome $\beta$ 33” in the text
+% and also sends entries to your index of manuscripts, that
+% will be printed at the end of your article with
+%\verb|\printindex[manuscripts]|.
+%
 %    \begin{macrocode}
-\newcommand{\MS}[1]{MS #1\index[manuscripts]{#1}} 
-    \let\MScite=\MS
-%    \end{macrocode}    
-% And a silent version (data to index; nothing in text):
+\newcommand{\MScite}[1]{MS #1\index[manuscripts]{#1}} 
+    \let\MS=\MScite
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\MSnocite, \MSsilent}
+% And a silent version.  This sends an entry to the 
+% index but prints nothing in the main text (works
+% like \verb|\nocite|):
 %    \begin{macrocode}
-\newcommand{\MSsilent}[1]{\index[manuscripts]{#1}} 
-    \let\MSnocite=\MSsilent
+\newcommand{\MSnocite}[1]{\index[manuscripts]{#1}} 
+    \let\MSsilent=\MSnocite
 %    \end{macrocode}    
 % \end{macro}
