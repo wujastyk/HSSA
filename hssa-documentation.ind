@@ -320,10 +320,10 @@
   \item \verb*+\footnotemargin+\pfill \hdclindex{426}{code}{346}
   \item \verb*+\footnoterule+\pfill \hdclindex{569}{code}{480}
   \item \verb*+\footnoteruleA+\pfill \hdclindex{638}{code}{544}
-  \item \verb*+\footnotesize+\pfill \hdclindex{244}{code}{168}, 
-		\hdclindex{276}{code}{200}, \hdclindex{291}{code}{214}, 
-		\hdclindex{403}{code}{324}, \hdclindex{472}{code}{387}, 
-		\hdclindex{562}{code}{473}
+  \item \verb*+\footnotesize+\pfill \hdclindex{92}{code}{44}, 
+		\hdclindex{244}{code}{168}, \hdclindex{276}{code}{200}, 
+		\hdclindex{291}{code}{214}, \hdclindex{403}{code}{324}, 
+		\hdclindex{472}{code}{387}, \hdclindex{562}{code}{473}
   \item \verb*+\footnotetext+\pfill \hdclindex{96}{code}{47}
   \item \verb*+\footrulewidth+\pfill \hdclindex{158}{code}{93}
   \item \verb*+\fspace+\pfill \hdclindex{462}{code}{378}, 

@@ -41,6 +41,7 @@
 \indexentry{setuptodonotes=\verb!*+\setuptodonotes+|hdclindex{90}{code}}{42}
 \indexentry{newcommand=\verb!*+\newcommand+|hdclindex{92}{code}}{44}
 \indexentry{todo=\verb!*+\todo+|hdclindex{92}{code}}{44}
+\indexentry{footnotesize=\verb!*+\footnotesize+|hdclindex{92}{code}}{44}
 \indexentry{PreliminaryNote=\verb!*+\PreliminaryNote+|hdclindex{93}{main}}{45}
 \indexentry{newcommand=\verb!*+\newcommand+|hdclindex{94}{code}}{45}
 \indexentry{def=\verb!*+\def+|hdclindex{95}{code}}{46}
