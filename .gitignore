@@ -12,5 +12,13 @@ hssa-biblatex-older.sty
 hssa-biblatex.bbl
 hssa-documentation.glg
 hssa-documentation.hd
-
+hssa-documentation.fdb_latexmk
+hssa-documentation.fls
+lexical.idx
+manuscripts.idx
+manuscripts.ilg
+manuscripts.ind
+template_HSSA.bbl
+template_HSSA.dep
+template_HSSA.synctex.gz
 
