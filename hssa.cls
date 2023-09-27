@@ -296,8 +296,8 @@
     textcomp, % arcane LaTeX/NFSS system for subsetting encodings.  Needed for Sigma.
     wasysym,
     polyglossia,
-    hyperxmp, % to embed XMP metadata in the PDF
     hyperref, 
+    hyperxmp, % to embed XMP metadata in the PDF
     geometry,
     array,
     longtable,
@@ -346,13 +346,13 @@
 \setlength{\marginparwidth}{2cm} %todonotes manual, section 1.6.5
 \usepackage[colorinlistoftodos,
 %    disable,
-textsize=tiny,
+%textsize=small,
 loadshadowlibrary,
 shadow,
 backgroundcolor=yellow]{todonotes}
 \setuptodonotes{fancyline} 
 %
-\newcommand{\q}[1]{{}\todo{#1}{}}
+\newcommand{\q}[1]{{}\todo{\footnotesize #1}{}}
 %    \end{macrocode}
 % \end{macro}
 
