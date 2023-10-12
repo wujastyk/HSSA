@@ -86,11 +86,8 @@
 \contentsline {subsection}{\numberline {5.12}”Forthcoming” hacks}{33}{subsection.5.12}%
 \contentsline {subsection}{\numberline {5.13}Tighten up URL date}{33}{subsection.5.13}%
 \contentsline {subsection}{\numberline {5.14}Hyperlink magic}{33}{subsection.5.14}%
-\contentsline {section}{\numberline {6}\texttt {hssa-indexing-xindy.sty}: indexing for HSSA}{35}{section.6}%
-\contentsline {section}{\numberline {7}Indexes}{35}{section.7}%
-\contentsline {section}{\numberline {8}User commands for easy indexing}{35}{section.8}%
-\contentsline {section}{\numberline {9}Lexical index, for inclusion in \texttt {engsan} or \texttt {saneng}}{36}{section.9}%
-\contentsline {section}{\numberline {10}Test version of \texttt {saneng} that puts tick marks around the indexed words}{37}{section.10}%
-\contentsline {section}{\numberline {11}Index of manuscripts, old version for index.sty}{37}{section.11}%
-\contentsline {section}{Index of macro definitions}{38}{section.11}%
+\contentsline {section}{\numberline {6}\texttt {hssa-indexing.sty}: indexing for HSSA}{35}{section.6}%
+\contentsline {subsection}{\numberline {6.1}English-Sanskrit indexes}{35}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Commands for citing and indexing manuscripts}{36}{subsection.6.2}%
+\contentsline {section}{Index of macro definitions}{37}{subsection.6.2}%
 \xpginauxfilefalse 

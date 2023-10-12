@@ -3,16 +3,13 @@
 %
 % Formerly used xindy; now updated to use xindex
 %
-% Now (2023) see the package \verb|indextools| by Ma\”iule Rouquette 
+% Now (2023) see the package \verb|indextools| by Maïeule Rouquette 
 % (\url{https://github.com/maieul/indextools}) that patches \verb|imakeidx|
 % to work with \verb|bidi|.
 %
-% This makes life a bit harder because xindex accepts the option 
-% \verb|imakedx| but not \verb|indextools|.  For this reason,
-% I am reverting to using \verb|xindy|, which is supported by \verb|indextools|.
-%
 %    \begin{macrocode}
-\usepackage[imakeidx] {xindex} 
+%\usepackage[imakeidx] {xindex}  % deprecated by indextools
+\usepackage[xindex]{indextools} 
 % \PassOptionsToPackage{nonewpage}{imakeidx}
 %
 \indexsetup{level=\section*,
