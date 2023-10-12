@@ -287,7 +287,7 @@
 %  \begin{macro}{\RequirePackage}
 % Here come the packages that HSSA assumes are present.
 %    \begin{macrocode}
-\usepackage{hssa-indexing} % has to be loaded before hyperref
+\usepackage{hssa-indexing-xindy} % has to be loaded before hyperref
 \RequirePackage{ %
     graphicx,
     amsmath,
@@ -295,7 +295,6 @@
     amssymb,
     textcomp, % arcane LaTeX/NFSS system for subsetting encodings.  Needed for Sigma.
     wasysym,
-    polyglossia,
     hyperref, 
     hyperxmp, % to embed XMP metadata in the PDF
     geometry,
@@ -967,7 +966,8 @@ backgroundcolor=yellow]{todonotes}
 %    \end{macrocode}
 
 %    \begin{macrocode}
-\RequirePackage{xltxtra}
+%\RequirePackage{xltxtra} % comment out because it clashes with bidi and is 
+% loaded by polyglossia anyhow.
 \emergencystretch=.1\columnwidth 
 %    \end{macrocode}
 
@@ -1120,7 +1120,7 @@ backgroundcolor=yellow]{todonotes}
 %  \subsection{Index of Manuscripts}
 %
 %    \begin{macro}{\MScite} 
-% The command \verb"\MScite" is defined in \verb"hssa-indexing.sty" that
+% The command \verb"\MScite" is defined in \verb"hssa-indexing-xindy.sty" that
 % is loaded earlier in this file.
 % 
 %Usage:

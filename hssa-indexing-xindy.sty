@@ -1,8 +1,24 @@
-\usepackage[xindy,nonewpage]{imakeidx} 
-%useful if there are multiple indexes, and 
+% \section{\texttt{hssa-indexing-xindy.sty}: indexing for HSSA}
+% This code is in the file \verb|hssa-indexing-xindy.sty|.
+%
+%  \begin{macro}{indextools}
+% Now (2023) see the package \verb|indextools| by Maïeule Rouquette 
+% (\url{https://github.com/maieul/indextools}) that patches \verb|imakeidx|
+% to work with \verb|bidi|.
+%    \begin{macrocode}
+% \usepackage[xindy,nonewpage]{imakeidx}  % imakeidx deprecated since 
+% indextools
+\usepackage[xindy,nonewpage]{indextools} 
+%    \end{macrocode}
+% Useful if there are multiple indexes, and 
 % to make indexing happen during a normal XeTeX run.
 % see https://cikitsa.blogspot.ca/2016/07/getting-xindy-to-work-for-iast-encoded.html
 %
+%  \end{macro}
+
+% \section{Indexes}
+%  \begin{macro}{lexical}
+%    \begin{macrocode}
 \makeindex[name=lexical,
 title=Lexical Index,
 program=texindy,
@@ -21,7 +37,16 @@ columns=2]
     noclearpage,
     firstpagestyle=fancy
 }
+%    \end{macrocode}
+%  \end{macro}
 
+% \section{User commands for easy indexing}
+% These are end-user commands for “sanskrit-english” and 
+% “silent-sanskrit-english” macros that facilitate saying things like
+% \verb|\saneng{cakra}{wheel}| and auto-building indexes from that.
+%
+%  \begin{macro}{\saneng, \ssaneng}
+%    \begin{macrocode}
 \newcommand{\saneng}[2]
 % #1 = Sanskrit
 % #2 = English
@@ -55,14 +80,19 @@ columns=2]
     %  \index[lex]{#2@#2!\sansk{#1}}}%
     \index[lexical]{#2!#1@\emph{#1}}%
     \index[lexical]{#1@\emph{#1}!#2}}
+%    \end{macrocode}
+%  \end{macro}
 
 % Older code, using index.sty:
 
-% Lexical index, for inclusion in \engsan or \saneng
+% \section{Lexical index, for inclusion in \texttt{engsan} or 
+% \texttt{saneng}}
 %
+%  \begin{macro}{\@idxitem}
+%
+%    \begin{macrocode}
 %\usepackage{index,amssymb}
 %\newindex{lex}{ldx}{lnd}{Lexical Index}
-\makeatletter
 \renewcommand\@idxitem{\par\hangindent 15\p@ }% from sanmed.sty
 %\newcommand\skt[2]{#1%\footnote{#1: Skt. \emph{#2}}%
 %% #1 = English 
@@ -70,9 +100,15 @@ columns=2]
 %% next lines experimental
 %  \index[skt]{#1!#2@\emph{#2}}%
 %  \index[skt]{#2@\emph{#2}!#1}}
-\makeatother
+%    \end{macrocode}
+%  \end{macro}
 
-% test version of \saneng that puts tick marks around the indexed words.
+
+% \section{Test version of \texttt{saneng} that puts tick marks 
+% around the indexed words}
+%
+%  \begin{macro}{\saneng}
+%    \begin{macrocode}
 %\newcommand{\saneng}[2]
 %% #1 = Sanskrit
 %% #2 = English
@@ -88,8 +124,12 @@ columns=2]
 %%  \index[lex]{#2@#2!\sansk{#1}}}%
 %  \index[lex]{#2!#1@\emph{#1}}%
 %  \index[lex]{#1@\emph{#1}!#2}}
+%    \end{macrocode}
+%  \end{macro}
 
-% Index of manuscripts, old version for index.sty
+% \section{Index of manuscripts, old version for index.sty}
+%  \begin{macro}{\MS, \MSsilent}
+%    \begin{macrocode}
 %\newindex{mex}{mdx}{mnd}{Index of Manuscripts}
 %\newcommand{\MS}[1]{MS #1\index[mex]{#1}}
 %\newcommand{\MSsilent}[1]{\index[mex]{#1}}
@@ -99,7 +139,11 @@ columns=2]
     \let\MScite=\MS
 \newcommand{\MSsilent}[1]{\index[manuscripts]{#1}} 
     \let\MSnocite=\MSsilent
+%    \end{macrocode}
+%  \end{macro}
+
     
+\endinput
 
 %\renewcommand{\doublespacing}{%
 %  \renewcommand{\baselinestretch}{1.5}

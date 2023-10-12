@@ -59,11 +59,11 @@ Scanning input file hssa-documentation.idx...
 
 !! Input index error (file = hssa-documentation.idx, line = 872):
    -- Extra `|' at position 68 of first argument.
-.done (1015 entries accepted, 28 rejected).
-Sorting entries...........done (11186 comparisons).
+.done (1108 entries accepted, 28 rejected).
+Sorting entries............done (12272 comparisons).
 Generating output file hssa-documentation.ind....
-## Warning (input = hssa-documentation.idx, line = 56; output = hssa-documentation.ind, line = 347):
+## Warning (input = hssa-documentation.idx, line = 56; output = hssa-documentation.ind, line = 353):
    -- Conflicting entries: multiple encaps for the same page under same key.
-done (838 lines written, 1 warning).
+.done (890 lines written, 1 warning).
 Output written in hssa-documentation.ind.
 Transcript written in hssa-documentation.ilg.
