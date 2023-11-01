@@ -7,10 +7,22 @@
 % the code that is not part of the core of HSSA's design, including calls to other style
 % files that might or might not be included for different articles.
 %
-%\subsection{Load basic macros for reledmac (footnote cols)}
+%\subsection{Load basic macros for reledmac}
+%  \begin{environment}{hssa-reledmac}
+% We load \verb|reledmac.sty| with some parameters set in the file 
+% \verb|hssa-reledmac.sty|.  This redefines \verb|\footnote| to produce
+% double-column notes.  Also, it makes the macros of \verb|reledmac|
+% available for making critical editions. 
+%
 %    \begin{macrocode}
 \usepackage{hssa-reledmac} % journal home style, two-col footnotes
 %    \end{macrocode}
+% 
+% For some documents without the need for critical edition features, 
+% it may be enough to 
+% use \verb|dblfnote.sty| instead.
+%  \end{environment}
+%
 % Note: we don't load  \verb"hssa-biblatex" here because it is 
 % already loaded in \verb"hssa.cls"; it's a permanent feature of HSSA. 
 %

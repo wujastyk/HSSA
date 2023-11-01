@@ -52,42 +52,42 @@
 \contentsline {subsection}{\numberline {2.27}Mini edition environment}{25}{subsection.2.27}%
 \contentsline {subsection}{\numberline {2.28}Index of Manuscripts}{25}{subsection.2.28}%
 \contentsline {section}{\numberline {3}\texttt {hssa.sty}: HSSA main style file}{26}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Load basic macros for reledmac (footnote cols)}{26}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Load basic macros for reledmac}{26}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Languages and fonts, Polyglossia-style}{26}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}British English, Greek, Sanskrit}{26}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}\TeX \ Gyre Pagella, the default roman font for HSSA}{26}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.3}Sanskrit input in Devanagari script}{26}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Sanskrit input in IAST script, output in Devanagari}{26}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4}Sanskrit input in IAST script, output in Devanagari}{27}{subsubsection.3.2.4}%
 \contentsline {subsubsection}{\numberline {3.2.5}Chinese}{27}{subsubsection.3.2.5}%
 \contentsline {subsubsection}{\numberline {3.2.6}Greek font}{27}{subsubsection.3.2.6}%
 \contentsline {subsection}{\numberline {3.3}Local generic author-facing macros}{27}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Math mode with Unicode fonts}{27}{subsection.3.4}%
-\contentsline {section}{\numberline {4}\texttt {hssa-reledmac.sty}: critical edition and footnote column macros}{28}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Two-column footnote formatting}{28}{subsection.4.1}%
-\contentsline {section}{\numberline {5}\texttt {hssa-biblatex.sty}: Bib\LaTeX \ settings for HSSA}{29}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Manuscript-oriented Bib\LaTeX \ macros}{29}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Load Biblatex}{29}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Settings for oxyear}{30}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Bibliography punctuation}{30}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Bibliography sorting}{30}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Positioning of the notes}{31}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}csquotes}{31}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Tweak the citation style}{31}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Unused code}{31}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}URL formatting in the bibliography}{32}{subsection.5.10}%
-\contentsline {subsubsection}{\numberline {5.10.1}Buddhist Digital Resource Center}{32}{subsubsection.5.10.1}%
-\contentsline {subsubsection}{\numberline {5.10.2}ARK}{32}{subsubsection.5.10.2}%
-\contentsline {subsubsection}{\numberline {5.10.3}Archive.org}{32}{subsubsection.5.10.3}%
-\contentsline {subsubsection}{\numberline {5.10.4}Academia.edu}{32}{subsubsection.5.10.4}%
-\contentsline {subsubsection}{\numberline {5.10.5}JSTOR}{32}{subsubsection.5.10.5}%
-\contentsline {subsubsection}{\numberline {5.10.6}Jainelibrary}{32}{subsubsection.5.10.6}%
-\contentsline {subsubsection}{\numberline {5.10.7}DOI}{33}{subsubsection.5.10.7}%
-\contentsline {subsection}{\numberline {5.11}Tweaks to make the citation form:- Author date: page}{33}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}”Forthcoming” hacks}{33}{subsection.5.12}%
-\contentsline {subsection}{\numberline {5.13}Tighten up URL date}{33}{subsection.5.13}%
-\contentsline {subsection}{\numberline {5.14}Hyperlink magic}{33}{subsection.5.14}%
-\contentsline {section}{\numberline {6}\texttt {hssa-indexing.sty}: indexing for HSSA}{35}{section.6}%
-\contentsline {subsection}{\numberline {6.1}English-Sanskrit indexes}{35}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Commands for citing and indexing manuscripts}{36}{subsection.6.2}%
-\contentsline {section}{Index of macro definitions}{37}{subsection.6.2}%
+\contentsline {subsection}{\numberline {3.4}Math mode with Unicode fonts}{28}{subsection.3.4}%
+\contentsline {section}{\numberline {4}\texttt {hssa-reledmac.sty}: critical edition and footnote column macros}{29}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Two-column footnote formatting}{29}{subsection.4.1}%
+\contentsline {section}{\numberline {5}\texttt {hssa-biblatex.sty}: Bib\LaTeX \ settings for HSSA}{30}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Manuscript-oriented Bib\LaTeX \ macros}{30}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Load Biblatex}{30}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Settings for oxyear}{31}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Bibliography punctuation}{31}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Bibliography sorting}{31}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Positioning of the notes}{32}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}csquotes}{32}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Tweak the citation style}{32}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Unused code}{32}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}URL formatting in the bibliography}{33}{subsection.5.10}%
+\contentsline {subsubsection}{\numberline {5.10.1}Buddhist Digital Resource Center}{33}{subsubsection.5.10.1}%
+\contentsline {subsubsection}{\numberline {5.10.2}ARK}{33}{subsubsection.5.10.2}%
+\contentsline {subsubsection}{\numberline {5.10.3}Archive.org}{33}{subsubsection.5.10.3}%
+\contentsline {subsubsection}{\numberline {5.10.4}Academia.edu}{33}{subsubsection.5.10.4}%
+\contentsline {subsubsection}{\numberline {5.10.5}JSTOR}{33}{subsubsection.5.10.5}%
+\contentsline {subsubsection}{\numberline {5.10.6}Jainelibrary}{33}{subsubsection.5.10.6}%
+\contentsline {subsubsection}{\numberline {5.10.7}DOI}{34}{subsubsection.5.10.7}%
+\contentsline {subsection}{\numberline {5.11}Tweaks to make the citation form:- Author date: page}{34}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}”Forthcoming” hacks}{34}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}Tighten up URL date}{34}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}Hyperlink magic}{34}{subsection.5.14}%
+\contentsline {section}{\numberline {6}\texttt {hssa-indexing.sty}: indexing for HSSA}{36}{section.6}%
+\contentsline {subsection}{\numberline {6.1}English-Sanskrit indexes}{36}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Commands for citing and indexing manuscripts}{37}{subsection.6.2}%
+\contentsline {section}{Index of macro definitions}{38}{subsection.6.2}%
 \xpginauxfilefalse 

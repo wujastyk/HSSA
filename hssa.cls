@@ -305,6 +305,7 @@
     booktabs, % better table spacing, \toprule etc.
     textcase, % to get \MakeTextLowercase for tweaking the running footer
     fancyhdr,
+    xltxtra, % for the definition of \XeLaTeX
     hssa-biblatex, % bibliography management and formatting
 }
 %    \end{macrocode}
@@ -1034,7 +1035,7 @@ backgroundcolor=yellow]{todonotes}
 %  \end{macro}
 
 % \subsection{Simple indented, environment for Sanskrit verses}
-%	\begin{macro}{\begin{sloka}}
+%	\begin{environment}{sloka}
 %    \begin{macrocode}
 %\newenvironment{sloka}
 % {\list{}{\rightmargin\leftmargin}%
@@ -1053,7 +1054,7 @@ backgroundcolor=yellow]{todonotes}
 }
 {\relax }
 %    \end{macrocode}
-%	\end{macro}
+%	\end{environment}
 
 %\subsection{Diatop}
 % \begin{macro}{\diatop}
