@@ -5,44 +5,51 @@
 % which calls \verb"hssa.cls" and \verb"hssa.sty", etc.
 %
 % Class file for the HSSA journal.\footnote{See 
-%\url{http://tug.org/pracjourn/2005-3/asknelly/} 
+% \url{http://tug.org/pracjourn/2005-3/asknelly/} 
 % for a nice statement of the difference between .cls and .sty files.}
 %
-%\subsection{Documentation for authors} 
+% \subsection{Documentation for authors} 
 %
 % If you are writing with \LaTeX\ please observe 
 % the following guidelines:
 %
-%\begin{itemize}
-%\item Use Unicode encoding for your files (i.e., for Xe\LaTeX\ or Lua\TeX)
-%\item Use the standard features of \LaTeX\ as documented in the standard manual, 
-%\emph{\LaTeX: A Document Preparation System} by Leslie Lamport, or in
+% \begin{itemize}
+% \item Use Unicode encoding for your files (i.e., for Xe\LaTeX\ or Lua\TeX)
+% \item Use the standard features of \LaTeX\ as documented in the standard 
+%manual, 
+% \emph{\LaTeX: A Document Preparation System} by Leslie Lamport, or in
 % \emph{The Very Short Guide to Typesetting with \LaTeX} by Peter Flynn and Silmaril 
 % Consultants (part of the \TeX live distribution and at
+% 
 %\href{http://ctan.mirror.colo-serv.net/info/latex-veryshortguide/veryshortguide-A4-imposed.pdf}{CTAN}).
-%\item Use logical markup, not presentational markup. That means you mark things as 
-%\verb"\chapter{xxx}", \verb"\footnote{xxx}", \verb"\sanskrit{xxx}", \verb"\title{xxx}", etc., 
+% \item Use logical markup, not presentational markup. That means you mark 
+%things as 
+% \verb"\chapter{xxx}", \verb"\footnote{xxx}", \verb"\sanskrit{xxx}", 
+%\verb"\title{xxx}", etc., 
 % and not \verb"\textbf{xxx}", 
-%\verb"\vspace{5ex}".
-%\item Do not use \verb"\newcommand" or \verb"\def" to make private commands. If this 
-%appears to be 
-%unavoidable, please contact the journal editor before proceeding.
-%\item Provide your bibliography entries in Bib\TeX\ format. The journal uses Bib\LaTeX, 
+% \verb"\vspace{5ex}".
+% \item Do not use \verb"\newcommand" or \verb"\def" to make private 
+%commands. If this 
+% appears to be 
+% unavoidable, please contact the journal editor before proceeding.
+% \item Provide your bibliography entries in Bib\TeX\ format. The journal uses 
+%Bib\LaTeX, 
 %which 
 %is flexible. So please do not use any special formatting commands or non-standard bst files. 
-%Just use \verb"\cite{xxx}" etc. in the simplest manner.
-%\item If you have tables, keep them simple and don't spend time putting in many horizontal 
-%and vertical lines. They will be reformatted for the journal, in any case.
-%\end{itemize}
-%The above advice is also given on the \href{https://hssa-journal.org}{HSSA 
-%website}.
+% Just use \verb"\cite{xxx}" etc. in the simplest manner.
+% \item If you have tables, keep them simple and don't spend time putting in 
+%many horizontal 
+% and vertical lines. They will be reformatted for the journal, in any case.
+% \end{itemize}
+% The above advice is also given on the \href{https://hssa-journal.org}{HSSA 
+% website}.
 
-%\newpage
+% \newpage
 
-%\subsection{Documentation for \LaTeX\ hackers converting incoming files to 
-%HSSA}
+% \subsection{Documentation for \LaTeX\ hackers converting incoming files to 
+% HSSA}
 %
-%\subsubsection{Prelims}
+% \subsubsection{Prelims}
 % Start off each HSSA article \LaTeX\ file with the following macros:
 %\begin{verbatim}
 %\RequirePackage{snapshot}
@@ -52,7 +59,7 @@
 %\end{verbatim}
 % Note that the article's bibliography should have the same name as the article, with the 
 % extension \verb".bib".
-
+%
 %\subsubsection{Metadata}
 %Next, use the following commands to capture the metadata for this article:
 %\begin{verbatim}
@@ -73,7 +80,7 @@
 % \begin{verbatim}
 % \HSSAshortarticletitle{An abbreviated title}
 % \end{verbatim}
-
+%
 %\subsubsection{HSSA user macros}
 % Here follow various commands for use in HSSA articles that aren't part of standard
 % \LaTeX.
@@ -92,7 +99,7 @@
 %\AD
 %\end{verbatim}
 % Don't forget to handle the space after these macros appropriately.
-
+%
 %\DescribeMacro{\q}
 % Use this to make a loud, obnoxious marginal note in bright yellow box. Use it to annotate
 % the PDF proofs for communicating with the author.
@@ -100,14 +107,14 @@
 % \verb"\q{}" stands for “query,” and is a tailord version of \verb"todonotes".  In addition 
 % to the yellow box in the margin, it can also build a page index of the notes that you can 
 % print at the end of the article with \verb"\listoftodos".
-
+%
 % \paragraph{Environments for ślokas and mini-editions}
 %\DescribeEnv{miniedition}
 % An environment for making apparatus notes to a single śloka or two.
-
+%
 %\DescribeEnv{sloka}
 % An environment for typesetting Sanskrit verses; pretty much the same as \verb”verse”.
-
+%
 % \paragraph{Citing manuscripts}
 %\DescribeMacro{\MScite}
 % Cite your manuscripts using the pattern “City, Library, accession number.”  The
@@ -115,17 +122,17 @@
 % entry to an alphabetical index of manuscripts that appears at the end of your article.
 % Saying \verb"\MScite{London, Wellcome, $\alpha$999}" will print “MS London, Wellcome 
 % $\alpha$ 999 in your text.
-
+%
 %\DescribeMacro{\MS}
 % \verb"\MS" is a synonym for \verb"\MScite"
-
+%
 %\DescribeMacro{\MSnocite}
 % If you want to put an entry in your index of manuscripts, but you don't want 
 % the entry printed in the main text where you're writing, use \verb"\MSnocite".
-
+%
 %\DescribeMacro{\MSsilent}
 % A synonym for \verb"\MSnocite".
-
+%
 %\paragraph{Making a lexical index}
 %\DescribeMacro{\saneng}
 % If you say \verb"\saneng{pūpa}{cake}" then you'll get “cake (\emph{pūpa})” printed in 
@@ -135,7 +142,7 @@
 %\DescribeMacro{\ssaneng}
 % \verb"\ssaneng" is a silent version of the same macro that writes the index entries but
 % puts nothing in the main text.
-
+%
 %\subsubsection{Language-switching}
 %\DescribeMacro{\textgreek}
 %\DescribeMacro{\textenglish}
@@ -151,13 +158,13 @@
 % 
 % \DescribeMacro{\cjk}
 %  This is just a switch, so say \verb”{\cjk X}” where X is a Chinese character.
-
+%
 %\subsubsection{Citation commands}
 %HSSA uses the Bib\LaTeX\ macros, and the Oxref style for formatting according to the 
 %Oxford Hart's Rules guidelines.  The NatBib conventions are also loaded, so you can use 
 %\verb"\cite", \verb"\citep" \verb"\citet" in the standard ways, as well as Bib\LaTeX's 
 %\verb"\footcite", \verb"\cites", \verb"\parencites", etc.
-
+%
 %\paragraph{Bibliography and index outputs}
 %Say \verb"\printbibliography" at the end of the document.  
 %
@@ -171,7 +178,7 @@
 % article.}} 
 %
 %\end{verbatim}
-
+%
 % \paragraph{Index of manuscripts}
 % As indexed using \verb"\MScite" etc.
 %\begin{verbatim}
@@ -184,7 +191,7 @@
 %%sorting=special,
 %]
 %\end{verbatim}
-
+%
 % \paragraph{Index of editions}
 %\begin{verbatim}
 %\printshorthands %
@@ -195,7 +202,7 @@
 %]
 %
 %\end{verbatim}
-
+%
 % \paragraph{Index of references}
 %\begin{verbatim}
 %\printbibliography
@@ -206,7 +213,7 @@
 %nottype=manuscript,
 %] % keep the editions in the Text Editions section only
 %\end{verbatim}
-
+%
 %\paragraph{Miscellaneous}
 %\DescribeMacro{\diatop}
 % Puts more than one accent over a letter.  This isn't available in standard \LaTeX, but we 
@@ -223,7 +230,7 @@
 % That's pretty much it.\\
 %  You might want to add \verb"\usepackage[figuresright]{rotating}" 
 % if you have some tables to go sideways.  
-
+%
 %\paragraph{Standard \LaTeX\ sectioning and similar commands}
 %
 %\DescribeMacro{\section}
@@ -247,8 +254,8 @@
 % \lettrine[lines=2,loversize=.1]{T}{he mahābhārata and the rāmāyana both feature kṛṣṇa 
 %%% ... 
 % \end{verbatim}
-
-
+%
+%
 %\subsubsection{What you get for nothing}
 %In addition to setting up the above commands, 
 % the class and style files below will handle the 
@@ -259,9 +266,9 @@
 %    \item the two-column footnotes
 %    \item the use of \TeX\ Gyre Pagella or other Unicode font in \TeX\ math mode.
 %\end{itemize}
-
+%
 % \newpage
-
+%
 % \section{\texttt{hssa.cls}: HSSA class file, macro definitions}
 % This code is in the file \verb|hssa.cls|.
 %
@@ -269,14 +276,14 @@
 % difference between .cls and .sty files.  Here in \verb"hssa.cls", I'm keeping
 % the code that is part of the core of HSSA's design.  I would not expect to 
 % change things here much after 2019.  
-
+%
 %\begin{macro}{\NeedsTeXFormat}
 % Declare that we are using the main \LaTeX2e format.
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 %    \end{macrocode}
 %\end{macro}
-
+%
 %  \begin{macro}{\LoadClass}
 % HSSA is based on an 11pt article style:
 %    \begin{macrocode}
@@ -293,7 +300,9 @@
     amsmath,
     amsfonts,
     amssymb,
-    textcomp, % arcane LaTeX/NFSS system for subsetting encodings.  Needed for Sigma.
+    textcomp, % arcane LaTeX/NFSS system for subsetting encodings.  Needed for 
+    %Sigma.
+    xltxtra, % for the XeTeX macro etc.
     wasysym,
     hyperref, 
     hyperxmp, % to embed XMP metadata in the PDF
@@ -305,24 +314,22 @@
     booktabs, % better table spacing, \toprule etc.
     textcase, % to get \MakeTextLowercase for tweaking the running footer
     fancyhdr,
-    xltxtra, % for the definition of \XeLaTeX
     hssa-biblatex, % bibliography management and formatting
 }
 %    \end{macrocode}
 %  \end{macro}
-
+%
 %  \begin{macro}{xcolor}
 % Settings for the \verb"xcolor" package
 %    \begin{macrocode}
 \RequirePackage[xetex,
     dvipdfmx,
-    hyperref,
     svgnames,
     table]
     {xcolor}
 %    \end{macrocode}
 %  \end{macro}
-
+%
 %  \begin{macro}{enumitem}
 % To control the spacing around itemized lists.
 %    \begin{macrocode}
@@ -333,7 +340,7 @@
 }
 %    \end{macrocode}
 %  \end{macro}
-
+%
 % \begin{macro}{\q}
 % Issue notes to the author in the margins of the page proofs.  
 %  It uses the \verb|todonotes| package.
@@ -355,7 +362,7 @@ backgroundcolor=yellow]{todonotes}
 \newcommand{\q}[1]{{}\todo{\footnotesize #1}{}}
 %    \end{macrocode}
 % \end{macro}
-
+%
 %\begin{macro}{\PreliminaryNote}
 % A preliminary numberless "footnote" for abbreviations,
 % grant references, and other general initial statements.
@@ -423,7 +430,7 @@ backgroundcolor=yellow]{todonotes}
 \date{\relax }
 %    \end{macrocode}
 %\end{macro}
-
+%
 %	\subsection{Running headers and footers}
 %
 %\begin{macro}{\HSSAfooter}
@@ -440,14 +447,14 @@ backgroundcolor=yellow]{todonotes}
 \newcommand{\@HSSAtitle}{History of Science in South Asia}
 %    \end{macrocode}
 %\end{macro}
-
+%
 %\begin{macro}{\HSSAverso}
 % Variable that collects the page header of the verso pages.
 %    \begin{macrocode}
 \def\HSSAverso#1{\gdef\@HSSAverso{#1}}
 %    \end{macrocode}
 %\end{macro}
-
+%
 % 	 \begin{macro}{\HSSArecto}
 % Ditto for the recto, and initialize them both to nothing.
 %    \begin{macrocode}    
@@ -456,7 +463,7 @@ backgroundcolor=yellow]{todonotes}
 \let\@HSSArecto\@empty
 %    \end{macrocode}
 %\end{macro}
-
+%
 % Now the HSSA journal running headers, footers and cover citation.
 % Set the shorttitle to be the same as \verb"\HSSAverso" unless the author
 % redefines it in the document preamble.
@@ -466,7 +473,7 @@ backgroundcolor=yellow]{todonotes}
 \HSSArecto{\@HSSAauthorname }
 %    \end{macrocode}
 %\end{macro}
-
+%
 %\begin{macro}{\@HSSAheaderfooterfont}
 % Set up the font that will be used for running headers and footers.  Small caps,
 % and a bit of extra space, 7\%, of the font's point size, 
@@ -475,7 +482,7 @@ backgroundcolor=yellow]{todonotes}
 \def\@HSSAheaderfooterfont{\scshape\addfontfeature{LetterSpace=7}}
 %    \end{macrocode}
 %\end{macro}
-
+%
 %\begin{macro}{\HSSAfooter}
 % Use the \verb"\MakeTextLowercase" macro from the \verb"textcase" package 
 %and construct the running footer for each page.
@@ -483,7 +490,7 @@ backgroundcolor=yellow]{todonotes}
 \HSSAfooter{\MakeTextLowercase{\@HSSAtitle}\ \@HSSAissuenum\ 
     (\@HSSAissuedate) \thefirstpage--\thelastpage}
 %    \end{macrocode}
-
+%
 % \subsection{Fancy headers and footers}
 % Now the fancy header setup, which should be done after the geometry setup.
 %    \begin{macrocode}
@@ -507,12 +514,12 @@ backgroundcolor=yellow]{todonotes}
 % Make a style for the first page that has the DOI in the bottom right
 %    \begin{macrocode}
 \fancypagestyle{fancy-plus-DOI}{%
-\fancyhead{}
-\fancyhead[R]{}
-\fancyfoot[L]{\copy\cclogobox\\ \tiny\textenglish{\@HSSAheaderfooterfont 
-    \href{http://doi.org/\@DOI}{doi: \@DOI}}}
-\fancyfoot[C]{\textenglish{\@HSSAheaderfooterfont\@HSSAfooter}}
-\fancyfoot[R]{}
+    \fancyhead{}
+    \fancyhead[R]{}
+    \fancyfoot[L]{\copy\cclogobox\\ \tiny\textenglish{\@HSSAheaderfooterfont 
+        \href{http://doi.org/\@DOI}{doi: \@DOI}}}
+    \fancyfoot[C]{\textenglish{\@HSSAheaderfooterfont\@HSSAfooter}}
+    \fancyfoot[R]{}
 }
 %    \end{macrocode}
 %\end{macro}
@@ -526,7 +533,7 @@ backgroundcolor=yellow]{todonotes}
 \definecolor{darkbrown}{rgb}{0.4, 0.26, 0.13} % from http://latexcolor.com/
 %    \end{macrocode}
 %\end{macro}
-
+%
 %  \subsection{Output the preliminary matter}
 % These commands depend on \verb|hyperref|, but that is always loaded
 % so there's no need to check.
@@ -746,7 +753,8 @@ backgroundcolor=yellow]{todonotes}
         
         Copyrights of all the articles rest with the respective authors and
         published under the provisions of
-        \href{http://www.creativecommons.org/licenses/by-sa/4.0/}{Creative Commons 
+        \href{http://www.creativecommons.org/licenses/by-sa/4.0/}{Creative 
+Commons 
             Attribution-ShareAlike 4.0} License.
         
         \medskip
