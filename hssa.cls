@@ -302,7 +302,7 @@
     amssymb,
     textcomp, % arcane LaTeX/NFSS system for subsetting encodings.  Needed for 
     %Sigma.
-    xltxtra, % for the XeTeX macro etc.
+    metalogo, % for the XeTeX macro etc.
     wasysym,
     hyperref, 
     hyperxmp, % to embed XMP metadata in the PDF
@@ -328,7 +328,7 @@
     table]
     {xcolor}
 %    \end{macrocode}
-%  \end{macro}
+%  \end{macro}%\font\largefont = cmr10 scaled \magstep5   
 %
 %  \begin{macro}{enumitem}
 % To control the spacing around itemized lists.
@@ -975,8 +975,6 @@ Commons
 %    \end{macrocode}
 
 %    \begin{macrocode}
-%\RequirePackage{xltxtra} % comment out because it clashes with bidi and is 
-% loaded by polyglossia anyhow.
 \emergencystretch=.1\columnwidth 
 %    \end{macrocode}
 
