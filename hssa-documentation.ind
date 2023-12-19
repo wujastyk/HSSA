@@ -87,14 +87,14 @@
   \item \verb*+\@urlcolor+\pfill \hdclindex{184}{code}{116}, 
 		\hdclindex{278}{code}{202}, \hdclindex{453}{code}{370}
   \item \verb*+\\+\pfill \hdclindex{123}{code}{65}, 
-		\hdclindex{163}{code}{97}, \hdclindex{277}{code}{201}, 
-		\hdclindex{294}{code}{217}, \hdclindex{305}{code}{228}, 
-		\hdclindex{324}{code}{247}, \hdclindex{329}{code}{252}, 
-		\hdclindex{330}{code}{253}, \hdclindex{335}{code}{258}, 
-		\hdclindex{336}{code}{259}, \hdclindex{337}{code}{260}, 
-		\hdclindex{338}{code}{261}, \hdclindex{339}{code}{262}, 
-		\hdclindex{340}{code}{263}, \hdclindex{389}{code}{311}, 
-		\hdclindex{487}{code}{402}, \hdclindex{536}{code}{449}
+		\hdclindex{277}{code}{201}, \hdclindex{294}{code}{217}, 
+		\hdclindex{305}{code}{228}, \hdclindex{324}{code}{247}, 
+		\hdclindex{329}{code}{252}, \hdclindex{330}{code}{253}, 
+		\hdclindex{335}{code}{258}, \hdclindex{336}{code}{259}, 
+		\hdclindex{337}{code}{260}, \hdclindex{338}{code}{261}, 
+		\hdclindex{339}{code}{262}, \hdclindex{340}{code}{263}, 
+		\hdclindex{389}{code}{311}, \hdclindex{487}{code}{402}, 
+		\hdclindex{536}{code}{449}
   \item \verb*+\ +\pfill \hdclindex{145}{code}{80}, 
 		\hdclindex{393}{code}{315}, \hdclindex{460}{code}{376}, 
 		\hdclindex{517}{code}{431}
