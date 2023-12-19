@@ -301,8 +301,8 @@
     amsfonts,
     amssymb,
     textcomp, % arcane LaTeX/NFSS system for subsetting encodings.  Needed for 
-    %Sigma.
-    metalogo, % for the XeTeX macro etc.
+    % Sigma.
+    metalogox, % for the XeTeX logo etc.
     wasysym,
     hyperref, 
     hyperxmp, % to embed XMP metadata in the PDF
@@ -516,7 +516,7 @@ backgroundcolor=yellow]{todonotes}
 \fancypagestyle{fancy-plus-DOI}{%
     \fancyhead{}
     \fancyhead[R]{}
-    \fancyfoot[L]{\copy\cclogobox\\ \tiny\textenglish{\@HSSAheaderfooterfont 
+    \fancyfoot[L]{\copy\cclogobox \tiny\textenglish{\@HSSAheaderfooterfont 
         \href{http://doi.org/\@DOI}{doi: \@DOI}}}
     \fancyfoot[C]{\textenglish{\@HSSAheaderfooterfont\@HSSAfooter}}
     \fancyfoot[R]{}
