@@ -516,7 +516,7 @@ backgroundcolor=yellow]{todonotes}
 \fancypagestyle{fancy-plus-DOI}{%
     \fancyhead{}
     \fancyhead[R]{}
-    \fancyfoot[L]{\copy\cclogobox \tiny\textenglish{\@HSSAheaderfooterfont 
+    \fancyfoot[L]{\copy\cclogobox \tiny\textenglish{\@HSSAheaderfooterfont \\
         \href{http://doi.org/\@DOI}{doi: \@DOI}}}
     \fancyfoot[C]{\textenglish{\@HSSAheaderfooterfont\@HSSAfooter}}
     \fancyfoot[R]{}
