@@ -1,5 +1,4 @@
-\xpginauxfiletrue 
-\selectlanguage *{latex}
+\selectlanguage *[]{latex}
 \contentsline {section}{\numberline {1}\texttt {hssa.cls}: HSSA class file, user documentation}{4}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Documentation for authors}{4}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Documentation for \LaTeX \ hackers converting incoming files to HSSA}{5}{subsection.1.2}%
@@ -90,4 +89,3 @@
 \contentsline {subsection}{\numberline {6.1}English-Sanskrit indexes}{36}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Commands for citing and indexing manuscripts}{37}{subsection.6.2}%
 \contentsline {section}{Index of macro definitions}{38}{subsection.6.2}%
-\xpginauxfilefalse 
