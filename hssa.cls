@@ -305,7 +305,8 @@
     metalogox, % for the XeTeX logo etc.
     wasysym,
     hyperref, 
-    hyperxmp, % to embed XMP metadata in the PDF
+    %hyperxmp, % to embed XMP metadata in the PDF;removed because too 
+    %%pernickety
     geometry,
     array,
     longtable,
@@ -1023,19 +1024,19 @@ Commons
     bookmarksopen=false,
     pdfpagescrop={39 62 554 759},
     % now hyperxmp settings:
-%    pdfauthor={\@HSSAauthorname},
-%    pdftitle={\@HSSAarticletitle},
-    pdfcopyright={\copyright\ The Author},
-%    pdfdoi={\@DOI },
-%    pdfurl={https://doi.org/\@DOI},
-    pdfissn={2369-775X},
-    pdflicenseurl={https://creativecommons.org/licenses/by-sa/4.0/},
-    pdfpublication={History of Science in South Asia},
-    pdfcaptionwriter={Dominik Wujastyk},
-    pdfurl={https://journals.library.ualberta.ca/hssa/},
-    pdfpublisher={University of Alberta Library},
-    pdfpubtype={journal},
-    pdfpubstatus={VoR}, % Version of Record
+%%    pdfauthor={\@HSSAauthorname},
+%%    pdftitle={\@HSSAarticletitle},
+%    pdfcopyright={\copyright\ The Author},
+%%    pdfdoi={\@DOI },
+%%    pdfurl={https://doi.org/\@DOI},
+%    pdfissn={2369-775X},
+%    pdflicenseurl={https://creativecommons.org/licenses/by-sa/4.0/},
+%    pdfpublication={History of Science in South Asia},
+%    pdfcaptionwriter={Dominik Wujastyk},
+%    pdfurl={https://journals.library.ualberta.ca/hssa/},
+%    pdfpublisher={University of Alberta Library},
+%    pdfpubtype={journal},
+%    pdfpubstatus={VoR}, % Version of Record
 }
 %    \end{macrocode}
 %  \end{macro}
