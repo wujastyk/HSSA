@@ -761,15 +761,16 @@ Commons
         \medskip
         
         The electronic versions were generated from sources marked up in  
-        \href{http://www.latex-project.org}{\LaTeX}{} in a computer running 
+        \href{http://www.latex-project.org}{\LaTeX}{} on a computer running 
         \textsc{gnu/linux} operating system. \textsc{pdf} was typeset 
         using \href{http://tug.org/xetex/}{\XeTeX}{} from
-        \href{http://tug.org/texlive/}{\TeX Live}.  
+        the most recent \href{http://tug.org/texlive/}{\TeX Live}.  
         The base font used for Latin script and oldstyle numerals  was
         \href{http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella}{\TeX{}
             Gyre Pagella}  developed by
         \href{http://www.gust.org.pl}{\textsc{gust}}, the Polish 
-        \TeX{} Users Group. 
+        \TeX{} Users Group. Devanāgarī and other Indic fonts are by 
+        Tiro Typeworks or Sanskrit 2003 from Omkarananda Ashram.
     \end{minipage}
     \endgroup
     
@@ -993,6 +994,10 @@ Commons
 
 % \subsection{PDF metadata}
 % Commented out because it interferes with other stuff.
+%
+% When the PDF-tagging project is mature
+% (\url{https://www.latex-project.org/news/2024/07/08/tagging/}), 
+% I will start using that.
 %    \begin{macrocode}
 %    \pdfstringdef{\@temppdftitle}{\@HSSAarticletitle}
 %    \pdfstringdef{\@temppdfauthor}{\@HSSAauthorname}
