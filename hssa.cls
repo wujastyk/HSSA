@@ -230,6 +230,9 @@
 % That's pretty much it.\\
 %  You might want to add \verb"\usepackage[figuresright]{rotating}" 
 % if you have some tables to go sideways.  
+% Then, instead of \verb|\begin{figure}| \verb|\end{figure}|, say
+% \verb|\begin{sidewaysfigure}| and \verb|\end{sidewaysfigure}|.
+% Similarly for \verb|{sidewaystable}|.
 %
 %\paragraph{Standard \LaTeX\ sectioning and similar commands}
 %
@@ -715,7 +718,7 @@ backgroundcolor=yellow]{todonotes}
             \item Clemency Montelle, University of Canterbury, 
                 Christchurch, New Zealand
             \item Fabrizio Speziale, School of Advanced Studies in the 
-                Social Sciences (EHSS), Paris, France
+                Social Sciences (EHESS), Paris, France
             \item Michio Yano, Kyoto Sangyo University, Kyoto, Japan
             \item Gudrun Bühnemann, University of Wisconsin-Madison, USA
             \item Anuj Misra, University of Copenhagen, Denmark            
