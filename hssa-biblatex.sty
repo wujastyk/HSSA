@@ -58,6 +58,15 @@ giveninits=false,
 maxbibnames=10]{biblatex}
 %    \end{macrocode}
 %
+% \subsubsection{Make the font of all bibliographies small}
+% \begin{macro}{\bibfont}
+%    \begin{macrocode}
+\renewcommand*{\bibfont}{\small}
+%%smaller font
+%    \end{macrocode}
+% \end{macro}    
+
+%
 % \subsection{Settings for oxyear}
 % \label{oxyear}
 %
@@ -124,11 +133,13 @@ mvreference]{useeditor=true,usetranslator=true}
 %    \end{macrocode}
 %
 % \subsection{csquotes}
+% \begin{macro}{csquotes}
 % The \verb|american| option with \verb|csquotes| gives double quotes 
 % in article titles in the bibliography.
 %    \begin{macrocode}
 \usepackage[style=american]{csquotes}
 %    \end{macrocode}
+% \end{macro}
 
 % \subsection{Tweak the citation style}
 % Remove the ``p.'' and ``pp." from, for example, \verb|\volcite| :
@@ -262,12 +273,41 @@ mvreference]{useeditor=true,usetranslator=true}
     {\bibhyperref{#1}}
     {\bibhyperlink{shorthand:\thefield{entrykey}}{#1}}}
 %    \end{macrocode}
+%
+% \subsection{More hyperlink magic}
+%
+% \begin{macro}{\citeyear, \citeauthor}
+% Normally, Bib\LaTeX's \verb|\citeyear| and \verb|\citeauthor| do not 
+% have hyperlinks, even if everything else does.  
+% Here's code from 
+%\href{https://tex.stackexchange.com/questions/83872/getting-hyperref-to-work-with-citeyear-and-citeyearpar-in-biblatex}{Stackexchange}
+% to add those hyperlinks:
+%    \begin{macrocode}
+\DeclareCiteCommand{\citeauthor}
+{\boolfalse{citetracker}%
+    \boolfalse{pagetracker}%
+    \usebibmacro{prenote}}
+{\ifciteindex
+    {\indexnames{labelname}}
+    {}%
+    \printtext[bibhyperref]{\printnames{labelname}}}
+{\multicitedelim}
+{\usebibmacro{postnote}}
+%
+\DeclareCiteCommand{\citeyear}
+{\usebibmacro{prenote}}
+{\bibhyperref{\printfield{year}}\bibhyperref{\printfield{extrayear}}}
+{\multicitedelim}
+{\usebibmacro{cite:postnote}}
+%
+%    \end{macrocode}
+% \end{macro}
 
-
-% Patch so that date-abbreviations aren't just one digit.
+% \subsection{Patch so that date-abbreviations aren't just one digit}
+% \begin{macro}{\bls@ox@compyear}
 % Kindly supplied by Alex Ball, 
 % \url{https://github.com/alex-ball/biblatex-oxref/issues/19}
-%    \begin{macrocode}
+%    \begin{macrocode}\
 \renewcommand{\blx@ox@compyear}[2]{%
     \def\num@one{#1}%
     \def\num@two{#2}%
@@ -288,6 +328,7 @@ mvreference]{useeditor=true,usetranslator=true}
         \StrGobbleLeft{0\num@two}{\Result}%
     }{\num@two}}
 %    \end{macrocode}
+% \end{macro}
 
 \endinput % TeX stops reading here. 
 
