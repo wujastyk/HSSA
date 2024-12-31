@@ -83,15 +83,12 @@ FakeStretch=1.08, % improves Sanskrit 2003
 %
 % \subsubsection{Greek font}
 %    \begin{macrocode}% Greek
-\newfontfamily\greekfont{Gentium Plus}[Script=Greek,
-    Mapping=tex-text,
+\newfontfamily\greekfont[Script=Greek,
+%    Mapping=tex-text,
+    AutoFakeBold=1.5,
     Scale=MatchUppercase]
-%     
-%{Old Standard}
-%{GFS Porson}
+{GFS Porson}
 %{GFS Didot}
-%{Galatia SIL}
-%{Linux Libertine O}
 %    \end{macrocode}
 % See 
 %\href{https://tex.stackexchange.com/questions/127222/fonts-for-polytonic-greek}{Stackexchange
