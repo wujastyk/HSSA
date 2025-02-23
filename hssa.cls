@@ -629,7 +629,12 @@ backgroundcolor=yellow]{todonotes}
 
 %  \subsection{The content of the cover page}
 %\begin{macro}{\coverpage}
+% This begins by defining a conditional \verb|\IssueCover| that
+% is true if we are making just a generic annual Issue cover,
+% but false if we are making an individual article cover.
 %    \begin{macrocode}
+\newif\ifIssueCover 
+\IssueCoverfalse % default to individual article cover    
 \long\def\coverpage{%
     \thispagestyle{empty}
     \begingroup
@@ -657,6 +662,10 @@ backgroundcolor=yellow]{todonotes}
     \par
     \vfill
     \par
+    \ifIssueCover
+   % Text here for issue cover, in \issuecovertext
+    \issuecovertext
+    \else
     \begin{minipage}{\linewidth} % Here's the main title and author and affiliation
         \raggedright
         \LARGE
@@ -669,6 +678,7 @@ backgroundcolor=yellow]{todonotes}
         \emph{\@HSSAauthoraddress}
         \par\vspace*{10mm}
     \end{minipage}
+    \fi % end IssueCover false
     \par
     \vfill
     \par
@@ -676,7 +686,12 @@ backgroundcolor=yellow]{todonotes}
     \begin{minipage}{1.1\linewidth}
         \rule{\linewidth}{.1pt}
         \footnotesize 
+            \ifIssueCover
+            \else
         {\tiny MLA} style citation form:  \thecovercitation \\[3pt]
+            \fi
+        ISSN:  {\def\@urlcolor{Maroon!20}
+        \href{https://portal.issn.org/resource/ISSN/2369-775X}{2369-775X}}\\[3pt]
         Online version available at: {\def\@urlcolor{Maroon!20}%
             \href{http://hssa-journal.org}{http://hssa-journal.org}}
     \end{minipage}
