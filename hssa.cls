@@ -1075,13 +1075,15 @@ Commons
 \newenvironment{sloka} % tweaked from verse
 {\let\\\@centercr
     \parindent 1em
-    \leavevmode \hskip-.03em
+    \leavevmode 
+    \indent
+    \hskip-.04em
     %    \rightmargin \leftmargin
     %    \advance \leftmargin 10em
     %   \advance\leftskip 2em
     %    \advance\rightskip 2em
     %\narrower 
-}
+    }
 {\relax }
 %    \end{macrocode}
 %	\end{environment}
