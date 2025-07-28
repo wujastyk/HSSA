@@ -1,4 +1,10 @@
 \RequirePackage{snapshot}
+% This is the template file for articles to appear in the journal HSSA (hssa-journal.org).
+% The class and style files mentioned below are maintained at 
+% https://github.com/wujastyk/HSSA
+% where they are publicly available. There is also simple documentation available 
+% there for journal authors and for typesetters. 
+% -- Dominik Wujastyk, 2021-01-01
 \documentclass{hssa}
 \usepackage{hssa,
     hssa-reledmac,
@@ -11,13 +17,14 @@
 \HSSAarticletitle{The Title}
 \HSSAauthorname{The Author}
 \HSSAauthoraddress{University of University}
-\firstpage{88}
-\lastpage{99}
-\DOI{assigned by editor} 
+\HSSAfirstpage{88}
+\HSSAlastpage{99}
+\DOI{to be assigned} 
 
 % \usepackage[figuresright]{rotating} % for rotating figures sometimes
 
 \begin{document}
+    \input{sanskrit-hyphenations}
    %\renewcommand{\q}[1]{\relax }
     
     \MSnocite{Pune BORI 220 of 1882--83}
