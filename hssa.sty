@@ -41,7 +41,6 @@
 % \subsubsection{\TeX\ Gyre Pagella, the default roman font for HSSA}
 %    \begin{macrocode}
 \setmainfont[Ligatures=TeX,
-  Mapping=tex-text,
   Numbers=OldStyle]{TeX Gyre Pagella}
 %\setmainfont[Scale=1.05]{Alegreya} % quite nice; superscripts not smaller
 %\setmainfont{Libertinus Serif} % looks good; does math
@@ -54,7 +53,8 @@
   FakeStretch=1.08, % improves Sanskrit 2003
   AutoFakeBold=1.5,
   ]
-{Sanskrit 2003} 
+{Sanskrit 2020} 
+% {Sanskrit 2003} % Now superseded by 2020
  %  {Murty Sanskrit}
 \let\dn\sanskritfont %for legacy Velthuis-encoded documents
 %    \end{macrocode}
@@ -67,7 +67,7 @@ FakeStretch=1.08, % improves Sanskrit 2003
  AutoFakeBold=2.5,
 ]
 %  {Murty Sanskrit}
-{Sanskrit 2003} 
+{Sanskrit 2020} 
 \newcommand{\dev}[1]{{\devanagarifont#1}}
 %\newcommand{\dev}[1]{\textdevanagari{#1}}
 \newcommand{\largesloka}[1]{{\raggedright \devanagarifont\large #1\par}}
@@ -75,7 +75,9 @@ FakeStretch=1.08, % improves Sanskrit 2003
 %
 % \subsubsection{Chinese}
 %    \begin{macrocode}
-\newfontfamily\cjk[Script=CJK,Mapping=tex-text,Scale=MatchLowercase]
+\newfontfamily\cjk[Script=CJK,
+    Ligatures=TeX,
+    Scale=MatchLowercase]
 %{IPAexMincho} % missing 說
 %{TakaoPGothic}
 {Yu Mincho}
@@ -93,7 +95,7 @@ Scale=MatchLowercase]
 % \subsubsection{Greek font}
 %    \begin{macrocode}% Greek
 \newfontfamily\greekfont[Script=Greek,
-%    Mapping=tex-text,
+%    Ligatures=TeX,
     AutoFakeBold=1.5,
     Scale=MatchUppercase]
 {GFS Porson}
@@ -115,11 +117,26 @@ Scale=MatchLowercase]
 % \end{macro}
 
 % \subsection{Math mode with Unicode fonts}
-
+%
+% \begin{macro}{unicode-math}
+% Load the \verb|unicode-math| package and use the Asana font (which is 
+% a type of Palatino).  
+% An alternative would be to
+% use the \verb|mathspec| package which can use the 
+% TeX Gyre Pagella Math, providing a slightly more uniform font
+% situation for HSSA documents.  See the mathspec manual, section 2, 
+% for discussion.
+%
+% The code would then look like this:\\
+% \verb|\Requirepackage[math]{mathspec}|
+% \verb|\setmathfont(Digits,Latin,Greek)[Numbers={Lining,Proportional}]|
+% \verb|{TeX Gyre Pagella Math}|
 %    \begin{macrocode}
-\usepackage{unicode-math} % must load after amsmath; see manual ch. 3
+\RequirePackage{unicode-math} % must load after amsmath; see manual ch. 3
 %\setmathfont{texgyrepagella-math.otf} % doesn't have old style numerals.
 \setmathfont{Asana Math}[Numbers=OldStyle]
 %    \end{macrocode}
+% \end{macro}
+
 
 \endinput

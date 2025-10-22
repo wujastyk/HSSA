@@ -140,18 +140,18 @@
 % and English-Sanskrit.
 %
 %\DescribeMacro{\ssaneng}
-% \verb"\ssaneng" is a silent version of the same macro that writes the index entries but
-% puts nothing in the main text.
+% \verb"\ssaneng" is a silent version of the same macro that writes 
+% the index entries but puts nothing in the main text.
 %
 %\subsubsection{Language-switching}
 %\DescribeMacro{\textgreek}
 %\DescribeMacro{\textenglish}
 %\DescribeMacro{\textsanskrit}
 % See the documentation for
-% \href{https://ctan.org/pkg/polyglossia?lang=en}{Polyglossia} for details of how 
-% these are used.
-% These macros switch to the respective languages and scripts (e.g., Devanagari for
-% \verb"\textsanskrit{}").
+% \href{https://ctan.org/pkg/polyglossia?lang=en}{Polyglossia} 
+% for details of how these are used.
+% These macros switch to the respective languages and 
+% scripts (e.g., Devanagari for \verb"\textsanskrit{}").
 %
 % \DescribeMacro{\dev}
 %  \verb"\dev" is just an abbreviation for the \verb"\textsanskrit" macro.
@@ -297,7 +297,7 @@
 %  \begin{macro}{\RequirePackage}
 % Here come the packages that HSSA assumes are present.
 %    \begin{macrocode}
-\usepackage{hssa-indexing} % has to be loaded before hyperref
+\RequirePackage{hssa-indexing} % has to be loaded before hyperref
 \RequirePackage{ %
     graphicx,
     amsmath,
@@ -327,17 +327,16 @@
 % Settings for the \verb"xcolor" package
 %    \begin{macrocode}
 \RequirePackage[xetex,
-    dvipdfmx,
     svgnames,
     table]
     {xcolor}
 %    \end{macrocode}
-%  \end{macro}%\font\largefont = cmr10 scaled \magstep5   
+%  \end{macro} 
 %
 %  \begin{macro}{enumitem}
 % To control the spacing around itemized lists.
 %    \begin{macrocode}
-\usepackage{enumitem} 		% supersedes mdwlist: does it globally
+\RequirePackage{enumitem} 		% supersedes mdwlist: does it globally
 \setlist{noitemsep,
     %labelindent=\parindent,
     %leftmargin=*,
@@ -355,7 +354,7 @@
 % to help the author with an indexed list to the marginal notes.
 %    \begin{macrocode}
 \setlength{\marginparwidth}{2cm} %todonotes manual, section 1.6.5
-\usepackage[colorinlistoftodos,
+\RequirePackage[colorinlistoftodos,
 %    disable,
 %textsize=small,
 loadshadowlibrary,
@@ -389,7 +388,7 @@ backgroundcolor=yellow]{todonotes}
 % \subsection{Set the geometry for the pages}
 %\begin{macro}{geometry}
 % Set the geometry for the pages
-%DW 
+% DW 
 %    \begin{macrocode}
  \geometry{twoside,
   paperwidth=210mm,
@@ -541,11 +540,17 @@ backgroundcolor=yellow]{todonotes}
 %  \subsection{Output the preliminary matter}
 % These commands depend on \verb|hyperref|, but that is always loaded
 % so there's no need to check.
+%
+% Make it easy to switch the cover and final pages on and off
+% using \verb|HSSAproduction[true|false]|
 %\begin{macro}{\AtBeginDocument}
 %    \begin{macrocode}
+\newif\ifHSSAproduction \HSSAproductiontrue
 \AtBeginDocument{%
-    \coverpage
-    \copyrightspage
+    \ifHSSAproduction
+        \coverpage
+        \copyrightspage
+    \fi    
     %
     \setcounter{page}{0}
     \maketitle
@@ -572,8 +577,10 @@ backgroundcolor=yellow]{todonotes}
 %\begin{macro}{\AtEndDocument}
 %    \begin{macrocode}
 \AtEndDocument{%
-    \newpage
-    \coverlastpage 
+    \ifHSSAproduction
+        \newpage
+        \coverlastpage 
+    \fi
 }
 %    \end{macrocode}
 %\end{macro}
@@ -764,31 +771,31 @@ backgroundcolor=yellow]{todonotes}
         
         \medskip
         
-        This journal provides immediate open access to its content on the
-        principle that making research freely available to the public supports
-        a greater global exchange of knowledge.
+        This journal charges no fees to authors and provides immediate
+open access to its content on the principle that making
+research freely available supports a greater
+global exchange of knowledge ("Diamond OS").
         
         \medskip
         
-        Copyrights of all the articles rest with the respective authors and
-        published under the provisions of
+        Copyright of all the articles rest with the respective authors. Articles are
+        published under the provisions of the
         \href{http://www.creativecommons.org/licenses/by-sa/4.0/}{Creative 
 Commons 
-            Attribution-ShareAlike 4.0} License.
+            Attribution-ShareAlike 4.0} license.
         
         \medskip
         
-        The electronic versions were generated from sources marked up in  
-        \href{http://www.latex-project.org}{\LaTeX}{} on a computer running 
-        \textsc{gnu/linux} operating system. \textsc{pdf} was typeset 
-        using \href{http://tug.org/xetex/}{\XeTeX}{} from
-        the most recent \href{http://tug.org/texlive/}{\TeX Live}.  
-        The base font used for Latin script and oldstyle numerals  was
-        \href{http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella}{\TeX{}
-            Gyre Pagella}  developed by
-        \href{http://www.gust.org.pl}{\textsc{gust}}, the Polish 
-        \TeX{} Users Group. Devanāgarī and other Indic fonts are by 
-        Tiro Typeworks or Sanskrit 2003 from Omkarananda Ashram.
+        The electronic versions were generated from sources marked up
+in \href{http://www.latex-project.org}{\LaTeX}{} on a computer
+running \textsc{gnu/linux} operating system. \textsc{pdf} was
+typeset using \href{http://tug.org/xetex/}{\XeTeX}{} from the
+most recent \href{http://tug.org/texlive/}{\TeX Live}. The
+base font used for Latin script and oldstyle numerals  was
+\href{http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella}{\TeX{} Gyre 
+Pagella}  developed by \href{http://www.gust.org.pl}{\textsc{gust}}, the Polish 
+\TeX{} Users Group. Devanāgarī and other Indic fonts are by Tiro Typeworks or 
+Sanskrit 2003 and 2020 from Omkarananda Ashram.
     \end{minipage}
     \endgroup
     
@@ -829,22 +836,30 @@ Commons
 %\end{macro}
 
 %  \subsection{Tweak captions $\rightarrow$ footnotesize}
-%\begin{macro}{\@makecaption}
+%
+% [2025] The raw LaTeX code tweaks have been replaced by
+% settings in the caption package (on the advice of chatGPT :-)
+%\begin{macro}{\caption}
 %    \begin{macrocode}
-% originally for Speziale
-\long\def\@makecaption#1#2{%
-    \vskip\abovecaptionskip
-    \footnotesize % added footnotesize
-    \sbox\@tempboxa{#1: #2}%
-    \ifdim \wd\@tempboxa >\hsize
-    #1: #2\par
-    \else
-    \global \@minipagefalse
-    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
-    \fi
-    \vskip\belowcaptionskip}
+\RequirePackage[font=footnotesize]{caption}
 %    \end{macrocode}
-%\end{macro}
+%\end{macro}    
+%%\begin{macro}{\@makecaption}
+%%    \begin{macrocode}
+%% originally for Speziale
+%%\long\def\@makecaption#1#2{%
+%%    \vskip\abovecaptionskip
+%%    \footnotesize % added footnotesize
+%%    \sbox\@tempboxa{#1: #2}%
+%%    \ifdim \wd\@tempboxa >\hsize
+%%    #1: #2\par
+%%    \else
+%%    \global \@minipagefalse
+%%    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+%%    \fi
+%%    \vskip\belowcaptionskip}
+%%    \end{macrocode}
+%%\end{macro}
 
 %  \subsection{Page layout dimensions}
 % %DW can this be superseded by the geometry package?
@@ -853,12 +868,8 @@ Commons
 \renewcommand\topfraction{1}
 \renewcommand\bottomfraction{.8}
 \renewcommand\textfraction{0}
-\renewcommand\floatpagefraction{.8}    % 0.95 better ????
 \renewcommand\dbltopfraction{1}
 \renewcommand\dblfloatpagefraction{.8}
-\renewcommand\topfraction{1}
-\renewcommand\bottomfraction{.8}
-\renewcommand\textfraction{0.1}
 \renewcommand\floatpagefraction{0.95}  % was 0.8 changed 1
 %    \end{macrocode}
 %\end{macro}
@@ -866,6 +877,7 @@ Commons
 
 
 % \subsection{Misc layout settings}
+%
 %    \begin{macrocode}
 \lefthyphenmin=3
 \righthyphenmin=3

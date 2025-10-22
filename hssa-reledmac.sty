@@ -5,7 +5,8 @@
 % With help from \href{https://doi.org/10.5281/zenodo.6471660}{EDMAC} and 
 %\href{https://tex.stackexchange.com/questions/134937/split-latex-footnotes-into-two-columns}{Stackexchange}.
 %    \begin{macrocode}
-\usepackage[nocritical,
+\usepackage[
+    %nocritical,
     noend,
     %noeledsec,
     %noledgroup,
@@ -14,7 +15,8 @@
 %\let\footnoteruleA=\relax % do we want a footnoterule?
 \def\thempfootnote{{\itshape\@alph\c@mpfootnote}} % from latex.ltx
 \arrangementX[A]{twocol}
-\arrangementX[B]{twocol} % for occasional use in the \verb|miniedition| environment
+\arrangementX[B]{twocol} % for occasional use in the \verb|miniedition| 
+%environment
 \colalignX{\relax } % looks better.  But should we optimize narrow columns 
 %by going  \verb"\raggedright"?
 \beforenotesX{2em plus 1.5em minus 1.5em} % spacing above notes
@@ -31,7 +33,10 @@
 %
 %    \begin{macrocode}
 \let\originalfootnote=\footnote % store this for use in minipages
-\def\@minipagerestore{\let\footnote\originalfootnote} % restore standard \footnote
+\def\@minipagerestore{\let\footnote\originalfootnote
+    \let\var\originalfootnote} % restore standard 
+% \footnote inside minipages and miniedition environment, and 
+% create the shorthand \verb|\variant|
 % Now change \verb"\footnote" to the reledmac version:
 \let\footnote=\footnoteA
 %    \end{macrocode}

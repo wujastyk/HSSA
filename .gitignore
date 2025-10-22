@@ -22,3 +22,6 @@ template_HSSA.bbl
 template_HSSA.dep
 template_HSSA.synctex.gz
 
+*.ilg
+*.toc
+*.ilg

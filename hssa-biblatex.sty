@@ -142,6 +142,7 @@ mvreference]{useeditor=true,usetranslator=true}
 % \end{macro}
 
 % \subsection{Tweak the citation style}
+% \begin{macro}{strings}
 % Remove the ``p.'' and ``pp." from, for example, \verb|\volcite| :
 %    \begin{macrocode}
 \DefineBibliographyStrings{english}{%
@@ -151,6 +152,14 @@ mvreference]{useeditor=true,usetranslator=true}
     volumes = {vols},
 } 
 %    \end{macrocode}
+% Now a special command for the oxref oxyear style, to get 
+% "5 vols" instead of "v".  See discussion with Alex Ball
+% at \url{https://github.com/alex-ball/biblatex-oxref/issues/23}.
+%    \begin{macrocode}
+\renewcommand*{\mkvolroman}[1]{#1\addspace \bibsstring{volumes}}
+% to get "5 vols" in the bibliography
+%    \end{macrocode}
+% \end{macro}
 
 
 % \subsection{Unused code}
@@ -307,7 +316,7 @@ mvreference]{useeditor=true,usetranslator=true}
 % \begin{macro}{\bls@ox@compyear}
 % Kindly supplied by Alex Ball, 
 % \url{https://github.com/alex-ball/biblatex-oxref/issues/19}
-%    \begin{macrocode}\
+%    \begin{macrocode}
 \renewcommand{\blx@ox@compyear}[2]{%
     \def\num@one{#1}%
     \def\num@two{#2}%
