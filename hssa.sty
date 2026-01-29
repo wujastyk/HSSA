@@ -35,7 +35,7 @@
 %\setotherlanguage{japanese} % still experimental in Polyglossia
 \setotherlanguage{greek}
 \setotherlanguage{sanskrit}
-\setotherlanguage{arabic}
+%\setotherlanguage{arabic}
 %    \end{macrocode}
 %
 % \subsubsection{\TeX\ Gyre Pagella, the default roman font for HSSA}
@@ -62,11 +62,12 @@
 % \subsubsection{Sanskrit input in IAST script, output in Devanagari}
 %    \begin{macrocode}% Sanskrit input in IAST
 \newfontfamily\devanagarifont[Script=Devanagari,
+Language=Sanskrit,
 Mapping=RomDev,
 FakeStretch=1.08, % improves Sanskrit 2003
- AutoFakeBold=2.5,
+AutoFakeBold=1,
 ]
-%  {Murty Sanskrit}
+%{Tiro Devanagari Sanskrit} %autofakebold 2.0
 {Sanskrit 2020} 
 \newcommand{\dev}[1]{{\devanagarifont#1}}
 %\newcommand{\dev}[1]{\textdevanagari{#1}}
@@ -86,9 +87,9 @@ FakeStretch=1.08, % improves Sanskrit 2003
 %
 % \subsubsection{Arabic}
 %    \begin{macrocode}
-\newfontfamily\arabicfont[Script=Arabic,
-Scale=MatchLowercase]
-{Noto Naskh Arabic}
+%\newfontfamily\arabicfont[Script=Arabic,
+%Scale=MatchLowercase]
+%{Noto Naskh Arabic}
 %
 %    \end{macrocode}
 %

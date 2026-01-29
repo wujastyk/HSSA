@@ -495,11 +495,13 @@ backgroundcolor=yellow]{todonotes}
 %    \end{macrocode}
 %
 % \subsection{Fancy headers and footers}
-% Now the fancy header setup, which should be done after the geometry setup.
+%
+% Now the fancy header setup, which should be done after the 
+% geometry setup.
 %    \begin{macrocode}
 %\usepackage{fancyhdr} % after the geometry setup
 \pagestyle{fancy}
-\fancyhead{}
+\fancyhead{\empty }
 \fancyhead[CO]{\textenglish{\@HSSAheaderfooterfont\MakeTextLowercase{\@HSSArecto}}}
 \fancyhead[CE]{\textenglish{\@HSSAheaderfooterfont\MakeTextLowercase{\@HSSAverso}}}
 \fancyhead[RO]{\textenglish{\@HSSAheaderfooterfont\thepage}}
