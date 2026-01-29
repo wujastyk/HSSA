@@ -55,7 +55,11 @@ urldate=short,
 useprefix=true,
 %refsection=section,
 giveninits=false,
-maxbibnames=10]{biblatex}
+%maxcitenames=3, % before “et al.”  
+%mincitenames=2,
+%maxbibnames=10
+]
+{biblatex}
 %    \end{macrocode}
 %
 % \subsubsection{Make the font of all bibliographies small}
@@ -80,7 +84,12 @@ incollection,
 inreference,
 collection,
 reference,
-mvreference]{useeditor=true,usetranslator=true}
+mvreference,
+maxcitenames=3,
+mincitenames=1,
+maxbibnames=10,
+minbibnames=9]
+{useeditor=true,usetranslator=true}
 %    \end{macrocode}
 %    \begin{macrocode}
 \AtBeginDocument{\assignrefcontextentries[]{*}}  
