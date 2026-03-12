@@ -403,6 +403,17 @@ backgroundcolor=yellow]{todonotes}
  }
 %    \end{macrocode}
 %\end{macro}
+% \begin{macro}{ifReview}
+% Set up a condition to deal with the different page numbering
+% of Review articles (they have a prefixed "r").
+% The conditional
+% is set to false generally, but true in the header of a review's \TeX\ file.
+%
+%    \begin{macrocode}
+\newif\ifReview \Reviewfalse
+%    \end{macrocode}
+% \end{macro}
+%
 
 % 	\subsection{Front matter}
 %
@@ -487,11 +498,19 @@ backgroundcolor=yellow]{todonotes}
 %\end{macro}
 %
 %\begin{macro}{\HSSAfooter}
-% Use the \verb"\MakeTextLowercase" macro from the \verb"textcase" package 
-%and construct the running footer for each page.
+% Use the \verb"\MakeTextLowercase" macro from the 
+% \verb"textcase" package 
+% and construct the running footer for each page.
+%
+% Review articles have slightly different page numbering
 %    \begin{macrocode}
 \HSSAfooter{\MakeTextLowercase{\@HSSAtitle}\ \@HSSAissuenum\ 
-    (\@HSSAissuedate) \thefirstpage--\thelastpage}
+    (\@HSSAissuedate) 
+    \ifReview
+    \textsc{r}\thefirstpage--\textsc{r}\thelastpage 
+    \else 
+    \thefirstpage--\thelastpage 
+    \fi}
 %    \end{macrocode}
 %
 % \subsection{Fancy headers and footers}
@@ -504,8 +523,15 @@ backgroundcolor=yellow]{todonotes}
 \fancyhead{\empty }
 \fancyhead[CO]{\textenglish{\@HSSAheaderfooterfont\MakeTextLowercase{\@HSSArecto}}}
 \fancyhead[CE]{\textenglish{\@HSSAheaderfooterfont\MakeTextLowercase{\@HSSAverso}}}
-\fancyhead[RO]{\textenglish{\@HSSAheaderfooterfont\thepage}}
-\fancyhead[LE]{\textenglish{\@HSSAheaderfooterfont\thepage}}
+% prefix 'r' to page numbers in Reviews
+  \fancyhead[RO]{\textenglish{\@HSSAheaderfooterfont 
+          \ifReview \textsc{r}\thepage 
+          \else \thepage 
+          \fi}}
+  \fancyhead[LE]{\textenglish{\@HSSAheaderfooterfont 
+          \ifReview \textsc{r}\thepage 
+          \else \thepage
+          \fi}}
 \fancyfoot[L]{}
 \fancyfoot[C]{\textenglish{\@HSSAheaderfooterfont\@HSSAfooter}}
 \fancyfoot[R]{}
@@ -601,7 +627,7 @@ backgroundcolor=yellow]{todonotes}
 }
 %    \end{macrocode}
 %\end{macro}
-
+%
 %\begin{macro}{Last page}
 % Define the last page number and set it to 100
 %
@@ -610,7 +636,7 @@ backgroundcolor=yellow]{todonotes}
 \LastPage{100}
 %    \end{macrocode}
 %\end{macro}
-
+%
 %  \subsection{Set up the alignment and fonts of title and author names}
 %\begin{macro}{\aufont,\titlefont,\footerfont,\footeraddress}
 %    \begin{macrocode}
@@ -950,13 +976,18 @@ Sanskrit 2003 and 2020 from Omkarananda Ashram.
 % Say \verb"\DOI{xxx}", and then later \verb"\printDOI" where you want it printed.
 %
 %	\begin{macro}{\covercitation}
-% Gather the required information for the MLA cover citation and format it for output
+% Gather the required information for the MLA cover citation and format it for 
+%output. 
 %    \begin{macrocode}
 \def\covercitation#1{\gdef\thecovercitation{#1}}
 %
 \covercitation{\@HSSAauthorname.  “\@HSSAarticletitle.” 
     \emph{\@HSSAtitle}, \@HSSAissuenum\ (\@HSSAissuedate): 
-    \thefirstpage--\thelastpage. \printDOI }
+    \ifReview
+      \textsc{r}\thefirstpage--\textsc{r}\thelastpage 
+    \else 
+    \thefirstpage--\thelastpage 
+    \fi. \printDOI }
 %/DW
 %    \end{macrocode}
 %    \end{macro}
