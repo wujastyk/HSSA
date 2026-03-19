@@ -81,7 +81,8 @@ AutoFakeBold=1,
     Scale=MatchLowercase]
 %{IPAexMincho} % missing 說
 %{TakaoPGothic}
-{Yu Mincho}
+%{Noto Serif CJK JP}
+{Yu Mincho} % Make sure this font is installed.
 %
 %    \end{macrocode}
 %
@@ -110,9 +111,9 @@ AutoFakeBold=1,
 % \subsection{Local generic author-facing macros}
 % \begin{macro}{\bce, \ce, \BCE, \CE}
 %    \begin{macrocode}
-\def\bce{\textsc{bce}} % I took out the final \xspace 
+\DeclareRobustCommand\bce{\textsc{bce}} % I took out the final \xspace 
 									   % because it's behaviour is hard to predict - DW
-\def\ce{\textsc{ce}} % ditto.
+\DeclareRobustCommand\ce{\textsc{ce}} % ditto.
 \let\BC\bce \let\BCE\bce \let\AD\ce \let\CE\ce
 %    \end{macrocode}
 % \end{macro}
@@ -135,7 +136,8 @@ AutoFakeBold=1,
 %    \begin{macrocode}
 \RequirePackage{unicode-math} % must load after amsmath; see manual ch. 3
 %\setmathfont{texgyrepagella-math.otf} % doesn't have old style numerals.
-\setmathfont{Asana Math}[Numbers=OldStyle]
+%\setmathfont{Asana Math}[Numbers=OldStyle] % works well
+\setmathfont[range=\mathup/{latin,Greek}]{TeX Gyre Pagella Math}
 %    \end{macrocode}
 % \end{macro}
 

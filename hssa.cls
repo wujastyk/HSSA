@@ -326,8 +326,7 @@
 %  \begin{macro}{xcolor}
 % Settings for the \verb"xcolor" package
 %    \begin{macrocode}
-\RequirePackage[xetex,
-    svgnames,
+\RequirePackage[svgnames,
     table]
     {xcolor}
 %    \end{macrocode}
@@ -633,7 +632,7 @@ backgroundcolor=yellow]{todonotes}
 %
 %    \begin{macrocode}
 \def\LastPage#1{\gdef\@LastPage{#1}}
-\LastPage{100}
+\LastPage{\empty}
 %    \end{macrocode}
 %\end{macro}
 %
@@ -1091,6 +1090,7 @@ Sanskrit 2003 and 2020 from Omkarananda Ashram.
 \hypersetup{colorlinks=true, 
     bookmarksopen=false,
     pdfpagescrop={39 62 554 759},
+    pdfdisplaydoctitle=true, % Required for PDF/UA
     % now hyperxmp settings:
 %%    pdfauthor={\@HSSAauthorname},
 %%    pdftitle={\@HSSAarticletitle},
