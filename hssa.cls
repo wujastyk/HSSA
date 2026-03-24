@@ -938,14 +938,14 @@ Sanskrit 2003 and 2020 from Omkarananda Ashram.
 % \begin{macro}{\HSSAarticletitle}
 % Provide user command \verb"\HSSAarticletitle"
 %    \begin{macrocode}
-\def\HSSAarticletitle#1{\gdef\@HSSAarticletitle{#1}\hypersetup{pdftitle=#1}}
+\def\HSSAarticletitle#1{\gdef\@HSSAarticletitle{#1}\hypersetup{pdftitle={#1}}}
 \HSSAarticletitle{My Life}
 %    \end{macrocode}
 % \end{macro}
 %
 % Provide user command \verb"\HSSAauthorname"
 %    \begin{macrocode}
-\def\HSSAauthorname#1{\gdef\@HSSAauthorname{#1}\hypersetup{pdfauthor=#1}}
+\def\HSSAauthorname#1{\gdef\@HSSAauthorname{#1}\hypersetup{pdfauthor={#1}}}
 \HSSAauthorname{Joe Bloggs}
 %    \end{macrocode}
 %
