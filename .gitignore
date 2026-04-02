@@ -28,3 +28,6 @@ template_HSSA.synctex.gz
 *.idx
 *.idx
 *.idx
+*.un~
+*.cls~
+*.cls~~
