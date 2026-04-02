@@ -31,37 +31,64 @@
 %
 % \subsubsection{British English, Greek, Sanskrit}
 %    \begin{macrocode}
+\ifLuaTeX
+\else % XeLaTeX with Polyglossia
 \setdefaultlanguage[variant=british]{english}
 %\setotherlanguage{japanese} % still experimental in Polyglossia
 \setotherlanguage{greek}
 \setotherlanguage{sanskrit}
 %\setotherlanguage{arabic}
+\fi % xetex/luatex
 %    \end{macrocode}
 %
 % \subsubsection{\TeX\ Gyre Pagella, the default roman font for HSSA}
 %    \begin{macrocode}
+\ifLuaTeX
+\else % XeLaTeX with Polyglossia
 \setmainfont[Ligatures=TeX,
   Numbers=OldStyle]{TeX Gyre Pagella}
+\fi
 %\setmainfont[Scale=1.05]{Alegreya} % quite nice; superscripts not smaller
 %\setmainfont{Libertinus Serif} % looks good; does math
 %    \end{macrocode}
 %
 % \subsubsection{Sanskrit input in Devanagari script}
 %    \begin{macrocode}
-\newfontfamily\sanskritfont[Script=Devanagari,
+\ifLuaTeX
+% Define the fonts
+% The [*devanagari] modifier tells babel to automatically switch to this 
+% font whenever the Sanskrit language is invoked. 
+% Crucially for LuaLaTeX, Harfbuzz must be explicitly called here.
+\babelfont{rm}{TeX Gyre Pagella} % e.g., GFS Didot or Times
+\babelfont[*devanagari]{rm}[Renderer=Harfbuzz, 
+   Script=Devanagari]
+  {Sanskrit 2020} % e.g., Murty Sanskrit
+%
+% Author-facing macros
+% For inline Devanagari text
+\newcommand{\textsanskrit}[1]{\foreignlanguage{sanskrit}{#1}}
+\newcommand{\san}[1]{\textsanskrit{#1}} % convenient shorthand
+\newcommand{\dev}[1]{\textsanskrit{#1}} % convenient shorthand
+%
+%
+\else % XeTeX up to the \verb|\fi| at about line 120
+\newfontfamily\sanskritfont[Renderer=Harfbuzz,
+  Script=Devanagari,
   %Mapping=RomDev,
   FakeStretch=1.08, % improves Sanskrit 2003
   AutoFakeBold=1.5,
   ]
-{Sanskrit 2020} 
+{Sanskrit 2020}
 % {Sanskrit 2003} % Now superseded by 2020
- %  {Murty Sanskrit}
+%  {Murty Sanskrit}
+%
 \let\dn\sanskritfont %for legacy Velthuis-encoded documents
 %    \end{macrocode}
 %
 % \subsubsection{Sanskrit input in IAST script, output in Devanagari}
 %    \begin{macrocode}% Sanskrit input in IAST
-\newfontfamily\devanagarifont[Script=Devanagari,
+\newfontfamily\devanagarifont[Renderer=Harfbuzz,
+Script=Devanagari,
 Language=Sanskrit,
 Mapping=RomDev,
 FakeStretch=1.08, % improves Sanskrit 2003
@@ -102,6 +129,7 @@ AutoFakeBold=1,
     Scale=MatchUppercase]
 {GFS Porson}
 %{GFS Didot}
+\fi % end of xetex/luatex else
 %    \end{macrocode}
 % See 
 %\href{https://tex.stackexchange.com/questions/127222/fonts-for-polytonic-greek}{Stackexchange

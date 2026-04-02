@@ -5,6 +5,7 @@
 % Now (2023) see the package \verb|indextools| by Maïeule Rouquette 
 % (\url{https://github.com/maieul/indextools}) that patches \verb|imakeidx|
 % to work with \verb|bidi|.
+%
 %    \begin{macrocode}
 % \usepackage[xindy,nonewpage]{imakeidx}  % imakeidx deprecated since 
 % indextools
@@ -19,6 +20,20 @@
 % \section{Indexes}
 %  \begin{macro}{lexical}
 %    \begin{macrocode}
+\ifLuaTeX
+\makeindex[name=lexical,
+title=Lexical Index,
+program=texindy,
+options =--input-markup lualatex -M iast.xdy -L general]
+%
+\makeindex[name=manuscripts,
+title=Index of Manuscripts,
+program=texindy,
+options =--input-markup lualatex -M iast.xdy -L general,
+%options = --input-markup xelatex -M de-accent
+columns=2]
+%
+\else
 \makeindex[name=lexical,
 title=Lexical Index,
 program=texindy,
@@ -32,7 +47,8 @@ program=texindy,
 options =--input-markup xelatex -M iast.xdy -L general,
 %options = --input-markup xelatex -M de-accent
 columns=2]
-
+\fi  % end of xelatex/lualatex check
+%
 \indexsetup{level=\section*,
     noclearpage,
     firstpagestyle=fancy

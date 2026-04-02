@@ -313,15 +313,34 @@
     geometry,
     array,
     longtable,
-    polyglossia,  % polyglossia calls fontspec
     multicol,
     booktabs, % better table spacing, \toprule etc.
     textcase, % to get \MakeTextLowercase for tweaking the running footer
     fancyhdr,
-    hssa-biblatex, % bibliography management and formatting
 }
+\ifLuaTeX
+% 1. Load babel with English as the main language
+\usepackage[sanskrit,english]{babel}
+% 2. Provide Sanskrit and enable the IAST transliteration engine;
+\babelprovide[transforms=transliteration.iast]{sanskrit}
+\else
+\usepackage{polyglossia}   % polyglossia calls fontspec
+\fi
+%
+% Load biblatex after polyglossia:
+\usepackage{hssa-biblatex} % bibliography management and formatting
 %    \end{macrocode}
 %  \end{macro}
+%
+% \begin{macro}{iftex}
+% I load \verb|iftex} so that these packages can 
+% respond to XeLaTeX or LuaTeX appropriately.
+% See, e.g., in the \verb|\makeindex| commands in \verb|xindex|,
+% and in the font-loading mechanism.
+%    \begin{macrocode|
+\usepackage{iftex}
+%    \end{macrocode}
+% \end{macro}
 %
 %  \begin{macro}{xcolor}
 % Settings for the \verb"xcolor" package

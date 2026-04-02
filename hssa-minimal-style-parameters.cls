@@ -381,7 +381,6 @@ backgroundcolor=yellow]{todonotes}
 % \subsubsection{\TeX\ Gyre Pagella, the default roman font for HSSA}
 %    \begin{macrocode}
 \setmainfont[Ligatures=TeX,
-Mapping=tex-text,
 Numbers=OldStyle]{TeX Gyre Pagella}
 %\setmainfont[Scale=1.05]{Alegreya} % quite nice; superscripts not smaller
 %\setmainfont{Libertinus Serif} % looks good; does math
@@ -415,7 +414,9 @@ AutoFakeBold=2.5,
 %
 % \subsubsection{Chinese}
 %    \begin{macrocode}
-\newfontfamily\cjk[Script=CJK,Mapping=tex-text,Scale=MatchLowercase]
+\newfontfamily\cjk[Script=CJK,
+	Ligatures=TeX,
+	Scale=MatchLowercase]
 %{IPAexMincho} % missing 說
 %{TakaoPGothic}
 {Yu Mincho}
@@ -433,7 +434,6 @@ Scale=MatchLowercase]
 % \subsubsection{Greek font}
 %    \begin{macrocode}% Greek
 \newfontfamily\greekfont[Script=Greek,
-%    Mapping=tex-text,
 AutoFakeBold=1.5,
 Scale=MatchUppercase]
 {GFS Porson}
