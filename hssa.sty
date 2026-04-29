@@ -165,8 +165,10 @@ AutoFakeBold=1,
 % \verb|{TeX Gyre Pagella Math}|
 %    \begin{macrocode}
 \RequirePackage{unicode-math} % must load after amsmath; see manual ch. 3
-%\setmathfont{TeX Gyre Pagella Math}[Numbers=OldStyle]  % doesn't have 
-% oldstyle numbers in mathmode.
+% must also load after hssa-biblatex.sty to avoid some very technical
+% char-number overrun errors issued because of \verb|\resetMathstrut@|.
+%\setmathfont{TeX Gyre Pagella Math}[Numbers=OldStyle]  
+% doesn't have oldstyle numbers in mathmode.
 \setmathfont{Asana Math}[Numbers=OldStyle] % works well
 %    \end{macrocode}
 % \end{macro}

@@ -333,11 +333,11 @@
 %  \end{macro}
 %
 % \begin{macro}{iftex}
-% I load \verb|iftex} so that these packages can 
+% I load \verb|iftex| so that these packages can 
 % respond to XeLaTeX or LuaTeX appropriately.
 % See, e.g., in the \verb|\makeindex| commands in \verb|xindex|,
 % and in the font-loading mechanism.
-%    \begin{macrocode|
+%    \begin{macrocode}
 \usepackage{iftex}
 %    \end{macrocode}
 % \end{macro}

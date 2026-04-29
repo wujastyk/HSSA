@@ -3,890 +3,926 @@
  \makeatletter\scan@allowedfalse
 {\bfseries\hfil Symbols\hfil}\nopagebreak
 
-  \item \verb*+\#+\pfill \hdclindex{768}{code}{665}
-  \item \verb*+\,+\pfill \hdclindex{802}{code}{699}
-  \item \verb*+\@DOI+\pfill \hdclindex{164}{code}{98}, 
-		\hdclindex{465}{code}{381}, \hdclindex{466}{code}{382}, 
-		\hdclindex{468}{code}{384}, \hdclindex{471}{code}{387}, 
-		\hdclindex{521}{code}{435}, \hdclindex{535}{code}{448}, 
-		\hdclindex{536}{code}{449}
-  \item \verb*+\@HSSAarticletitle+\pfill \hdclindex{121}{code}{64}, 
-		\hdclindex{139}{code}{76}, \hdclindex{272}{code}{196}, 
-		\hdclindex{457}{code}{373}, \hdclindex{476}{code}{391}, 
-		\hdclindex{515}{code}{429}, \hdclindex{533}{code}{446}
-  \item \verb*+\@HSSAauthoraddress+\pfill \hdclindex{124}{code}{66}, 
-		\hdclindex{278}{code}{202}, \hdclindex{463}{code}{379}
-  \item \verb*+\@HSSAauthorname+\pfill \hdclindex{123}{code}{65}, 
-		\hdclindex{141}{code}{78}, \hdclindex{275}{code}{199}, 
-		\hdclindex{459}{code}{375}, \hdclindex{476}{code}{391}, 
-		\hdclindex{516}{code}{430}, \hdclindex{532}{code}{445}
-  \item \verb*+\@HSSAfooter+\pfill \hdclindex{130}{code}{70}, 
-		\hdclindex{155}{code}{90}, \hdclindex{165}{code}{99}
-  \item \verb*+\@HSSAheaderfooterfont+\pfill \hdclindex{142}{main}{79}, 
-		\hdclindex{150}{code}{85}, \hdclindex{151}{code}{86}, 
-		\hdclindex{152}{code}{87}, \hdclindex{153}{code}{88}, 
-		\hdclindex{155}{code}{90}, \hdclindex{163}{code}{97}, 
-		\hdclindex{165}{code}{99}
-  \item \verb*+\@HSSAissuedate+\pfill \hdclindex{146}{code}{81}, 
-		\hdclindex{461}{code}{377}, \hdclindex{477}{code}{392}
-  \item \verb*+\@HSSAissuenum+\pfill \hdclindex{145}{code}{80}, 
-		\hdclindex{454}{code}{371}, \hdclindex{477}{code}{392}
-  \item \verb*+\@HSSArecto+\pfill \hdclindex{136}{code}{73}, 
-		\hdclindex{138}{code}{75}, \hdclindex{150}{code}{85}
+  \item \verb*+\#+\pfill \hdclindex{841}{code}{736}
+  \item \verb*+\,+\pfill \hdclindex{875}{code}{770}
+  \item \verb*+\@DOI+\pfill \hdclindex{188}{code}{120}, 
+		\hdclindex{489}{code}{403}, \hdclindex{490}{code}{404}, 
+		\hdclindex{492}{code}{406}, \hdclindex{495}{code}{409}, 
+		\hdclindex{549}{code}{461}, \hdclindex{564}{code}{475}, 
+		\hdclindex{565}{code}{476}
+  \item \verb*+\@HSSAarticletitle+\pfill \hdclindex{133}{code}{74}, 
+		\hdclindex{151}{code}{86}, \hdclindex{296}{code}{218}, 
+		\hdclindex{481}{code}{395}, \hdclindex{500}{code}{413}, 
+		\hdclindex{543}{code}{455}, \hdclindex{562}{code}{473}
+  \item \verb*+\@HSSAauthoraddress+\pfill \hdclindex{136}{code}{76}, 
+		\hdclindex{302}{code}{224}, \hdclindex{487}{code}{401}
+  \item \verb*+\@HSSAauthorname+\pfill \hdclindex{135}{code}{75}, 
+		\hdclindex{153}{code}{88}, \hdclindex{299}{code}{221}, 
+		\hdclindex{483}{code}{397}, \hdclindex{500}{code}{413}, 
+		\hdclindex{544}{code}{456}, \hdclindex{561}{code}{472}
+  \item \verb*+\@HSSAfooter+\pfill \hdclindex{142}{code}{80}, 
+		\hdclindex{179}{code}{112}, \hdclindex{189}{code}{121}
+  \item \verb*+\@HSSAheaderfooterfont+\pfill \hdclindex{154}{main}{89}, 
+		\hdclindex{167}{code}{100}, \hdclindex{168}{code}{101}, 
+		\hdclindex{170}{code}{103}, \hdclindex{174}{code}{107}, 
+		\hdclindex{179}{code}{112}, \hdclindex{187}{code}{119}, 
+		\hdclindex{189}{code}{121}
+  \item \verb*+\@HSSAissuedate+\pfill \hdclindex{158}{code}{91}, 
+		\hdclindex{485}{code}{399}, \hdclindex{501}{code}{414}
+  \item \verb*+\@HSSAissuenum+\pfill \hdclindex{157}{code}{90}, 
+		\hdclindex{478}{code}{393}, \hdclindex{501}{code}{414}
+  \item \verb*+\@HSSArecto+\pfill \hdclindex{148}{code}{83}, 
+		\hdclindex{150}{code}{85}, \hdclindex{167}{code}{100}
   \item \verb*+\@HSSAspecialissuedetails+\pfill 
-		\hdclindex{260}{code}{184}, \hdclindex{451}{code}{369}
-  \item \verb*+\@HSSAtitle+\pfill \hdclindex{131}{main}{71}, 
-		\hdclindex{145}{code}{80}, \hdclindex{477}{code}{392}
-  \item \verb*+\@HSSAverso+\pfill \hdclindex{134}{code}{72}, 
-		\hdclindex{137}{code}{74}, \hdclindex{151}{code}{86}
-  \item \verb*+\@LastPage+\pfill \hdclindex{211}{code}{140}
-  \item \verb*+\@alph+\pfill \hdclindex{665}{code}{568}
-  \item \verb*+\@anchorcolor+\pfill \hdclindex{184}{code}{116}
-  \item \verb*+\@arraycr+\pfill \hdclindex{504}{code}{418}
-  \item \verb*+\@aualign+\pfill \hdclindex{219}{code}{144}, 
-		\hdclindex{220}{code}{145}
-  \item \verb*+\@aufont+\pfill \hdclindex{222}{code}{147}, 
-		\hdclindex{224}{code}{149}
-  \item \verb*+\@centercr+\pfill \hdclindex{553}{code}{465}
-  \item \verb*+\@citecolor+\pfill \hdclindex{185}{code}{117}
-  \item \verb*+\@empty+\pfill \hdclindex{137}{code}{74}, 
-		\hdclindex{138}{code}{75}, \hdclindex{234}{code}{159}
-  \item \verb*+\@filecolor+\pfill \hdclindex{186}{code}{118}
-  \item \verb*+\@footeraddress+\pfill \hdclindex{233}{code}{158}, 
-		\hdclindex{234}{code}{159}
-  \item \verb*+\@footerfont+\pfill \hdclindex{228}{code}{153}
-  \item \verb*+\@idxitem+\pfill \hdclindex{903}{code}{795}
-  \item \verb*+\@ifnextchar+\pfill \hdclindex{739}{code}{638}
-  \item \verb*+\@linkcolor+\pfill \hdclindex{183}{code}{115}
-  \item \verb*+\@makecaption+\pfill \hdclindex{420}{main}{341}
-  \item \verb*+\@makefnmark+\pfill \hdclindex{581}{code}{491}
-  \item \verb*+\@makefntext+\pfill \hdclindex{576}{code}{486}
-  \item \verb*+\@menucolor+\pfill \hdclindex{188}{code}{120}
-  \item \verb*+\@minipagefalse+\pfill \hdclindex{429}{code}{349}
-  \item \verb*+\@minipagerestore+\pfill \hdclindex{676}{code}{578}
-  \item \verb*+\@minus+\pfill \hdclindex{484}{code}{398}, 
-		\hdclindex{485}{code}{399}, \hdclindex{488}{code}{402}, 
-		\hdclindex{489}{code}{403}, \hdclindex{493}{code}{407}
-  \item \verb*+\@nameuse+\pfill \hdclindex{673}{code}{576}
-  \item \verb*+\@pagecolor+\pfill \hdclindex{189}{code}{121}
-  \item \verb*+\@plus+\pfill \hdclindex{484}{code}{398}, 
-		\hdclindex{485}{code}{399}, \hdclindex{488}{code}{402}, 
-		\hdclindex{489}{code}{403}, \hdclindex{493}{code}{407}
-  \item \verb*+\@startsection+\pfill \hdclindex{483}{code}{397}, 
-		\hdclindex{487}{code}{401}, \hdclindex{492}{code}{406}
-  \item \verb*+\@tempboxa+\pfill \hdclindex{425}{code}{345}, 
-		\hdclindex{426}{code}{346}, \hdclindex{430}{code}{350}
-  \item \verb*+\@temppdfauthor+\pfill \hdclindex{516}{code}{430}, 
-		\hdclindex{520}{code}{434}
-  \item \verb*+\@temppdftitle+\pfill \hdclindex{515}{code}{429}, 
-		\hdclindex{519}{code}{433}
-  \item \verb*+\@titlealign+\pfill \hdclindex{217}{code}{142}, 
-		\hdclindex{218}{code}{143}
-  \item \verb*+\@titlefont+\pfill \hdclindex{221}{code}{146}, 
-		\hdclindex{223}{code}{148}
-  \item \verb*+\@urlcolor+\pfill \hdclindex{187}{code}{119}, 
-		\hdclindex{293}{code}{217}, \hdclindex{295}{code}{219}, 
-		\hdclindex{470}{code}{386}
-  \item \verb*+\\+\pfill \hdclindex{123}{code}{65}, 
-		\hdclindex{163}{code}{97}, \hdclindex{291}{code}{215}, 
-		\hdclindex{294}{code}{218}, \hdclindex{311}{code}{234}, 
-		\hdclindex{322}{code}{245}, \hdclindex{341}{code}{264}, 
-		\hdclindex{346}{code}{269}, \hdclindex{347}{code}{270}, 
-		\hdclindex{352}{code}{275}, \hdclindex{353}{code}{276}, 
-		\hdclindex{354}{code}{277}, \hdclindex{355}{code}{278}, 
-		\hdclindex{356}{code}{279}, \hdclindex{357}{code}{280}, 
-		\hdclindex{407}{code}{329}, \hdclindex{504}{code}{418}, 
-		\hdclindex{553}{code}{465}
-  \item \verb*+\ +\pfill \hdclindex{145}{code}{80}, 
-		\hdclindex{411}{code}{333}, \hdclindex{477}{code}{392}, 
-		\hdclindex{534}{code}{447}
+		\hdclindex{284}{code}{206}, \hdclindex{475}{code}{391}
+  \item \verb*+\@HSSAtitle+\pfill \hdclindex{143}{main}{81}, 
+		\hdclindex{157}{code}{90}, \hdclindex{501}{code}{414}
+  \item \verb*+\@HSSAverso+\pfill \hdclindex{146}{code}{82}, 
+		\hdclindex{149}{code}{84}, \hdclindex{168}{code}{101}
+  \item \verb*+\@LastPage+\pfill \hdclindex{235}{code}{162}
+  \item \verb*+\@alph+\pfill \hdclindex{729}{code}{630}
+  \item \verb*+\@anchorcolor+\pfill \hdclindex{208}{code}{138}
+  \item \verb*+\@arraycr+\pfill \hdclindex{532}{code}{444}
+  \item \verb*+\@aualign+\pfill \hdclindex{243}{code}{166}, 
+		\hdclindex{244}{code}{167}
+  \item \verb*+\@aufont+\pfill \hdclindex{246}{code}{169}, 
+		\hdclindex{248}{code}{171}
+  \item \verb*+\@centercr+\pfill \hdclindex{582}{code}{492}
+  \item \verb*+\@citecolor+\pfill \hdclindex{209}{code}{139}
+  \item \verb*+\@empty+\pfill \hdclindex{149}{code}{84}, 
+		\hdclindex{150}{code}{85}, \hdclindex{258}{code}{181}
+  \item \verb*+\@filecolor+\pfill \hdclindex{210}{code}{140}
+  \item \verb*+\@footeraddress+\pfill \hdclindex{257}{code}{180}, 
+		\hdclindex{258}{code}{181}
+  \item \verb*+\@footerfont+\pfill \hdclindex{252}{code}{175}
+  \item \verb*+\@idxitem+\pfill \hdclindex{976}{code}{866}
+  \item \verb*+\@ifnextchar+\pfill \hdclindex{812}{code}{709}
+  \item \verb*+\@linkcolor+\pfill \hdclindex{207}{code}{137}
+  \item \verb*+\@makecaption+\pfill \hdclindex{444}{main}{363}
+  \item \verb*+\@makefnmark+\pfill \hdclindex{610}{code}{518}
+  \item \verb*+\@makefntext+\pfill \hdclindex{605}{code}{513}
+  \item \verb*+\@menucolor+\pfill \hdclindex{212}{code}{142}
+  \item \verb*+\@minipagefalse+\pfill \hdclindex{453}{code}{371}
+  \item \verb*+\@minipagerestore+\pfill \hdclindex{740}{code}{640}
+  \item \verb*+\@minus+\pfill \hdclindex{512}{code}{424}, 
+		\hdclindex{513}{code}{425}, \hdclindex{516}{code}{428}, 
+		\hdclindex{517}{code}{429}, \hdclindex{521}{code}{433}
+  \item \verb*+\@nameuse+\pfill \hdclindex{737}{code}{638}
+  \item \verb*+\@pagecolor+\pfill \hdclindex{213}{code}{143}
+  \item \verb*+\@plus+\pfill \hdclindex{512}{code}{424}, 
+		\hdclindex{513}{code}{425}, \hdclindex{516}{code}{428}, 
+		\hdclindex{517}{code}{429}, \hdclindex{521}{code}{433}
+  \item \verb*+\@startsection+\pfill \hdclindex{511}{code}{423}, 
+		\hdclindex{515}{code}{427}, \hdclindex{520}{code}{432}
+  \item \verb*+\@tempboxa+\pfill \hdclindex{449}{code}{367}, 
+		\hdclindex{450}{code}{368}, \hdclindex{454}{code}{372}
+  \item \verb*+\@temppdfauthor+\pfill \hdclindex{544}{code}{456}, 
+		\hdclindex{548}{code}{460}
+  \item \verb*+\@temppdftitle+\pfill \hdclindex{543}{code}{455}, 
+		\hdclindex{547}{code}{459}
+  \item \verb*+\@titlealign+\pfill \hdclindex{241}{code}{164}, 
+		\hdclindex{242}{code}{165}
+  \item \verb*+\@titlefont+\pfill \hdclindex{245}{code}{168}, 
+		\hdclindex{247}{code}{170}
+  \item \verb*+\@urlcolor+\pfill \hdclindex{211}{code}{141}, 
+		\hdclindex{317}{code}{239}, \hdclindex{319}{code}{241}, 
+		\hdclindex{494}{code}{408}
+  \item \verb*+\\+\pfill \hdclindex{135}{code}{75}, 
+		\hdclindex{187}{code}{119}, \hdclindex{315}{code}{237}, 
+		\hdclindex{318}{code}{240}, \hdclindex{335}{code}{256}, 
+		\hdclindex{346}{code}{267}, \hdclindex{365}{code}{286}, 
+		\hdclindex{370}{code}{291}, \hdclindex{371}{code}{292}, 
+		\hdclindex{376}{code}{297}, \hdclindex{377}{code}{298}, 
+		\hdclindex{378}{code}{299}, \hdclindex{379}{code}{300}, 
+		\hdclindex{380}{code}{301}, \hdclindex{381}{code}{302}, 
+		\hdclindex{431}{code}{351}, \hdclindex{532}{code}{444}, 
+		\hdclindex{582}{code}{492}
+  \item \verb*+\ +\pfill \hdclindex{157}{code}{90}, 
+		\hdclindex{435}{code}{355}, \hdclindex{501}{code}{414}, 
+		\hdclindex{563}{code}{474}
 
   \indexspace
 {\bfseries\hfil A\hfil}\nopagebreak
 
-  \item \verb*+\abovecaptionskip+\pfill \hdclindex{423}{code}{343}
-  \item \verb*+\AD+\pfill \hdclindex{652}{code}{556}
-  \item \verb*+\addcolon+\pfill \hdclindex{776}{code}{673}, 
-		\hdclindex{782}{code}{679}, \hdclindex{792}{code}{689}, 
-		\hdclindex{797}{code}{694}
-  \item \verb*+\addfontfeature+\pfill \hdclindex{143}{code}{79}, 
-		\hdclindex{310}{code}{233}, \hdclindex{408}{code}{330}, 
-		\hdclindex{480}{code}{395}
-  \item \verb*+\addspace+\pfill \hdclindex{761}{code}{658}, 
-		\hdclindex{815}{code}{712}, \hdclindex{816}{code}{713}
-  \item \verb*+\addtocontents+\pfill \hdclindex{208}{code}{138}
-  \item \verb*+\addtolength+\pfill \hdclindex{586}{code}{496}
-  \item \verb*+\advance+\pfill \hdclindex{559}{code}{471}, 
-		\hdclindex{560}{code}{472}, \hdclindex{561}{code}{473}, 
-		\hdclindex{568}{code}{479}
-  \item \verb*+\appendix+\pfill \hdclindex{200}{main}{131}, 
-		\hdclindex{204}{code}{134}
-  \item \verb*+\appendixname+\pfill \hdclindex{203}{code}{133}
-  \item \verb*+\arabicfont+\pfill \hdclindex{634}{code}{542}
-  \item \verb*+\arrangementX+\pfill \hdclindex{666}{code}{569}, 
-		\hdclindex{667}{code}{570}
-  \item \verb*+\arraybslash+\pfill \hdclindex{504}{code}{418}
-  \item \verb*+\arraystretch+\pfill \hdclindex{506}{code}{420}
+  \item \verb*+\abovecaptionskip+\pfill \hdclindex{447}{code}{365}
+  \item \verb*+\AD+\pfill \hdclindex{713}{code}{615}
+  \item \verb*+\addcolon+\pfill \hdclindex{849}{code}{744}, 
+		\hdclindex{855}{code}{750}, \hdclindex{865}{code}{760}, 
+		\hdclindex{870}{code}{765}
+  \item \verb*+\addfontfeature+\pfill \hdclindex{155}{code}{89}, 
+		\hdclindex{334}{code}{255}, \hdclindex{432}{code}{352}, 
+		\hdclindex{508}{code}{421}
+  \item \verb*+\addspace+\pfill \hdclindex{834}{code}{729}, 
+		\hdclindex{888}{code}{783}, \hdclindex{889}{code}{784}
+  \item \verb*+\addtocontents+\pfill \hdclindex{232}{code}{160}
+  \item \verb*+\addtolength+\pfill \hdclindex{615}{code}{523}
+  \item \verb*+\advance+\pfill \hdclindex{588}{code}{498}, 
+		\hdclindex{589}{code}{499}, \hdclindex{590}{code}{500}, 
+		\hdclindex{597}{code}{506}
+  \item \verb*+\appendix+\pfill \hdclindex{224}{main}{153}, 
+		\hdclindex{228}{code}{156}
+  \item \verb*+\appendixname+\pfill \hdclindex{227}{code}{155}
+  \item \verb*+\arabicfont+\pfill \hdclindex{694}{code}{600}
+  \item \verb*+\arrangementX+\pfill \hdclindex{730}{code}{631}, 
+		\hdclindex{731}{code}{632}
+  \item \verb*+\arraybslash+\pfill \hdclindex{532}{code}{444}
+  \item \verb*+\arraystretch+\pfill \hdclindex{534}{code}{446}
   \item \verb*+\assignrefcontextentries+\pfill 
-		\hdclindex{730}{code}{631}
-  \item \verb*+\AtBeginDocument+\pfill \hdclindex{170}{main}{103}, 
-		\hdclindex{730}{code}{631}
-  \item \verb*+\AtEndDocument+\pfill \hdclindex{193}{main}{125}
-  \item \verb*+\aualign+\pfill \hdclindex{219}{code}{144}
-  \item \verb*+\aufont+\pfill \hdclindex{213}{main}{142}
-  \item \verb*+\Author+\pfill \hdclindex{525}{code}{439}
-  \item \verb*+\author+\pfill \hdclindex{122}{main}{65}
+		\hdclindex{803}{code}{702}
+  \item \verb*+\AtBeginDocument+\pfill \hdclindex{194}{main}{125}, 
+		\hdclindex{803}{code}{702}
+  \item \verb*+\AtEndDocument+\pfill \hdclindex{217}{main}{147}
+  \item \verb*+\aualign+\pfill \hdclindex{243}{code}{166}
+  \item \verb*+\aufont+\pfill \hdclindex{237}{main}{164}
+  \item \verb*+\Author+\pfill \hdclindex{553}{code}{465}
+  \item \verb*+\author+\pfill \hdclindex{134}{main}{75}
 
   \indexspace
 {\bfseries\hfil B\hfil}\nopagebreak
 
-  \item \verb*+\baselineskip+\pfill \hdclindex{276}{code}{200}
-  \item \verb*+\BC+\pfill \hdclindex{652}{code}{556}
-  \item \verb*+\BCE+\pfill \hdclindex{647}{main}{553}
-  \item \verb*+\bce+\pfill \hdclindex{645}{main}{553}
-  \item \verb*+\beforenotesX+\pfill \hdclindex{671}{code}{574}
-  \item \verb*+\begin+\pfill \hdclindex{245}{code}{169}, 
-		\hdclindex{257}{code}{181}, \hdclindex{269}{code}{193}, 
-		\hdclindex{286}{code}{210}, \hdclindex{309}{code}{232}, 
-		\hdclindex{323}{code}{246}, \hdclindex{577}{code}{487}, 
-		\hdclindex{585}{code}{495}, \hdclindex{587}{code}{497}
-  \item \verb*+\begingroup+\pfill \hdclindex{240}{code}{164}, 
-		\hdclindex{304}{code}{227}, \hdclindex{736}{code}{635}
-  \item \verb*+\belowcaptionskip+\pfill \hdclindex{432}{code}{352}
-  \item \verb*+\bfseries+\pfill \hdclindex{310}{code}{233}
-  \item \verb*+\bibfont+\pfill \hdclindex{717}{main}{619}
-  \item \verb*+\bibhyperlink+\pfill \hdclindex{825}{code}{722}
-  \item \verb*+\bibhyperref+\pfill \hdclindex{824}{code}{721}, 
-		\hdclindex{841}{code}{736}
-  \item \verb*+\bibhypertarget+\pfill \hdclindex{819}{code}{716}
-  \item \verb*+\bibsstring+\pfill \hdclindex{761}{code}{658}
-  \item \verb*+\bls@ox@compyear+\pfill \hdclindex{845}{main}{740}
-  \item \verb*+\blx@ox@compyear+\pfill \hdclindex{846}{code}{740}
-  \item \verb*+\blx@printbibliography+\pfill \hdclindex{740}{code}{639}, 
-		\hdclindex{741}{code}{640}
-  \item \verb*+\boolfalse+\pfill \hdclindex{829}{code}{724}, 
-		\hdclindex{830}{code}{725}
-  \item \verb*+\bottomfraction+\pfill \hdclindex{436}{code}{355}
-  \item \verb*+\box+\pfill \hdclindex{430}{code}{350}, 
-		\hdclindex{570}{code}{481}
+  \item \verb*+\babelfont+\pfill \hdclindex{649}{code}{555}, 
+		\hdclindex{650}{code}{556}
+  \item \verb*+\babelprovide+\pfill \hdclindex{73}{code}{28}
+  \item \verb*+\baselineskip+\pfill \hdclindex{300}{code}{222}
+  \item \verb*+\BC+\pfill \hdclindex{713}{code}{615}
+  \item \verb*+\BCE+\pfill \hdclindex{708}{main}{612}
+  \item \verb*+\bce+\pfill \hdclindex{706}{main}{612}
+  \item \verb*+\beforenotesX+\pfill \hdclindex{735}{code}{636}
+  \item \verb*+\begin+\pfill \hdclindex{269}{code}{191}, 
+		\hdclindex{281}{code}{203}, \hdclindex{293}{code}{215}, 
+		\hdclindex{310}{code}{232}, \hdclindex{333}{code}{254}, 
+		\hdclindex{347}{code}{268}, \hdclindex{606}{code}{514}, 
+		\hdclindex{614}{code}{522}, \hdclindex{616}{code}{524}
+  \item \verb*+\begingroup+\pfill \hdclindex{264}{code}{186}, 
+		\hdclindex{328}{code}{249}, \hdclindex{809}{code}{706}
+  \item \verb*+\belowcaptionskip+\pfill \hdclindex{456}{code}{374}
+  \item \verb*+\bfseries+\pfill \hdclindex{334}{code}{255}
+  \item \verb*+\bibfont+\pfill \hdclindex{785}{main}{685}
+  \item \verb*+\bibhyperlink+\pfill \hdclindex{898}{code}{793}
+  \item \verb*+\bibhyperref+\pfill \hdclindex{897}{code}{792}, 
+		\hdclindex{914}{code}{807}
+  \item \verb*+\bibhypertarget+\pfill \hdclindex{892}{code}{787}
+  \item \verb*+\bibsstring+\pfill \hdclindex{834}{code}{729}
+  \item \verb*+\bls@ox@compyear+\pfill \hdclindex{918}{main}{811}
+  \item \verb*+\blx@ox@compyear+\pfill \hdclindex{919}{code}{811}
+  \item \verb*+\blx@printbibliography+\pfill \hdclindex{813}{code}{710}, 
+		\hdclindex{814}{code}{711}
+  \item \verb*+\boolfalse+\pfill \hdclindex{902}{code}{795}, 
+		\hdclindex{903}{code}{796}
+  \item \verb*+\bottomfraction+\pfill \hdclindex{460}{code}{377}
+  \item \verb*+\box+\pfill \hdclindex{454}{code}{372}, 
+		\hdclindex{599}{code}{508}
 
   \indexspace
 {\bfseries\hfil C\hfil}\nopagebreak
 
-  \item \verb*+\c@mpfootnote+\pfill \hdclindex{665}{code}{568}
-  \item \verb*+\caption+\pfill \hdclindex{418}{main}{340}
-  \item \verb*+\cclogobox+\pfill \hdclindex{163}{code}{97}, 
-		\hdclindex{501}{code}{415}, \hdclindex{502}{code}{416}
-  \item \verb*+\CE+\pfill \hdclindex{648}{main}{553}
-  \item \verb*+\ce+\pfill \hdclindex{646}{main}{553}
-  \item \verb*+\centering+\pfill \hdclindex{124}{code}{66}, 
-		\hdclindex{218}{code}{143}, \hdclindex{220}{code}{145}, 
-		\hdclindex{486}{code}{400}, \hdclindex{490}{code}{404}, 
-		\hdclindex{491}{code}{405}, \hdclindex{495}{code}{409}
-  \item \verb*+\citeauthor+\pfill \hdclindex{827}{main}{723}
-  \item \verb*+\citeyear+\pfill \hdclindex{826}{main}{723}
-  \item \verb*+\cjk+\pfill \hdclindex{627}{code}{535}
-  \item \verb*+\colalignX+\pfill \hdclindex{669}{code}{572}
-  \item \verb*+\color+\pfill \hdclindex{243}{code}{167}, 
-		\hdclindex{401}{code}{323}, \hdclindex{406}{code}{328}, 
-		\hdclindex{410}{code}{332}
-  \item \verb*+\colorlet+\pfill \hdclindex{402}{code}{324}, 
-		\hdclindex{510}{code}{424}, \hdclindex{511}{code}{425}, 
-		\hdclindex{512}{code}{426}, \hdclindex{513}{code}{427}, 
-		\hdclindex{514}{code}{428}
-  \item \verb*+\columnwidth+\pfill \hdclindex{507}{code}{421}
-  \item \verb*+\copy+\pfill \hdclindex{163}{code}{97}
-  \item \verb*+\Copyright+\pfill \hdclindex{525}{code}{439}
-  \item \verb*+\copyright+\pfill \hdclindex{534}{code}{447}
-  \item \verb*+\copyrightpage+\pfill \hdclindex{392}{code}{315}
-  \item \verb*+\copyrightspage+\pfill \hdclindex{175}{code}{107}, 
-		\hdclindex{302}{main}{226}
-  \item \verb*+\CopyrightURL+\pfill \hdclindex{526}{code}{440}
-  \item \verb*+\covercitation+\pfill \hdclindex{473}{main}{389}
-  \item \verb*+\coverlastpage+\pfill \hdclindex{197}{code}{128}, 
-		\hdclindex{393}{main}{316}
-  \item \verb*+\coverpage+\pfill \hdclindex{174}{code}{106}, 
-		\hdclindex{235}{main}{160}
-  \item \verb*+\csquotes+\pfill \hdclindex{752}{main}{651}
+  \item \verb*+\c@mpfootnote+\pfill \hdclindex{729}{code}{630}
+  \item \verb*+\caption+\pfill \hdclindex{442}{main}{362}
+  \item \verb*+\cclogobox+\pfill \hdclindex{187}{code}{119}, 
+		\hdclindex{529}{code}{441}, \hdclindex{530}{code}{442}
+  \item \verb*+\CE+\pfill \hdclindex{709}{main}{612}
+  \item \verb*+\ce+\pfill \hdclindex{707}{main}{612}
+  \item \verb*+\centering+\pfill \hdclindex{136}{code}{76}, 
+		\hdclindex{242}{code}{165}, \hdclindex{244}{code}{167}, 
+		\hdclindex{514}{code}{426}, \hdclindex{518}{code}{430}, 
+		\hdclindex{519}{code}{431}, \hdclindex{523}{code}{435}
+  \item \verb*+\citeauthor+\pfill \hdclindex{900}{main}{794}
+  \item \verb*+\citeyear+\pfill \hdclindex{899}{main}{794}
+  \item \verb*+\cjk+\pfill \hdclindex{686}{code}{592}
+  \item \verb*+\colalignX+\pfill \hdclindex{733}{code}{634}
+  \item \verb*+\color+\pfill \hdclindex{267}{code}{189}, 
+		\hdclindex{425}{code}{345}, \hdclindex{430}{code}{350}, 
+		\hdclindex{434}{code}{354}
+  \item \verb*+\colorlet+\pfill \hdclindex{426}{code}{346}, 
+		\hdclindex{538}{code}{450}, \hdclindex{539}{code}{451}, 
+		\hdclindex{540}{code}{452}, \hdclindex{541}{code}{453}, 
+		\hdclindex{542}{code}{454}
+  \item \verb*+\columnwidth+\pfill \hdclindex{535}{code}{447}
+  \item \verb*+\copy+\pfill \hdclindex{187}{code}{119}
+  \item \verb*+\Copyright+\pfill \hdclindex{553}{code}{465}
+  \item \verb*+\copyright+\pfill \hdclindex{563}{code}{474}
+  \item \verb*+\copyrightpage+\pfill \hdclindex{416}{code}{337}
+  \item \verb*+\copyrightspage+\pfill \hdclindex{199}{code}{129}, 
+		\hdclindex{326}{main}{248}
+  \item \verb*+\CopyrightURL+\pfill \hdclindex{554}{code}{466}
+  \item \verb*+\covercitation+\pfill \hdclindex{497}{main}{411}
+  \item \verb*+\coverlastpage+\pfill \hdclindex{221}{code}{150}, 
+		\hdclindex{417}{main}{338}
+  \item \verb*+\coverpage+\pfill \hdclindex{198}{code}{128}, 
+		\hdclindex{259}{main}{182}
+  \item \verb*+\csquotes+\pfill \hdclindex{825}{main}{722}
 
   \indexspace
 {\bfseries\hfil D\hfil}\nopagebreak
 
-  \item \verb*+\date+\pfill \hdclindex{126}{main}{68}
-  \item \verb*+\dblfloatpagefraction+\pfill \hdclindex{439}{code}{358}
-  \item \verb*+\dbltopfraction+\pfill \hdclindex{438}{code}{357}
-  \item \verb*+\DeclareCiteCommand+\pfill \hdclindex{828}{code}{723}, 
-		\hdclindex{839}{code}{734}
-  \item \verb*+\DeclareFieldAlias+\pfill \hdclindex{780}{code}{677}, 
-		\hdclindex{786}{code}{683}
-  \item \verb*+\DeclareFieldFormat+\pfill \hdclindex{763}{code}{660}, 
-		\hdclindex{764}{code}{661}, \hdclindex{765}{code}{662}, 
-		\hdclindex{770}{code}{667}, \hdclindex{775}{code}{672}, 
-		\hdclindex{781}{code}{678}, \hdclindex{787}{code}{684}, 
-		\hdclindex{791}{code}{688}, \hdclindex{796}{code}{693}, 
-		\hdclindex{801}{code}{698}, \hdclindex{813}{code}{710}, 
-		\hdclindex{818}{code}{715}, \hdclindex{822}{code}{719}
-  \item \verb*+\DeclareLabeldate+\pfill \hdclindex{804}{code}{701}
+  \item \verb*+\date+\pfill \hdclindex{138}{main}{78}
+  \item \verb*+\dblfloatpagefraction+\pfill \hdclindex{463}{code}{380}
+  \item \verb*+\dbltopfraction+\pfill \hdclindex{462}{code}{379}
+  \item \verb*+\DeclareCiteCommand+\pfill \hdclindex{901}{code}{794}, 
+		\hdclindex{912}{code}{805}
+  \item \verb*+\DeclareFieldAlias+\pfill \hdclindex{853}{code}{748}, 
+		\hdclindex{859}{code}{754}
+  \item \verb*+\DeclareFieldFormat+\pfill \hdclindex{836}{code}{731}, 
+		\hdclindex{837}{code}{732}, \hdclindex{838}{code}{733}, 
+		\hdclindex{843}{code}{738}, \hdclindex{848}{code}{743}, 
+		\hdclindex{854}{code}{749}, \hdclindex{860}{code}{755}, 
+		\hdclindex{864}{code}{759}, \hdclindex{869}{code}{764}, 
+		\hdclindex{874}{code}{769}, \hdclindex{886}{code}{781}, 
+		\hdclindex{891}{code}{786}, \hdclindex{895}{code}{790}
+  \item \verb*+\DeclareLabeldate+\pfill \hdclindex{877}{code}{772}
   \item \verb*+\DeclareQuotePunctuation+\pfill 
-		\hdclindex{731}{code}{632}
-  \item \verb*+\DeclareSourcemap+\pfill \hdclindex{743}{code}{642}
-  \item \verb*+\def+\pfill \hdclindex{95}{code}{46}, 
-		\hdclindex{129}{code}{69}, \hdclindex{134}{code}{72}, 
-		\hdclindex{136}{code}{73}, \hdclindex{143}{code}{79}, 
-		\hdclindex{183}{code}{115}, \hdclindex{184}{code}{116}, 
-		\hdclindex{185}{code}{117}, \hdclindex{186}{code}{118}, 
-		\hdclindex{187}{code}{119}, \hdclindex{188}{code}{120}, 
-		\hdclindex{189}{code}{121}, \hdclindex{203}{code}{133}, 
-		\hdclindex{211}{code}{140}, \hdclindex{217}{code}{142}, 
-		\hdclindex{219}{code}{144}, \hdclindex{221}{code}{146}, 
-		\hdclindex{222}{code}{147}, \hdclindex{223}{code}{148}, 
-		\hdclindex{224}{code}{149}, \hdclindex{228}{code}{153}, 
-		\hdclindex{233}{code}{158}, \hdclindex{238}{code}{162}, 
-		\hdclindex{293}{code}{217}, \hdclindex{295}{code}{219}, 
-		\hdclindex{303}{code}{226}, \hdclindex{394}{code}{316}, 
-		\hdclindex{422}{code}{342}, \hdclindex{451}{code}{369}, 
-		\hdclindex{454}{code}{371}, \hdclindex{457}{code}{373}, 
-		\hdclindex{459}{code}{375}, \hdclindex{461}{code}{377}, 
-		\hdclindex{463}{code}{379}, \hdclindex{465}{code}{381}, 
-		\hdclindex{470}{code}{386}, \hdclindex{474}{code}{389}, 
-		\hdclindex{480}{code}{395}, \hdclindex{496}{code}{410}, 
-		\hdclindex{497}{code}{411}, \hdclindex{566}{code}{477}, 
-		\hdclindex{575}{code}{485}, \hdclindex{649}{code}{553}, 
-		\hdclindex{651}{code}{555}, \hdclindex{665}{code}{568}, 
-		\hdclindex{676}{code}{578}, \hdclindex{847}{code}{741}, 
-		\hdclindex{848}{code}{742}, \hdclindex{858}{code}{752}, 
-		\hdclindex{861}{code}{755}
+		\hdclindex{804}{code}{703}
+  \item \verb*+\DeclareRobustCommand+\pfill \hdclindex{710}{code}{612}, 
+		\hdclindex{712}{code}{614}
+  \item \verb*+\DeclareSourcemap+\pfill \hdclindex{816}{code}{713}
+  \item \verb*+\def+\pfill \hdclindex{105}{code}{55}, 
+		\hdclindex{141}{code}{79}, \hdclindex{146}{code}{82}, 
+		\hdclindex{148}{code}{83}, \hdclindex{155}{code}{89}, 
+		\hdclindex{207}{code}{137}, \hdclindex{208}{code}{138}, 
+		\hdclindex{209}{code}{139}, \hdclindex{210}{code}{140}, 
+		\hdclindex{211}{code}{141}, \hdclindex{212}{code}{142}, 
+		\hdclindex{213}{code}{143}, \hdclindex{227}{code}{155}, 
+		\hdclindex{235}{code}{162}, \hdclindex{241}{code}{164}, 
+		\hdclindex{243}{code}{166}, \hdclindex{245}{code}{168}, 
+		\hdclindex{246}{code}{169}, \hdclindex{247}{code}{170}, 
+		\hdclindex{248}{code}{171}, \hdclindex{252}{code}{175}, 
+		\hdclindex{257}{code}{180}, \hdclindex{262}{code}{184}, 
+		\hdclindex{317}{code}{239}, \hdclindex{319}{code}{241}, 
+		\hdclindex{327}{code}{248}, \hdclindex{418}{code}{338}, 
+		\hdclindex{446}{code}{364}, \hdclindex{475}{code}{391}, 
+		\hdclindex{478}{code}{393}, \hdclindex{481}{code}{395}, 
+		\hdclindex{483}{code}{397}, \hdclindex{485}{code}{399}, 
+		\hdclindex{487}{code}{401}, \hdclindex{489}{code}{403}, 
+		\hdclindex{494}{code}{408}, \hdclindex{498}{code}{411}, 
+		\hdclindex{508}{code}{421}, \hdclindex{524}{code}{436}, 
+		\hdclindex{525}{code}{437}, \hdclindex{595}{code}{504}, 
+		\hdclindex{604}{code}{512}, \hdclindex{729}{code}{630}, 
+		\hdclindex{740}{code}{640}, \hdclindex{920}{code}{812}, 
+		\hdclindex{921}{code}{813}, \hdclindex{931}{code}{823}, 
+		\hdclindex{934}{code}{826}
   \item \verb*+\DefineBibliographyExtras+\pfill 
-		\hdclindex{731}{code}{632}
+		\hdclindex{804}{code}{703}
   \item \verb*+\DefineBibliographyStrings+\pfill 
-		\hdclindex{755}{code}{652}
-  \item \verb*+\definecolor+\pfill \hdclindex{168}{main}{102}, 
-		\hdclindex{509}{code}{423}
-  \item \verb*+\delimcontext+\pfill \hdclindex{737}{code}{636}
-  \item \verb*+\dev+\pfill \hdclindex{624}{code}{532}, 
-		\hdclindex{625}{code}{533}
-  \item \verb*+\devanagarifont+\pfill \hdclindex{617}{code}{525}, 
-		\hdclindex{624}{code}{532}, \hdclindex{626}{code}{534}
-  \item \verb*+\diatop+\pfill \hdclindex{565}{main}{477}
-  \item \verb*+\dimen+\pfill \hdclindex{567}{code}{478}, 
-		\hdclindex{568}{code}{479}, \hdclindex{569}{code}{480}, 
-		\hdclindex{570}{code}{481}, \hdclindex{571}{code}{482}
-  \item \verb*+\dn+\pfill \hdclindex{615}{code}{523}
-  \item \verb*+\DOI+\pfill \hdclindex{465}{code}{381}, 
-		\hdclindex{467}{code}{383}
+		\hdclindex{828}{code}{723}
+  \item \verb*+\definecolor+\pfill \hdclindex{192}{main}{124}, 
+		\hdclindex{537}{code}{449}
+  \item \verb*+\delimcontext+\pfill \hdclindex{810}{code}{707}
+  \item \verb*+\dev+\pfill \hdclindex{658}{code}{564}, 
+		\hdclindex{683}{code}{589}, \hdclindex{684}{code}{590}
+  \item \verb*+\devanagarifont+\pfill \hdclindex{674}{code}{580}, 
+		\hdclindex{683}{code}{589}, \hdclindex{685}{code}{591}
+  \item \verb*+\diatop+\pfill \hdclindex{594}{main}{504}
+  \item \verb*+\dimen+\pfill \hdclindex{596}{code}{505}, 
+		\hdclindex{597}{code}{506}, \hdclindex{598}{code}{507}, 
+		\hdclindex{599}{code}{508}, \hdclindex{600}{code}{509}
+  \item \verb*+\dn+\pfill \hdclindex{672}{code}{578}
+  \item \verb*+\DOI+\pfill \hdclindex{489}{code}{403}, 
+		\hdclindex{491}{code}{405}
 
   \indexspace
 {\bfseries\hfil E\hfil}\nopagebreak
 
-  \item \verb*+\edef+\pfill \hdclindex{738}{code}{637}
-  \item \verb*+\else+\pfill \hdclindex{268}{code}{192}, 
-		\hdclindex{290}{code}{214}, \hdclindex{428}{code}{348}, 
-		\hdclindex{469}{code}{385}, \hdclindex{567}{code}{478}
-  \item \verb*+\emergencystretch+\pfill \hdclindex{507}{code}{421}
-  \item \verb*+\emph+\pfill \hdclindex{124}{code}{66}, 
-		\hdclindex{278}{code}{202}, \hdclindex{477}{code}{392}, 
-		\hdclindex{891}{code}{784}, \hdclindex{892}{code}{785}, 
-		\hdclindex{899}{code}{791}, \hdclindex{900}{code}{792}
-  \item \verb*+\empty+\pfill \hdclindex{452}{code}{370}, 
-		\hdclindex{466}{code}{382}, \hdclindex{468}{code}{384}
-  \item \verb*+\end+\pfill \hdclindex{254}{code}{178}, 
-		\hdclindex{261}{code}{185}, \hdclindex{280}{code}{204}, 
-		\hdclindex{297}{code}{221}, \hdclindex{337}{code}{260}, 
-		\hdclindex{387}{code}{310}, \hdclindex{582}{code}{492}, 
-		\hdclindex{592}{code}{502}, \hdclindex{593}{code}{503}
-  \item \verb*+\endgroup+\pfill \hdclindex{298}{code}{222}, 
-		\hdclindex{388}{code}{311}
-  \item \verb*+\endlist+\pfill \hdclindex{550}{code}{462}
-  \item \verb*+\enumitem+\pfill \hdclindex{76}{main}{30}
+  \item \verb*+\edef+\pfill \hdclindex{811}{code}{708}
+  \item \verb*+\else+\pfill \hdclindex{74}{code}{29}, 
+		\hdclindex{161}{code}{94}, \hdclindex{172}{code}{105}, 
+		\hdclindex{176}{code}{109}, \hdclindex{292}{code}{214}, 
+		\hdclindex{314}{code}{236}, \hdclindex{452}{code}{370}, 
+		\hdclindex{493}{code}{407}, \hdclindex{504}{code}{417}, 
+		\hdclindex{596}{code}{505}, \hdclindex{628}{code}{534}, 
+		\hdclindex{637}{code}{543}, \hdclindex{661}{code}{567}
+  \item \verb*+\emergencystretch+\pfill \hdclindex{535}{code}{447}
+  \item \verb*+\emph+\pfill \hdclindex{136}{code}{76}, 
+		\hdclindex{302}{code}{224}, \hdclindex{501}{code}{414}, 
+		\hdclindex{964}{code}{855}, \hdclindex{965}{code}{856}, 
+		\hdclindex{972}{code}{862}, \hdclindex{973}{code}{863}
+  \item \verb*+\empty+\pfill \hdclindex{166}{code}{99}, 
+		\hdclindex{236}{code}{163}, \hdclindex{476}{code}{392}, 
+		\hdclindex{490}{code}{404}, \hdclindex{492}{code}{406}
+  \item \verb*+\end+\pfill \hdclindex{278}{code}{200}, 
+		\hdclindex{285}{code}{207}, \hdclindex{304}{code}{226}, 
+		\hdclindex{321}{code}{243}, \hdclindex{361}{code}{282}, 
+		\hdclindex{411}{code}{332}, \hdclindex{611}{code}{519}, 
+		\hdclindex{621}{code}{529}, \hdclindex{622}{code}{530}
+  \item \verb*+\endgroup+\pfill \hdclindex{322}{code}{244}, 
+		\hdclindex{412}{code}{333}
+  \item \verb*+\endlist+\pfill \hdclindex{579}{code}{489}
+  \item \verb*+\enumitem+\pfill \hdclindex{86}{main}{39}
   \item environments:\efill 
  \subitem {\ttfamily hssa-reledmac}\pfill 
-		\hdclindex{596}{main}{505}
-    \subitem {\ttfamily sloka}\pfill \hdclindex{546}{main}{459}
+		\hdclindex{625}{main}{532}
+    \subitem {\ttfamily sloka}\pfill \hdclindex{575}{main}{486}
   \item \verb*+\ExecuteBibliographyOptions+\pfill 
-		\hdclindex{720}{code}{621}
+		\hdclindex{788}{code}{687}
 
   \indexspace
 {\bfseries\hfil F\hfil}\nopagebreak
 
-  \item \verb*+\fancyfoot+\pfill \hdclindex{154}{code}{89}, 
-		\hdclindex{155}{code}{90}, \hdclindex{156}{code}{91}, 
-		\hdclindex{163}{code}{97}, \hdclindex{165}{code}{99}, 
-		\hdclindex{166}{code}{100}
-  \item \verb*+\fancyhead+\pfill \hdclindex{149}{code}{84}, 
-		\hdclindex{150}{code}{85}, \hdclindex{151}{code}{86}, 
-		\hdclindex{152}{code}{87}, \hdclindex{153}{code}{88}, 
-		\hdclindex{161}{code}{95}, \hdclindex{162}{code}{96}
-  \item \verb*+\fancypage+\pfill \hdclindex{159}{main}{94}
-  \item \verb*+\fancypagestyle+\pfill \hdclindex{160}{code}{94}
-  \item \verb*+\fi+\pfill \hdclindex{176}{code}{108}, 
-		\hdclindex{198}{code}{129}, \hdclindex{281}{code}{205}, 
-		\hdclindex{292}{code}{216}, \hdclindex{431}{code}{351}, 
-		\hdclindex{471}{code}{387}, \hdclindex{567}{code}{478}, 
-		\hdclindex{859}{code}{753}
-  \item \verb*+\field+\pfill \hdclindex{805}{code}{702}, 
-		\hdclindex{806}{code}{703}, \hdclindex{807}{code}{704}, 
-		\hdclindex{808}{code}{705}, \hdclindex{809}{code}{706}, 
-		\hdclindex{810}{code}{707}
-  \item \verb*+\floatpagefraction+\pfill \hdclindex{440}{code}{359}
-  \item \verb*+\fontsize+\pfill \hdclindex{223}{code}{148}, 
-		\hdclindex{224}{code}{149}, \hdclindex{229}{code}{154}, 
-		\hdclindex{249}{code}{173}
-  \item \verb*+\footeraddress+\pfill \hdclindex{216}{main}{142}
-  \item \verb*+\footerfont+\pfill \hdclindex{215}{main}{142}
-  \item \verb*+\footins+\pfill \hdclindex{100}{code}{51}
-  \item \verb*+\footnote+\pfill \hdclindex{590}{code}{500}, 
-		\hdclindex{674}{main}{577}
-  \item \verb*+\footnoteA+\pfill \hdclindex{681}{code}{583}
-  \item \verb*+\footnotemargin+\pfill \hdclindex{444}{code}{363}
-  \item \verb*+\footnoterule+\pfill \hdclindex{588}{code}{498}
-  \item \verb*+\footnoteruleA+\pfill \hdclindex{664}{code}{567}
-  \item \verb*+\footnotesize+\pfill \hdclindex{92}{code}{44}, 
-		\hdclindex{251}{code}{175}, \hdclindex{288}{code}{212}, 
-		\hdclindex{308}{code}{231}, \hdclindex{424}{code}{344}, 
-		\hdclindex{490}{code}{404}, \hdclindex{581}{code}{491}
-  \item \verb*+\footnotetext+\pfill \hdclindex{96}{code}{47}
-  \item \verb*+\footrulewidth+\pfill \hdclindex{158}{code}{93}
-  \item \verb*+\fspace+\pfill \hdclindex{480}{code}{395}, 
-		\hdclindex{486}{code}{400}, \hdclindex{490}{code}{404}, 
-		\hdclindex{491}{code}{405}
+  \item \verb*+\fancyfoot+\pfill \hdclindex{178}{code}{111}, 
+		\hdclindex{179}{code}{112}, \hdclindex{180}{code}{113}, 
+		\hdclindex{187}{code}{119}, \hdclindex{189}{code}{121}, 
+		\hdclindex{190}{code}{122}
+  \item \verb*+\fancyhead+\pfill \hdclindex{166}{code}{99}, 
+		\hdclindex{167}{code}{100}, \hdclindex{168}{code}{101}, 
+		\hdclindex{170}{code}{103}, \hdclindex{174}{code}{107}, 
+		\hdclindex{185}{code}{117}, \hdclindex{186}{code}{118}
+  \item \verb*+\fancypage+\pfill \hdclindex{183}{main}{116}
+  \item \verb*+\fancypagestyle+\pfill \hdclindex{184}{code}{116}
+  \item \verb*+\fi+\pfill \hdclindex{76}{code}{31}, 
+		\hdclindex{163}{code}{96}, \hdclindex{173}{code}{106}, 
+		\hdclindex{177}{code}{110}, \hdclindex{200}{code}{130}, 
+		\hdclindex{222}{code}{151}, \hdclindex{305}{code}{227}, 
+		\hdclindex{316}{code}{238}, \hdclindex{455}{code}{373}, 
+		\hdclindex{495}{code}{409}, \hdclindex{506}{code}{419}, 
+		\hdclindex{596}{code}{505}, \hdclindex{634}{code}{540}, 
+		\hdclindex{641}{code}{547}, \hdclindex{661}{code}{567}, 
+		\hdclindex{705}{code}{611}, \hdclindex{932}{code}{824}
+  \item \verb*+\field+\pfill \hdclindex{878}{code}{773}, 
+		\hdclindex{879}{code}{774}, \hdclindex{880}{code}{775}, 
+		\hdclindex{881}{code}{776}, \hdclindex{882}{code}{777}, 
+		\hdclindex{883}{code}{778}
+  \item \verb*+\floatpagefraction+\pfill \hdclindex{464}{code}{381}
+  \item \verb*+\fontsize+\pfill \hdclindex{247}{code}{170}, 
+		\hdclindex{248}{code}{171}, \hdclindex{253}{code}{176}, 
+		\hdclindex{273}{code}{195}
+  \item \verb*+\footeraddress+\pfill \hdclindex{240}{main}{164}
+  \item \verb*+\footerfont+\pfill \hdclindex{239}{main}{164}
+  \item \verb*+\footins+\pfill \hdclindex{110}{code}{60}
+  \item \verb*+\footnote+\pfill \hdclindex{619}{code}{527}, 
+		\hdclindex{738}{main}{639}
+  \item \verb*+\footnoteA+\pfill \hdclindex{745}{code}{645}
+  \item \verb*+\footnotemargin+\pfill \hdclindex{468}{code}{385}
+  \item \verb*+\footnoterule+\pfill \hdclindex{617}{code}{525}
+  \item \verb*+\footnoteruleA+\pfill \hdclindex{728}{code}{629}
+  \item \verb*+\footnotesize+\pfill \hdclindex{102}{code}{53}, 
+		\hdclindex{275}{code}{197}, \hdclindex{312}{code}{234}, 
+		\hdclindex{332}{code}{253}, \hdclindex{448}{code}{366}, 
+		\hdclindex{518}{code}{430}, \hdclindex{610}{code}{518}
+  \item \verb*+\footnotetext+\pfill \hdclindex{106}{code}{56}
+  \item \verb*+\footrulewidth+\pfill \hdclindex{182}{code}{115}
+  \item \verb*+\foreignlanguage+\pfill \hdclindex{656}{code}{562}
+  \item \verb*+\fspace+\pfill \hdclindex{508}{code}{421}, 
+		\hdclindex{514}{code}{426}, \hdclindex{518}{code}{430}, 
+		\hdclindex{519}{code}{431}
 
   \indexspace
 {\bfseries\hfil G\hfil}\nopagebreak
 
-  \item \verb*+\gdef+\pfill \hdclindex{130}{code}{70}, 
-		\hdclindex{134}{code}{72}, \hdclindex{136}{code}{73}, 
-		\hdclindex{211}{code}{140}, \hdclindex{217}{code}{142}, 
-		\hdclindex{219}{code}{144}, \hdclindex{221}{code}{146}, 
-		\hdclindex{222}{code}{147}, \hdclindex{228}{code}{153}, 
-		\hdclindex{233}{code}{158}, \hdclindex{451}{code}{369}, 
-		\hdclindex{454}{code}{371}, \hdclindex{457}{code}{373}, 
-		\hdclindex{459}{code}{375}, \hdclindex{461}{code}{377}, 
-		\hdclindex{463}{code}{379}, \hdclindex{465}{code}{381}, 
-		\hdclindex{466}{code}{382}, \hdclindex{474}{code}{389}, 
-		\hdclindex{496}{code}{410}, \hdclindex{497}{code}{411}
-  \item \verb*+\geometry+\pfill \hdclindex{102}{main}{53}, 
-		\hdclindex{103}{code}{53}, \hdclindex{446}{code}{365}
-  \item \verb*+\global+\pfill \hdclindex{429}{code}{349}, 
-		\hdclindex{502}{code}{416}
-  \item \verb*+\greekfont+\pfill \hdclindex{639}{code}{547}
+  \item \verb*+\gdef+\pfill \hdclindex{142}{code}{80}, 
+		\hdclindex{146}{code}{82}, \hdclindex{148}{code}{83}, 
+		\hdclindex{235}{code}{162}, \hdclindex{241}{code}{164}, 
+		\hdclindex{243}{code}{166}, \hdclindex{245}{code}{168}, 
+		\hdclindex{246}{code}{169}, \hdclindex{252}{code}{175}, 
+		\hdclindex{257}{code}{180}, \hdclindex{475}{code}{391}, 
+		\hdclindex{478}{code}{393}, \hdclindex{481}{code}{395}, 
+		\hdclindex{483}{code}{397}, \hdclindex{485}{code}{399}, 
+		\hdclindex{487}{code}{401}, \hdclindex{489}{code}{403}, 
+		\hdclindex{490}{code}{404}, \hdclindex{498}{code}{411}, 
+		\hdclindex{524}{code}{436}, \hdclindex{525}{code}{437}
+  \item \verb*+\geometry+\pfill \hdclindex{112}{main}{62}, 
+		\hdclindex{113}{code}{62}, \hdclindex{470}{code}{387}
+  \item \verb*+\global+\pfill \hdclindex{453}{code}{371}, 
+		\hdclindex{530}{code}{442}
+  \item \verb*+\greekfont+\pfill \hdclindex{699}{code}{605}
 
   \indexspace
 {\bfseries\hfil H\hfil}\nopagebreak
 
-  \item \verb*+\hangfootnotes+\pfill \hdclindex{96}{code}{47}, 
-		\hdclindex{575}{code}{485}, \hdclindex{589}{code}{499}
-  \item \verb*+\hangindent+\pfill \hdclindex{903}{code}{795}
-  \item \verb*+\hb@xt@+\pfill \hdclindex{430}{code}{350}
-  \item \verb*+\hbox+\pfill \hdclindex{502}{code}{416}, 
-		\hdclindex{566}{code}{477}, \hdclindex{569}{code}{480}, 
-		\hdclindex{571}{code}{482}
-  \item \verb*+\headrulewidth+\pfill \hdclindex{157}{code}{92}
-  \item \verb*+\hfil+\pfill \hdclindex{430}{code}{350}
-  \item \verb*+\hfill+\pfill \hdclindex{581}{code}{491}
-  \item \verb*+\href+\pfill \hdclindex{164}{code}{98}, 
-		\hdclindex{294}{code}{218}, \hdclindex{296}{code}{220}, 
-		\hdclindex{314}{code}{237}, \hdclindex{371}{code}{294}, 
-		\hdclindex{378}{code}{301}, \hdclindex{380}{code}{303}, 
-		\hdclindex{381}{code}{304}, \hdclindex{383}{code}{306}, 
-		\hdclindex{384}{code}{307}, \hdclindex{405}{code}{327}, 
-		\hdclindex{409}{code}{331}, \hdclindex{471}{code}{387}, 
-		\hdclindex{763}{code}{660}, \hdclindex{764}{code}{661}, 
-		\hdclindex{768}{code}{665}, \hdclindex{773}{code}{670}, 
-		\hdclindex{778}{code}{675}, \hdclindex{784}{code}{681}, 
-		\hdclindex{789}{code}{686}, \hdclindex{794}{code}{691}, 
-		\hdclindex{799}{code}{696}
-  \item \verb*+\hsize+\pfill \hdclindex{426}{code}{346}, 
-		\hdclindex{430}{code}{350}
-  \item \verb*+\hskip+\pfill \hdclindex{557}{code}{469}
-  \item \verb*+\hspace+\pfill \hdclindex{96}{code}{47}, 
-		\hdclindex{244}{code}{168}, \hdclindex{285}{code}{209}, 
-		\hdclindex{673}{code}{576}
-  \item \verb*+\hss+\pfill \hdclindex{569}{code}{480}, 
-		\hdclindex{571}{code}{482}
+  \item \verb*+\hangfootnotes+\pfill \hdclindex{106}{code}{56}, 
+		\hdclindex{604}{code}{512}, \hdclindex{618}{code}{526}
+  \item \verb*+\hangindent+\pfill \hdclindex{976}{code}{866}
+  \item \verb*+\hb@xt@+\pfill \hdclindex{454}{code}{372}
+  \item \verb*+\hbox+\pfill \hdclindex{530}{code}{442}, 
+		\hdclindex{595}{code}{504}, \hdclindex{598}{code}{507}, 
+		\hdclindex{600}{code}{509}
+  \item \verb*+\headrulewidth+\pfill \hdclindex{181}{code}{114}
+  \item \verb*+\hfil+\pfill \hdclindex{454}{code}{372}
+  \item \verb*+\hfill+\pfill \hdclindex{610}{code}{518}
+  \item \verb*+\href+\pfill \hdclindex{188}{code}{120}, 
+		\hdclindex{318}{code}{240}, \hdclindex{320}{code}{242}, 
+		\hdclindex{338}{code}{259}, \hdclindex{395}{code}{316}, 
+		\hdclindex{402}{code}{323}, \hdclindex{404}{code}{325}, 
+		\hdclindex{405}{code}{326}, \hdclindex{407}{code}{328}, 
+		\hdclindex{408}{code}{329}, \hdclindex{429}{code}{349}, 
+		\hdclindex{433}{code}{353}, \hdclindex{495}{code}{409}, 
+		\hdclindex{836}{code}{731}, \hdclindex{837}{code}{732}, 
+		\hdclindex{841}{code}{736}, \hdclindex{846}{code}{741}, 
+		\hdclindex{851}{code}{746}, \hdclindex{857}{code}{752}, 
+		\hdclindex{862}{code}{757}, \hdclindex{867}{code}{762}, 
+		\hdclindex{872}{code}{767}
+  \item \verb*+\hsize+\pfill \hdclindex{450}{code}{368}, 
+		\hdclindex{454}{code}{372}
+  \item \verb*+\hskip+\pfill \hdclindex{586}{code}{496}
+  \item \verb*+\hspace+\pfill \hdclindex{106}{code}{56}, 
+		\hdclindex{268}{code}{190}, \hdclindex{309}{code}{231}, 
+		\hdclindex{737}{code}{638}
+  \item \verb*+\hss+\pfill \hdclindex{598}{code}{507}, 
+		\hdclindex{600}{code}{509}
   \item {\ttfamily hssa-reledmac} (env.)\pfill 
-		\hdclindex{596}{main}{505}
-  \item \verb*+\HSSAarticletitle+\pfill \hdclindex{456}{main}{373}
-  \item \verb*+\HSSAauthoraddress+\pfill \hdclindex{463}{code}{379}, 
-		\hdclindex{464}{code}{380}
-  \item \verb*+\HSSAauthorname+\pfill \hdclindex{459}{code}{375}, 
-		\hdclindex{460}{code}{376}
-  \item \verb*+\HSSAfirstpage+\pfill \hdclindex{496}{code}{410}, 
-		\hdclindex{499}{code}{413}
-  \item \verb*+\HSSAfooter+\pfill \hdclindex{128}{main}{69}, 
-		\hdclindex{144}{main}{80}
-  \item \verb*+\HSSAissuedate+\pfill \hdclindex{461}{code}{377}, 
-		\hdclindex{462}{code}{378}
-  \item \verb*+\HSSAissuenum+\pfill \hdclindex{453}{main}{371}
-  \item \verb*+\HSSAjournalAbbrev+\pfill \hdclindex{508}{code}{422}
-  \item \verb*+\HSSAlastpage+\pfill \hdclindex{497}{code}{411}, 
-		\hdclindex{500}{code}{414}
-  \item \verb*+\HSSAproductiontrue+\pfill \hdclindex{171}{code}{103}
-  \item \verb*+\HSSArecto+\pfill \hdclindex{135}{main}{73}, 
-		\hdclindex{141}{code}{78}
-  \item \verb*+\HSSAshorttitle+\pfill \hdclindex{140}{code}{77}
+		\hdclindex{625}{main}{532}
+  \item \verb*+\HSSAarticletitle+\pfill \hdclindex{480}{main}{395}
+  \item \verb*+\HSSAauthoraddress+\pfill \hdclindex{487}{code}{401}, 
+		\hdclindex{488}{code}{402}
+  \item \verb*+\HSSAauthorname+\pfill \hdclindex{483}{code}{397}, 
+		\hdclindex{484}{code}{398}
+  \item \verb*+\HSSAfirstpage+\pfill \hdclindex{524}{code}{436}, 
+		\hdclindex{527}{code}{439}
+  \item \verb*+\HSSAfooter+\pfill \hdclindex{140}{main}{79}, 
+		\hdclindex{156}{main}{90}
+  \item \verb*+\HSSAissuedate+\pfill \hdclindex{485}{code}{399}, 
+		\hdclindex{486}{code}{400}
+  \item \verb*+\HSSAissuenum+\pfill \hdclindex{477}{main}{393}
+  \item \verb*+\HSSAjournalAbbrev+\pfill \hdclindex{536}{code}{448}
+  \item \verb*+\HSSAlastpage+\pfill \hdclindex{525}{code}{437}, 
+		\hdclindex{528}{code}{440}
+  \item \verb*+\HSSAproductiontrue+\pfill \hdclindex{195}{code}{125}
+  \item \verb*+\HSSArecto+\pfill \hdclindex{147}{main}{83}, 
+		\hdclindex{153}{code}{88}
+  \item \verb*+\HSSAshorttitle+\pfill \hdclindex{152}{code}{87}
   \item \verb*+\HSSAspecialissuedetails+\pfill 
-		\hdclindex{450}{main}{369}
-  \item \verb*+\HSSAverso+\pfill \hdclindex{133}{main}{72}, 
-		\hdclindex{139}{code}{76}, \hdclindex{140}{code}{77}
-  \item \verb*+\ht+\pfill \hdclindex{568}{code}{479}
-  \item \verb*+\hypersetup+\pfill \hdclindex{457}{code}{373}, 
-		\hdclindex{459}{code}{375}, \hdclindex{527}{main}{441}
+		\hdclindex{474}{main}{391}
+  \item \verb*+\HSSAverso+\pfill \hdclindex{145}{main}{82}, 
+		\hdclindex{151}{code}{86}, \hdclindex{152}{code}{87}
+  \item \verb*+\ht+\pfill \hdclindex{597}{code}{506}
+  \item \verb*+\hypersetup+\pfill \hdclindex{481}{code}{395}, 
+		\hdclindex{483}{code}{397}, \hdclindex{555}{main}{467}
 
   \indexspace
 {\bfseries\hfil I\hfil}\nopagebreak
 
-  \item \verb*+\ifboolexpr+\pfill \hdclindex{851}{code}{745}
-  \item \verb*+\ifciteindex+\pfill \hdclindex{832}{code}{727}
-  \item \verb*+\ifdim+\pfill \hdclindex{426}{code}{346}, 
-		\hdclindex{567}{code}{478}
-  \item \verb*+\iffieldundef+\pfill \hdclindex{823}{code}{720}
-  \item \verb*+\ifHSSAproduction+\pfill \hdclindex{171}{code}{103}, 
-		\hdclindex{173}{code}{105}, \hdclindex{195}{code}{126}
-  \item \verb*+\ifhyperref+\pfill \hdclindex{767}{code}{664}, 
-		\hdclindex{772}{code}{669}, \hdclindex{777}{code}{674}, 
-		\hdclindex{783}{code}{680}, \hdclindex{788}{code}{685}, 
-		\hdclindex{798}{code}{695}
-  \item \verb*+\ifhyperrefsloka+\pfill \hdclindex{793}{code}{690}
-  \item \verb*+\ifIssueCover+\pfill \hdclindex{236}{code}{160}, 
-		\hdclindex{265}{code}{189}, \hdclindex{289}{code}{213}
-  \item \verb*+\ifnum+\pfill \hdclindex{857}{code}{751}
-  \item \verb*+\ifnumequal+\pfill \hdclindex{852}{code}{746}
-  \item \verb*+\ifnumless+\pfill \hdclindex{854}{code}{748}
-  \item \verb*+\IfStrEq+\pfill \hdclindex{858}{code}{752}, 
-		\hdclindex{861}{code}{755}
-  \item \verb*+\ifx+\pfill \hdclindex{468}{code}{384}
-  \item \verb*+\includegraphics+\pfill \hdclindex{247}{code}{171}, 
-		\hdclindex{503}{code}{417}
-  \item \verb*+\indent+\pfill \hdclindex{556}{code}{468}
-  \item \verb*+\index+\pfill \hdclindex{891}{code}{784}, 
-		\hdclindex{892}{code}{785}, \hdclindex{899}{code}{791}, 
-		\hdclindex{900}{code}{792}, \hdclindex{906}{code}{796}, 
-		\hdclindex{910}{code}{798}
-  \item \verb*+\indexnames+\pfill \hdclindex{833}{code}{728}
-  \item \verb*+\indexsetup+\pfill \hdclindex{869}{code}{763}
-  \item \verb*+\isdot+\pfill \hdclindex{817}{code}{714}
-  \item \verb*+\IssueCoverfalse+\pfill \hdclindex{237}{code}{161}
-  \item \verb*+\issuecovertext+\pfill \hdclindex{266}{code}{190}, 
-		\hdclindex{267}{code}{191}
-  \item \verb*+\item+\pfill \hdclindex{325}{code}{248}, 
-		\hdclindex{326}{code}{249}, \hdclindex{327}{code}{250}, 
-		\hdclindex{328}{code}{251}, \hdclindex{330}{code}{253}, 
-		\hdclindex{332}{code}{255}, \hdclindex{333}{code}{256}, 
-		\hdclindex{334}{code}{257}, \hdclindex{335}{code}{258}, 
-		\hdclindex{336}{code}{259}, \hdclindex{549}{code}{461}, 
-		\hdclindex{581}{code}{491}
-  \item \verb*+\itemsep+\pfill \hdclindex{579}{code}{489}
-  \item \verb*+\itshape+\pfill \hdclindex{251}{code}{175}, 
-		\hdclindex{495}{code}{409}, \hdclindex{665}{code}{568}
+  \item \verb*+\ifboolexpr+\pfill \hdclindex{924}{code}{816}
+  \item \verb*+\ifciteindex+\pfill \hdclindex{905}{code}{798}
+  \item \verb*+\ifdim+\pfill \hdclindex{450}{code}{368}, 
+		\hdclindex{596}{code}{505}
+  \item \verb*+\iffieldundef+\pfill \hdclindex{896}{code}{791}
+  \item \verb*+\ifHSSAproduction+\pfill \hdclindex{195}{code}{125}, 
+		\hdclindex{197}{code}{127}, \hdclindex{219}{code}{148}
+  \item \verb*+\ifhyperref+\pfill \hdclindex{840}{code}{735}, 
+		\hdclindex{845}{code}{740}, \hdclindex{850}{code}{745}, 
+		\hdclindex{856}{code}{751}, \hdclindex{861}{code}{756}, 
+		\hdclindex{871}{code}{766}
+  \item \verb*+\ifhyperrefsloka+\pfill \hdclindex{866}{code}{761}
+  \item \verb*+\ifIssueCover+\pfill \hdclindex{260}{code}{182}, 
+		\hdclindex{289}{code}{211}, \hdclindex{313}{code}{235}
+  \item \verb*+\ifLuaTeX+\pfill \hdclindex{69}{code}{24}, 
+		\hdclindex{627}{code}{533}, \hdclindex{635}{code}{541}, 
+		\hdclindex{644}{code}{550}
+  \item \verb*+\ifnum+\pfill \hdclindex{930}{code}{822}
+  \item \verb*+\ifnumequal+\pfill \hdclindex{925}{code}{817}
+  \item \verb*+\ifnumless+\pfill \hdclindex{927}{code}{819}
+  \item \verb*+\ifReview+\pfill \hdclindex{124}{main}{73}, 
+		\hdclindex{125}{code}{73}, \hdclindex{159}{code}{92}, 
+		\hdclindex{171}{code}{104}, \hdclindex{175}{code}{108}, 
+		\hdclindex{502}{code}{415}
+  \item \verb*+\IfStrEq+\pfill \hdclindex{931}{code}{823}, 
+		\hdclindex{934}{code}{826}
+  \item \verb*+\iftex+\pfill \hdclindex{80}{main}{35}
+  \item \verb*+\ifx+\pfill \hdclindex{492}{code}{406}
+  \item \verb*+\includegraphics+\pfill \hdclindex{271}{code}{193}, 
+		\hdclindex{531}{code}{443}
+  \item \verb*+\indent+\pfill \hdclindex{585}{code}{495}
+  \item \verb*+\index+\pfill \hdclindex{964}{code}{855}, 
+		\hdclindex{965}{code}{856}, \hdclindex{972}{code}{862}, 
+		\hdclindex{973}{code}{863}, \hdclindex{979}{code}{867}, 
+		\hdclindex{983}{code}{869}
+  \item \verb*+\indexnames+\pfill \hdclindex{906}{code}{799}
+  \item \verb*+\indexsetup+\pfill \hdclindex{942}{code}{834}
+  \item \verb*+\isdot+\pfill \hdclindex{890}{code}{785}
+  \item \verb*+\IssueCoverfalse+\pfill \hdclindex{261}{code}{183}
+  \item \verb*+\issuecovertext+\pfill \hdclindex{290}{code}{212}, 
+		\hdclindex{291}{code}{213}
+  \item \verb*+\item+\pfill \hdclindex{349}{code}{270}, 
+		\hdclindex{350}{code}{271}, \hdclindex{351}{code}{272}, 
+		\hdclindex{352}{code}{273}, \hdclindex{354}{code}{275}, 
+		\hdclindex{356}{code}{277}, \hdclindex{357}{code}{278}, 
+		\hdclindex{358}{code}{279}, \hdclindex{359}{code}{280}, 
+		\hdclindex{360}{code}{281}, \hdclindex{578}{code}{488}, 
+		\hdclindex{610}{code}{518}
+  \item \verb*+\itemsep+\pfill \hdclindex{608}{code}{516}
+  \item \verb*+\itshape+\pfill \hdclindex{275}{code}{197}, 
+		\hdclindex{523}{code}{435}, \hdclindex{729}{code}{630}
 
   \indexspace
 {\bfseries\hfil J\hfil}\nopagebreak
 
-  \item \verb*+\jobname+\pfill \hdclindex{525}{code}{439}
+  \item \verb*+\jobname+\pfill \hdclindex{553}{code}{465}
 
   \indexspace
 {\bfseries\hfil K\hfil}\nopagebreak
 
-  \item \verb*+\Keywords+\pfill \hdclindex{526}{code}{440}
+  \item \verb*+\Keywords+\pfill \hdclindex{554}{code}{466}
 
   \indexspace
 {\bfseries\hfil L\hfil}\nopagebreak
 
-  \item \verb*+\labelsep+\pfill \hdclindex{579}{code}{489}
-  \item \verb*+\labelwidth+\pfill \hdclindex{577}{code}{487}, 
-		\hdclindex{578}{code}{488}
-  \item \verb*+\langle+\pfill \hdclindex{348}{code}{271}, 
-		\hdclindex{406}{code}{328}
-  \item \verb*+\LARGE+\pfill \hdclindex{121}{code}{64}, 
-		\hdclindex{259}{code}{183}, \hdclindex{271}{code}{195}
-  \item \verb*+\large+\pfill \hdclindex{274}{code}{198}, 
-		\hdclindex{491}{code}{405}, \hdclindex{626}{code}{534}
-  \item \verb*+\largesloka+\pfill \hdclindex{626}{code}{534}
-  \item \verb*+\Last page+\pfill \hdclindex{210}{main}{140}
-  \item \verb*+\LastPage+\pfill \hdclindex{211}{code}{140}, 
-		\hdclindex{212}{code}{141}
-  \item \verb*+\LaTeX+\pfill \hdclindex{378}{code}{301}
-  \item \verb*+\leavevmode+\pfill \hdclindex{555}{code}{467}, 
-		\hdclindex{566}{code}{477}
-  \item \verb*+\lefthyphenmin+\pfill \hdclindex{441}{code}{360}
-  \item \verb*+\leftmargin+\pfill \hdclindex{548}{code}{460}, 
-		\hdclindex{558}{code}{470}, \hdclindex{559}{code}{471}, 
-		\hdclindex{578}{code}{488}
-  \item \verb*+\leftmargini+\pfill \hdclindex{324}{code}{247}
-  \item \verb*+\leftskip+\pfill \hdclindex{560}{code}{472}
-  \item \verb*+\let+\pfill \hdclindex{137}{code}{74}, 
-		\hdclindex{138}{code}{75}, \hdclindex{140}{code}{77}, 
-		\hdclindex{208}{code}{138}, \hdclindex{218}{code}{143}, 
-		\hdclindex{220}{code}{145}, \hdclindex{234}{code}{159}, 
-		\hdclindex{504}{code}{418}, \hdclindex{553}{code}{465}, 
-		\hdclindex{588}{code}{498}, \hdclindex{590}{code}{500}, 
-		\hdclindex{615}{code}{523}, \hdclindex{652}{code}{556}, 
-		\hdclindex{664}{code}{567}, \hdclindex{675}{code}{577}, 
-		\hdclindex{676}{code}{578}, \hdclindex{677}{code}{579}, 
-		\hdclindex{681}{code}{583}, \hdclindex{894}{code}{787}, 
-		\hdclindex{902}{code}{794}, \hdclindex{907}{code}{797}, 
-		\hdclindex{911}{code}{799}
-  \item \verb*+\lettergroup+\pfill \hdclindex{572}{code}{483}
-  \item \verb*+\linewidth+\pfill \hdclindex{244}{code}{168}, 
-		\hdclindex{245}{code}{169}, \hdclindex{257}{code}{181}, 
-		\hdclindex{269}{code}{193}, \hdclindex{285}{code}{209}, 
-		\hdclindex{286}{code}{210}, \hdclindex{287}{code}{211}, 
-		\hdclindex{309}{code}{232}
-  \item \verb*+\list+\pfill \hdclindex{548}{code}{460}
-  \item \verb*+\literal+\pfill \hdclindex{811}{code}{708}
+  \item \verb*+\labelsep+\pfill \hdclindex{608}{code}{516}
+  \item \verb*+\labelwidth+\pfill \hdclindex{606}{code}{514}, 
+		\hdclindex{607}{code}{515}
+  \item \verb*+\langle+\pfill \hdclindex{372}{code}{293}, 
+		\hdclindex{430}{code}{350}
+  \item \verb*+\LARGE+\pfill \hdclindex{133}{code}{74}, 
+		\hdclindex{283}{code}{205}, \hdclindex{295}{code}{217}
+  \item \verb*+\large+\pfill \hdclindex{298}{code}{220}, 
+		\hdclindex{519}{code}{431}, \hdclindex{685}{code}{591}
+  \item \verb*+\largesloka+\pfill \hdclindex{685}{code}{591}
+  \item \verb*+\Last page+\pfill \hdclindex{234}{main}{162}
+  \item \verb*+\LastPage+\pfill \hdclindex{235}{code}{162}, 
+		\hdclindex{236}{code}{163}
+  \item \verb*+\LaTeX+\pfill \hdclindex{402}{code}{323}
+  \item \verb*+\leavevmode+\pfill \hdclindex{584}{code}{494}, 
+		\hdclindex{595}{code}{504}
+  \item \verb*+\lefthyphenmin+\pfill \hdclindex{465}{code}{382}
+  \item \verb*+\leftmargin+\pfill \hdclindex{577}{code}{487}, 
+		\hdclindex{587}{code}{497}, \hdclindex{588}{code}{498}, 
+		\hdclindex{607}{code}{515}
+  \item \verb*+\leftmargini+\pfill \hdclindex{348}{code}{269}
+  \item \verb*+\leftskip+\pfill \hdclindex{589}{code}{499}
+  \item \verb*+\let+\pfill \hdclindex{149}{code}{84}, 
+		\hdclindex{150}{code}{85}, \hdclindex{152}{code}{87}, 
+		\hdclindex{232}{code}{160}, \hdclindex{242}{code}{165}, 
+		\hdclindex{244}{code}{167}, \hdclindex{258}{code}{181}, 
+		\hdclindex{532}{code}{444}, \hdclindex{582}{code}{492}, 
+		\hdclindex{617}{code}{525}, \hdclindex{619}{code}{527}, 
+		\hdclindex{672}{code}{578}, \hdclindex{713}{code}{615}, 
+		\hdclindex{728}{code}{629}, \hdclindex{739}{code}{639}, 
+		\hdclindex{740}{code}{640}, \hdclindex{741}{code}{641}, 
+		\hdclindex{745}{code}{645}, \hdclindex{967}{code}{858}, 
+		\hdclindex{975}{code}{865}, \hdclindex{980}{code}{868}, 
+		\hdclindex{984}{code}{870}
+  \item \verb*+\lettergroup+\pfill \hdclindex{601}{code}{510}
+  \item \verb*+\linewidth+\pfill \hdclindex{268}{code}{190}, 
+		\hdclindex{269}{code}{191}, \hdclindex{281}{code}{203}, 
+		\hdclindex{293}{code}{215}, \hdclindex{309}{code}{231}, 
+		\hdclindex{310}{code}{232}, \hdclindex{311}{code}{233}, 
+		\hdclindex{333}{code}{254}
+  \item \verb*+\list+\pfill \hdclindex{577}{code}{487}
+  \item \verb*+\literal+\pfill \hdclindex{884}{code}{779}
   \item \verb*+\LoadClass+\pfill \hdclindex{45}{main}{2}
-  \item \verb*+\long+\pfill \hdclindex{238}{code}{162}, 
-		\hdclindex{303}{code}{226}, \hdclindex{394}{code}{316}, 
-		\hdclindex{422}{code}{342}
+  \item \verb*+\long+\pfill \hdclindex{262}{code}{184}, 
+		\hdclindex{327}{code}{248}, \hdclindex{418}{code}{338}, 
+		\hdclindex{446}{code}{364}
 
   \indexspace
 {\bfseries\hfil M\hfil}\nopagebreak
 
-  \item \verb*+\makeindex+\pfill \hdclindex{874}{code}{768}, 
-		\hdclindex{881}{code}{775}
-  \item \verb*+\MakeLowercase+\pfill \hdclindex{491}{code}{405}
-  \item \verb*+\MakeTextLowercase+\pfill \hdclindex{67}{code}{22}, 
-		\hdclindex{145}{code}{80}, \hdclindex{150}{code}{85}, 
-		\hdclindex{151}{code}{86}
-  \item \verb*+\maketitle+\pfill \hdclindex{179}{code}{111}
-  \item \verb*+\MakeUppercase+\pfill \hdclindex{486}{code}{400}, 
-		\hdclindex{490}{code}{404}
-  \item \verb*+\map+\pfill \hdclindex{745}{code}{644}
-  \item \verb*+\maps+\pfill \hdclindex{744}{code}{643}
-  \item \verb*+\marginparwidth+\pfill \hdclindex{83}{code}{35}
-  \item \verb*+\mbox+\pfill \hdclindex{398}{code}{320}
-  \item \verb*+\medskip+\pfill \hdclindex{250}{code}{174}, 
-		\hdclindex{339}{code}{262}, \hdclindex{344}{code}{267}, 
-		\hdclindex{350}{code}{273}, \hdclindex{360}{code}{283}, 
-		\hdclindex{367}{code}{290}, \hdclindex{375}{code}{298}
-  \item \verb*+\miniedition+\pfill \hdclindex{573}{main}{484}
-  \item \verb*+\mkbibmonth+\pfill \hdclindex{816}{code}{713}
-  \item \verb*+\mkvolroman+\pfill \hdclindex{761}{code}{658}
-  \item \verb*+\MS+\pfill \hdclindex{904}{main}{796}
-  \item \verb*+\MScite+\pfill \hdclindex{595}{main}{505}, 
-		\hdclindex{905}{main}{796}
-  \item \verb*+\MSnocite+\pfill \hdclindex{908}{main}{798}
-  \item \verb*+\MSsilent+\pfill \hdclindex{909}{main}{798}
-  \item \verb*+\multicitedelim+\pfill \hdclindex{836}{code}{731}, 
-		\hdclindex{842}{code}{737}
+  \item \verb*+\makeindex+\pfill \hdclindex{947}{code}{839}, 
+		\hdclindex{954}{code}{846}
+  \item \verb*+\MakeLowercase+\pfill \hdclindex{519}{code}{431}
+  \item \verb*+\MakeTextLowercase+\pfill \hdclindex{66}{code}{21}, 
+		\hdclindex{157}{code}{90}, \hdclindex{167}{code}{100}, 
+		\hdclindex{168}{code}{101}
+  \item \verb*+\maketitle+\pfill \hdclindex{203}{code}{133}
+  \item \verb*+\MakeUppercase+\pfill \hdclindex{514}{code}{426}, 
+		\hdclindex{518}{code}{430}
+  \item \verb*+\map+\pfill \hdclindex{818}{code}{715}
+  \item \verb*+\maps+\pfill \hdclindex{817}{code}{714}
+  \item \verb*+\marginparwidth+\pfill \hdclindex{93}{code}{44}
+  \item \verb*+\mbox+\pfill \hdclindex{422}{code}{342}
+  \item \verb*+\medskip+\pfill \hdclindex{274}{code}{196}, 
+		\hdclindex{363}{code}{284}, \hdclindex{368}{code}{289}, 
+		\hdclindex{374}{code}{295}, \hdclindex{384}{code}{305}, 
+		\hdclindex{391}{code}{312}, \hdclindex{399}{code}{320}
+  \item \verb*+\miniedition+\pfill \hdclindex{602}{main}{511}
+  \item \verb*+\mkbibmonth+\pfill \hdclindex{889}{code}{784}
+  \item \verb*+\mkvolroman+\pfill \hdclindex{834}{code}{729}
+  \item \verb*+\MS+\pfill \hdclindex{977}{main}{867}
+  \item \verb*+\MScite+\pfill \hdclindex{624}{main}{532}, 
+		\hdclindex{978}{main}{867}
+  \item \verb*+\MSnocite+\pfill \hdclindex{981}{main}{869}
+  \item \verb*+\MSsilent+\pfill \hdclindex{982}{main}{869}
+  \item \verb*+\multicitedelim+\pfill \hdclindex{909}{code}{802}, 
+		\hdclindex{915}{code}{808}
 
   \indexspace
 {\bfseries\hfil N\hfil}\nopagebreak
 
-  \item \verb*+\nameyeardelim+\pfill \hdclindex{803}{code}{700}
-  \item \verb*+\narrower+\pfill \hdclindex{562}{code}{474}
+  \item \verb*+\nameyeardelim+\pfill \hdclindex{876}{code}{771}
+  \item \verb*+\narrower+\pfill \hdclindex{591}{code}{501}
   \item \verb*+\NeedsTeXFormat+\pfill \hdclindex{43}{main}{1}
-  \item \verb*+\newbox+\pfill \hdclindex{501}{code}{415}
-  \item \verb*+\newcommand+\pfill \hdclindex{92}{code}{44}, 
-		\hdclindex{94}{code}{45}, \hdclindex{132}{code}{71}, 
-		\hdclindex{468}{code}{384}, \hdclindex{504}{code}{418}, 
-		\hdclindex{572}{code}{483}, \hdclindex{624}{code}{532}, 
-		\hdclindex{625}{code}{533}, \hdclindex{626}{code}{534}, 
-		\hdclindex{887}{code}{780}, \hdclindex{906}{code}{796}, 
-		\hdclindex{910}{code}{798}
-  \item \verb*+\newenvironment+\pfill \hdclindex{547}{code}{459}, 
-		\hdclindex{552}{code}{464}, \hdclindex{584}{code}{494}
-  \item \verb*+\newfontfamily+\pfill \hdclindex{607}{code}{515}, 
-		\hdclindex{617}{code}{525}, \hdclindex{627}{code}{535}, 
-		\hdclindex{634}{code}{542}, \hdclindex{639}{code}{547}
-  \item \verb*+\newif+\pfill \hdclindex{171}{code}{103}, 
-		\hdclindex{236}{code}{160}
-  \item \verb*+\newpage+\pfill \hdclindex{196}{code}{127}, 
-		\hdclindex{300}{code}{224}, \hdclindex{394}{code}{316}
-  \item \verb*+\newrefcontext+\pfill \hdclindex{735}{code}{634}
-  \item \verb*+\newtoks+\pfill \hdclindex{467}{code}{383}
-  \item \verb*+\nolinkurl+\pfill \hdclindex{763}{code}{660}, 
-		\hdclindex{764}{code}{661}, \hdclindex{768}{code}{665}, 
-		\hdclindex{769}{code}{666}, \hdclindex{773}{code}{670}, 
-		\hdclindex{774}{code}{671}, \hdclindex{778}{code}{675}, 
-		\hdclindex{779}{code}{676}, \hdclindex{784}{code}{681}, 
-		\hdclindex{785}{code}{682}, \hdclindex{790}{code}{687}, 
-		\hdclindex{794}{code}{691}, \hdclindex{795}{code}{692}, 
-		\hdclindex{799}{code}{696}, \hdclindex{800}{code}{697}
-  \item \verb*+\normalcolor+\pfill \hdclindex{306}{code}{229}, 
-		\hdclindex{391}{code}{314}
-  \item \verb*+\normalfont+\pfill \hdclindex{404}{code}{326}, 
-		\hdclindex{486}{code}{400}, \hdclindex{490}{code}{404}, 
-		\hdclindex{491}{code}{405}, \hdclindex{495}{code}{409}
-  \item \verb*+\normalfootfootmarkX+\pfill \hdclindex{672}{code}{575}
-  \item \verb*+\normalsize+\pfill \hdclindex{277}{code}{201}, 
-		\hdclindex{495}{code}{409}
-  \item \verb*+\num@one+\pfill \hdclindex{847}{code}{741}, 
-		\hdclindex{849}{code}{743}, \hdclindex{854}{code}{748}, 
-		\hdclindex{856}{code}{750}
-  \item \verb*+\num@one@len+\pfill \hdclindex{849}{code}{743}, 
-		\hdclindex{852}{code}{746}
-  \item \verb*+\num@two+\pfill \hdclindex{848}{code}{742}, 
-		\hdclindex{850}{code}{744}, \hdclindex{854}{code}{748}, 
-		\hdclindex{856}{code}{750}, \hdclindex{863}{code}{757}, 
-		\hdclindex{864}{code}{758}
-  \item \verb*+\num@two@len+\pfill \hdclindex{850}{code}{744}, 
-		\hdclindex{852}{code}{746}, \hdclindex{857}{code}{751}
-  \item \verb*+\numberline+\pfill \hdclindex{208}{code}{138}
+  \item \verb*+\newbox+\pfill \hdclindex{529}{code}{441}
+  \item \verb*+\newcommand+\pfill \hdclindex{102}{code}{53}, 
+		\hdclindex{104}{code}{54}, \hdclindex{144}{code}{81}, 
+		\hdclindex{492}{code}{406}, \hdclindex{532}{code}{444}, 
+		\hdclindex{601}{code}{510}, \hdclindex{656}{code}{562}, 
+		\hdclindex{657}{code}{563}, \hdclindex{658}{code}{564}, 
+		\hdclindex{683}{code}{589}, \hdclindex{684}{code}{590}, 
+		\hdclindex{685}{code}{591}, \hdclindex{960}{code}{851}, 
+		\hdclindex{979}{code}{867}, \hdclindex{983}{code}{869}
+  \item \verb*+\newenvironment+\pfill \hdclindex{576}{code}{486}, 
+		\hdclindex{581}{code}{491}, \hdclindex{613}{code}{521}
+  \item \verb*+\newfontfamily+\pfill \hdclindex{662}{code}{568}, 
+		\hdclindex{674}{code}{580}, \hdclindex{686}{code}{592}, 
+		\hdclindex{694}{code}{600}, \hdclindex{699}{code}{605}
+  \item \verb*+\newif+\pfill \hdclindex{125}{code}{73}, 
+		\hdclindex{195}{code}{125}, \hdclindex{260}{code}{182}
+  \item \verb*+\newpage+\pfill \hdclindex{220}{code}{149}, 
+		\hdclindex{324}{code}{246}, \hdclindex{418}{code}{338}
+  \item \verb*+\newrefcontext+\pfill \hdclindex{808}{code}{705}
+  \item \verb*+\newtoks+\pfill \hdclindex{491}{code}{405}
+  \item \verb*+\nolinkurl+\pfill \hdclindex{836}{code}{731}, 
+		\hdclindex{837}{code}{732}, \hdclindex{841}{code}{736}, 
+		\hdclindex{842}{code}{737}, \hdclindex{846}{code}{741}, 
+		\hdclindex{847}{code}{742}, \hdclindex{851}{code}{746}, 
+		\hdclindex{852}{code}{747}, \hdclindex{857}{code}{752}, 
+		\hdclindex{858}{code}{753}, \hdclindex{863}{code}{758}, 
+		\hdclindex{867}{code}{762}, \hdclindex{868}{code}{763}, 
+		\hdclindex{872}{code}{767}, \hdclindex{873}{code}{768}
+  \item \verb*+\normalcolor+\pfill \hdclindex{330}{code}{251}, 
+		\hdclindex{415}{code}{336}
+  \item \verb*+\normalfont+\pfill \hdclindex{428}{code}{348}, 
+		\hdclindex{514}{code}{426}, \hdclindex{518}{code}{430}, 
+		\hdclindex{519}{code}{431}, \hdclindex{523}{code}{435}
+  \item \verb*+\normalfootfootmarkX+\pfill \hdclindex{736}{code}{637}
+  \item \verb*+\normalsize+\pfill \hdclindex{301}{code}{223}, 
+		\hdclindex{523}{code}{435}
+  \item \verb*+\num@one+\pfill \hdclindex{920}{code}{812}, 
+		\hdclindex{922}{code}{814}, \hdclindex{927}{code}{819}, 
+		\hdclindex{929}{code}{821}
+  \item \verb*+\num@one@len+\pfill \hdclindex{922}{code}{814}, 
+		\hdclindex{925}{code}{817}
+  \item \verb*+\num@two+\pfill \hdclindex{921}{code}{813}, 
+		\hdclindex{923}{code}{815}, \hdclindex{927}{code}{819}, 
+		\hdclindex{929}{code}{821}, \hdclindex{936}{code}{828}, 
+		\hdclindex{937}{code}{829}
+  \item \verb*+\num@two@len+\pfill \hdclindex{923}{code}{815}, 
+		\hdclindex{925}{code}{817}, \hdclindex{930}{code}{822}
+  \item \verb*+\numberline+\pfill \hdclindex{232}{code}{160}
 
   \indexspace
 {\bfseries\hfil O\hfil}\nopagebreak
 
-  \item \verb*+\on@line+\pfill \hdclindex{738}{code}{637}
-  \item \verb*+\originalfootnote+\pfill \hdclindex{590}{code}{500}, 
-		\hdclindex{675}{code}{577}, \hdclindex{676}{code}{578}, 
-		\hdclindex{677}{code}{579}
+  \item \verb*+\on@line+\pfill \hdclindex{811}{code}{708}
+  \item \verb*+\originalfootnote+\pfill \hdclindex{619}{code}{527}, 
+		\hdclindex{739}{code}{639}, \hdclindex{740}{code}{640}, 
+		\hdclindex{741}{code}{641}
 
   \indexspace
 {\bfseries\hfil P\hfil}\nopagebreak
 
-  \item \verb*+\p@+\pfill \hdclindex{484}{code}{398}, 
-		\hdclindex{485}{code}{399}, \hdclindex{488}{code}{402}, 
-		\hdclindex{489}{code}{403}, \hdclindex{493}{code}{407}, 
-		\hdclindex{494}{code}{408}, \hdclindex{903}{code}{795}
-  \item \verb*+\pagecolor+\pfill \hdclindex{242}{code}{166}, 
-		\hdclindex{305}{code}{228}, \hdclindex{390}{code}{313}, 
-		\hdclindex{396}{code}{318}
-  \item \verb*+\pagelayout+\pfill \hdclindex{434}{main}{354}
-  \item \verb*+\pagestyle+\pfill \hdclindex{148}{code}{83}
-  \item \verb*+\par+\pfill \hdclindex{204}{code}{134}, 
-		\hdclindex{247}{code}{171}, \hdclindex{250}{code}{174}, 
-		\hdclindex{253}{code}{177}, \hdclindex{255}{code}{179}, 
-		\hdclindex{262}{code}{186}, \hdclindex{264}{code}{188}, 
-		\hdclindex{273}{code}{197}, \hdclindex{275}{code}{199}, 
-		\hdclindex{279}{code}{203}, \hdclindex{282}{code}{206}, 
-		\hdclindex{284}{code}{208}, \hdclindex{400}{code}{322}, 
-		\hdclindex{427}{code}{347}, \hdclindex{626}{code}{534}, 
-		\hdclindex{903}{code}{795}
-  \item \verb*+\parbox+\pfill \hdclindex{124}{code}{66}
-  \item \verb*+\parindent+\pfill \hdclindex{79}{code}{32}, 
-		\hdclindex{241}{code}{165}, \hdclindex{394}{code}{316}, 
-		\hdclindex{554}{code}{466}, \hdclindex{576}{code}{486}
-  \item \verb*+\parsep+\pfill \hdclindex{580}{code}{490}
-  \item \verb*+\parskip+\pfill \hdclindex{397}{code}{319}
-  \item \verb*+\PassOptionsToPackage+\pfill \hdclindex{867}{code}{761}
-  \item \verb*+\pdfinfo+\pfill \hdclindex{517}{code}{431}
-  \item \verb*+\pdfstringdef+\pfill \hdclindex{515}{code}{429}, 
-		\hdclindex{516}{code}{430}
-  \item \verb*+\postnotedelim+\pfill \hdclindex{802}{code}{699}
-  \item \verb*+\PreliminaryNote+\pfill \hdclindex{93}{main}{45}
-  \item \verb*+\printbibliography+\pfill \hdclindex{734}{code}{633}
-  \item \verb*+\printDOI+\pfill \hdclindex{468}{code}{384}, 
-		\hdclindex{478}{code}{393}
-  \item \verb*+\printfield+\pfill \hdclindex{841}{code}{736}
-  \item \verb*+\printnames+\pfill \hdclindex{835}{code}{730}
-  \item \verb*+\printtext+\pfill \hdclindex{835}{code}{730}
-  \item \verb*+\providecommand+\pfill \hdclindex{896}{code}{788}
+  \item \verb*+\p@+\pfill \hdclindex{512}{code}{424}, 
+		\hdclindex{513}{code}{425}, \hdclindex{516}{code}{428}, 
+		\hdclindex{517}{code}{429}, \hdclindex{521}{code}{433}, 
+		\hdclindex{522}{code}{434}, \hdclindex{976}{code}{866}
+  \item \verb*+\pagecolor+\pfill \hdclindex{266}{code}{188}, 
+		\hdclindex{329}{code}{250}, \hdclindex{414}{code}{335}, 
+		\hdclindex{420}{code}{340}
+  \item \verb*+\pagelayout+\pfill \hdclindex{458}{main}{376}
+  \item \verb*+\pagestyle+\pfill \hdclindex{165}{code}{98}
+  \item \verb*+\par+\pfill \hdclindex{228}{code}{156}, 
+		\hdclindex{271}{code}{193}, \hdclindex{274}{code}{196}, 
+		\hdclindex{277}{code}{199}, \hdclindex{279}{code}{201}, 
+		\hdclindex{286}{code}{208}, \hdclindex{288}{code}{210}, 
+		\hdclindex{297}{code}{219}, \hdclindex{299}{code}{221}, 
+		\hdclindex{303}{code}{225}, \hdclindex{306}{code}{228}, 
+		\hdclindex{308}{code}{230}, \hdclindex{424}{code}{344}, 
+		\hdclindex{451}{code}{369}, \hdclindex{685}{code}{591}, 
+		\hdclindex{976}{code}{866}
+  \item \verb*+\parbox+\pfill \hdclindex{136}{code}{76}
+  \item \verb*+\parindent+\pfill \hdclindex{89}{code}{41}, 
+		\hdclindex{265}{code}{187}, \hdclindex{418}{code}{338}, 
+		\hdclindex{583}{code}{493}, \hdclindex{605}{code}{513}
+  \item \verb*+\parsep+\pfill \hdclindex{609}{code}{517}
+  \item \verb*+\parskip+\pfill \hdclindex{421}{code}{341}
+  \item \verb*+\PassOptionsToPackage+\pfill \hdclindex{940}{code}{832}
+  \item \verb*+\pdfinfo+\pfill \hdclindex{545}{code}{457}
+  \item \verb*+\pdfstringdef+\pfill \hdclindex{543}{code}{455}, 
+		\hdclindex{544}{code}{456}
+  \item \verb*+\postnotedelim+\pfill \hdclindex{875}{code}{770}
+  \item \verb*+\PreliminaryNote+\pfill \hdclindex{103}{main}{54}
+  \item \verb*+\printbibliography+\pfill \hdclindex{807}{code}{704}
+  \item \verb*+\printDOI+\pfill \hdclindex{492}{code}{406}, 
+		\hdclindex{506}{code}{419}
+  \item \verb*+\printfield+\pfill \hdclindex{914}{code}{807}
+  \item \verb*+\printnames+\pfill \hdclindex{908}{code}{801}
+  \item \verb*+\printtext+\pfill \hdclindex{908}{code}{801}
+  \item \verb*+\providecommand+\pfill \hdclindex{969}{code}{859}
 
   \indexspace
 {\bfseries\hfil Q\hfil}\nopagebreak
 
-  \item \verb*+\q+\pfill \hdclindex{82}{main}{35}
+  \item \verb*+\q+\pfill \hdclindex{92}{main}{44}
 
   \indexspace
 {\bfseries\hfil R\hfil}\nopagebreak
 
-  \item \verb*+\raggedright+\pfill \hdclindex{258}{code}{182}, 
-		\hdclindex{270}{code}{194}, \hdclindex{404}{code}{326}, 
-		\hdclindex{626}{code}{534}, \hdclindex{670}{code}{573}
-  \item \verb*+\raise+\pfill \hdclindex{570}{code}{481}
-  \item \verb*+\rangle+\pfill \hdclindex{348}{code}{271}, 
-		\hdclindex{406}{code}{328}
-  \item \verb*+\relax+\pfill \hdclindex{95}{code}{46}, 
-		\hdclindex{127}{code}{68}, \hdclindex{468}{code}{384}, 
-		\hdclindex{549}{code}{461}, \hdclindex{564}{code}{476}, 
-		\hdclindex{588}{code}{498}, \hdclindex{664}{code}{567}, 
-		\hdclindex{669}{code}{572}
-  \item \verb*+\renewcommand+\pfill \hdclindex{157}{code}{92}, 
-		\hdclindex{158}{code}{93}, \hdclindex{204}{code}{134}, 
-		\hdclindex{435}{code}{354}, \hdclindex{436}{code}{355}, 
-		\hdclindex{437}{code}{356}, \hdclindex{438}{code}{357}, 
-		\hdclindex{439}{code}{358}, \hdclindex{440}{code}{359}, 
-		\hdclindex{483}{code}{397}, \hdclindex{487}{code}{401}, 
-		\hdclindex{492}{code}{406}, \hdclindex{506}{code}{420}, 
-		\hdclindex{576}{code}{486}, \hdclindex{672}{code}{575}, 
-		\hdclindex{718}{code}{619}, \hdclindex{761}{code}{658}, 
-		\hdclindex{802}{code}{699}, \hdclindex{803}{code}{700}, 
-		\hdclindex{846}{code}{740}, \hdclindex{903}{code}{795}
-  \item \verb*+\renewrobustcmd+\pfill \hdclindex{734}{code}{633}
+  \item \verb*+\raggedright+\pfill \hdclindex{282}{code}{204}, 
+		\hdclindex{294}{code}{216}, \hdclindex{428}{code}{348}, 
+		\hdclindex{685}{code}{591}, \hdclindex{734}{code}{635}
+  \item \verb*+\raise+\pfill \hdclindex{599}{code}{508}
+  \item \verb*+\rangle+\pfill \hdclindex{372}{code}{293}, 
+		\hdclindex{430}{code}{350}
+  \item \verb*+\relax+\pfill \hdclindex{105}{code}{55}, 
+		\hdclindex{139}{code}{78}, \hdclindex{492}{code}{406}, 
+		\hdclindex{578}{code}{488}, \hdclindex{593}{code}{503}, 
+		\hdclindex{617}{code}{525}, \hdclindex{728}{code}{629}, 
+		\hdclindex{733}{code}{634}
+  \item \verb*+\renewcommand+\pfill \hdclindex{181}{code}{114}, 
+		\hdclindex{182}{code}{115}, \hdclindex{228}{code}{156}, 
+		\hdclindex{459}{code}{376}, \hdclindex{460}{code}{377}, 
+		\hdclindex{461}{code}{378}, \hdclindex{462}{code}{379}, 
+		\hdclindex{463}{code}{380}, \hdclindex{464}{code}{381}, 
+		\hdclindex{511}{code}{423}, \hdclindex{515}{code}{427}, 
+		\hdclindex{520}{code}{432}, \hdclindex{534}{code}{446}, 
+		\hdclindex{605}{code}{513}, \hdclindex{736}{code}{637}, 
+		\hdclindex{786}{code}{685}, \hdclindex{834}{code}{729}, 
+		\hdclindex{875}{code}{770}, \hdclindex{876}{code}{771}, 
+		\hdclindex{919}{code}{811}, \hdclindex{976}{code}{866}
+  \item \verb*+\renewrobustcmd+\pfill \hdclindex{807}{code}{704}
   \item \verb*+\RequirePackage+\pfill \hdclindex{47}{main}{3}, 
-		\hdclindex{72}{code}{26}, \hdclindex{77}{code}{30}, 
-		\hdclindex{84}{code}{36}, \hdclindex{201}{code}{131}, 
-		\hdclindex{419}{code}{340}, \hdclindex{443}{code}{362}, 
-		\hdclindex{448}{code}{367}, \hdclindex{449}{code}{368}, 
-		\hdclindex{654}{code}{557}
-  \item \verb*+\Result+\pfill \hdclindex{856}{code}{750}, 
-		\hdclindex{858}{code}{752}, \hdclindex{861}{code}{755}, 
-		\hdclindex{863}{code}{757}
-  \item \verb*+\righthyphenmin+\pfill \hdclindex{442}{code}{361}
-  \item \verb*+\rightmargin+\pfill \hdclindex{548}{code}{460}, 
-		\hdclindex{558}{code}{470}, \hdclindex{586}{code}{496}
-  \item \verb*+\rightskip+\pfill \hdclindex{561}{code}{473}
-  \item \verb*+\rlap+\pfill \hdclindex{570}{code}{481}
-  \item \verb*+\rule+\pfill \hdclindex{287}{code}{211}, 
-		\hdclindex{403}{code}{325}
+		\hdclindex{83}{code}{36}, \hdclindex{87}{code}{39}, 
+		\hdclindex{94}{code}{45}, \hdclindex{225}{code}{153}, 
+		\hdclindex{443}{code}{362}, \hdclindex{467}{code}{384}, 
+		\hdclindex{472}{code}{389}, \hdclindex{473}{code}{390}, 
+		\hdclindex{715}{code}{616}
+  \item \verb*+\resetMathstrut@+\pfill \hdclindex{717}{code}{618}
+  \item \verb*+\Result+\pfill \hdclindex{929}{code}{821}, 
+		\hdclindex{931}{code}{823}, \hdclindex{934}{code}{826}, 
+		\hdclindex{936}{code}{828}
+  \item \verb*+\Reviewfalse+\pfill \hdclindex{125}{code}{73}
+  \item \verb*+\righthyphenmin+\pfill \hdclindex{466}{code}{383}
+  \item \verb*+\rightmargin+\pfill \hdclindex{577}{code}{487}, 
+		\hdclindex{587}{code}{497}, \hdclindex{615}{code}{523}
+  \item \verb*+\rightskip+\pfill \hdclindex{590}{code}{500}
+  \item \verb*+\rlap+\pfill \hdclindex{599}{code}{508}
+  \item \verb*+\rule+\pfill \hdclindex{311}{code}{233}, 
+		\hdclindex{427}{code}{347}
 
   \indexspace
 {\bfseries\hfil S\hfil}\nopagebreak
 
-  \item \verb*+\saneng+\pfill \hdclindex{886}{main}{780}
-  \item \verb*+\sansk+\pfill \hdclindex{890}{code}{783}
-  \item \verb*+\sanskritfont+\pfill \hdclindex{607}{code}{515}, 
-		\hdclindex{615}{code}{523}
-  \item \verb*+\sbox+\pfill \hdclindex{425}{code}{345}
-  \item \verb*+\scriptsize+\pfill \hdclindex{404}{code}{326}
-  \item \verb*+\scshape+\pfill \hdclindex{143}{code}{79}, 
-		\hdclindex{491}{code}{405}
-  \item \verb*+\se+\pfill \hdclindex{894}{code}{787}
-  \item \verb*+\section+\pfill \hdclindex{481}{main}{396}, 
-		\hdclindex{869}{code}{763}
+  \item \verb*+\san+\pfill \hdclindex{657}{code}{563}
+  \item \verb*+\saneng+\pfill \hdclindex{959}{main}{851}
+  \item \verb*+\sansk+\pfill \hdclindex{963}{code}{854}
+  \item \verb*+\sanskritfont+\pfill \hdclindex{662}{code}{568}, 
+		\hdclindex{672}{code}{578}
+  \item \verb*+\sbox+\pfill \hdclindex{449}{code}{367}
+  \item \verb*+\scriptsize+\pfill \hdclindex{428}{code}{348}
+  \item \verb*+\scshape+\pfill \hdclindex{155}{code}{89}, 
+		\hdclindex{519}{code}{431}
+  \item \verb*+\se+\pfill \hdclindex{967}{code}{858}
+  \item \verb*+\section+\pfill \hdclindex{509}{main}{422}, 
+		\hdclindex{942}{code}{834}
   \item \verb*+\selectbackgroundlanguage+\pfill 
-		\hdclindex{191}{code}{123}
-  \item \verb*+\selectfont+\pfill \hdclindex{249}{code}{173}
-  \item \verb*+\setbox+\pfill \hdclindex{502}{code}{416}, 
-		\hdclindex{566}{code}{477}, \hdclindex{569}{code}{480}
-  \item \verb*+\setcounter+\pfill \hdclindex{178}{code}{110}, 
-		\hdclindex{181}{code}{113}, \hdclindex{205}{code}{135}, 
-		\hdclindex{206}{code}{136}, \hdclindex{207}{code}{137}, 
-		\hdclindex{482}{code}{396}
-  \item \verb*+\setdefaultlanguage+\pfill \hdclindex{598}{code}{506}
-  \item \verb*+\setlength+\pfill \hdclindex{83}{code}{35}, 
-		\hdclindex{444}{code}{363}, \hdclindex{505}{code}{419}, 
-		\hdclindex{576}{code}{486}, \hdclindex{577}{code}{487}, 
-		\hdclindex{578}{code}{488}, \hdclindex{579}{code}{489}, 
-		\hdclindex{580}{code}{490}
-  \item \verb*+\setlist+\pfill \hdclindex{78}{code}{31}
-  \item \verb*+\setmainfont+\pfill \hdclindex{603}{code}{511}, 
-		\hdclindex{605}{code}{513}, \hdclindex{606}{code}{514}
-  \item \verb*+\setmathfont+\pfill \hdclindex{655}{code}{558}, 
-		\hdclindex{656}{code}{559}
-  \item \verb*+\setotherlanguage+\pfill \hdclindex{599}{code}{507}, 
-		\hdclindex{600}{code}{508}, \hdclindex{601}{code}{509}, 
-		\hdclindex{602}{code}{510}
-  \item \verb*+\setuptodonotes+\pfill \hdclindex{90}{code}{42}
-  \item \verb*+\skip+\pfill \hdclindex{100}{code}{51}
-  \item {\ttfamily sloka} (env.)\pfill \hdclindex{546}{main}{459}
-  \item \verb*+\small+\pfill \hdclindex{124}{code}{66}, 
-		\hdclindex{718}{code}{619}, \hdclindex{763}{code}{660}, 
-		\hdclindex{764}{code}{661}, \hdclindex{789}{code}{686}
-  \item \verb*+\smallskip+\pfill \hdclindex{572}{code}{483}
-  \item \verb*+\space+\pfill \hdclindex{766}{code}{663}, 
-		\hdclindex{771}{code}{668}, \hdclindex{776}{code}{673}, 
-		\hdclindex{782}{code}{679}, \hdclindex{792}{code}{689}, 
-		\hdclindex{797}{code}{694}
-  \item \verb*+\ssaneng+\pfill \hdclindex{895}{main}{788}
-  \item \verb*+\sse+\pfill \hdclindex{902}{code}{794}
-  \item \verb*+\step+\pfill \hdclindex{746}{code}{645}, 
-		\hdclindex{747}{code}{646}, \hdclindex{748}{code}{647}
-  \item \verb*+\StrCompare+\pfill \hdclindex{856}{code}{750}
-  \item \verb*+\StrGobbleLeft+\pfill \hdclindex{863}{code}{757}
-  \item \verb*+\string+\pfill \hdclindex{208}{code}{138}
-  \item \verb*+\strings+\pfill \hdclindex{754}{main}{652}
-  \item \verb*+\StrLen+\pfill \hdclindex{849}{code}{743}, 
-		\hdclindex{850}{code}{744}
-  \item \verb*+\subsection+\pfill \hdclindex{487}{code}{401}
-  \item \verb*+\subsubsection+\pfill \hdclindex{492}{code}{406}
+		\hdclindex{215}{code}{145}
+  \item \verb*+\selectfont+\pfill \hdclindex{273}{code}{195}
+  \item \verb*+\setbox+\pfill \hdclindex{530}{code}{442}, 
+		\hdclindex{595}{code}{504}, \hdclindex{598}{code}{507}
+  \item \verb*+\setcounter+\pfill \hdclindex{202}{code}{132}, 
+		\hdclindex{205}{code}{135}, \hdclindex{229}{code}{157}, 
+		\hdclindex{230}{code}{158}, \hdclindex{231}{code}{159}, 
+		\hdclindex{510}{code}{422}
+  \item \verb*+\setdefaultlanguage+\pfill \hdclindex{629}{code}{535}
+  \item \verb*+\setlength+\pfill \hdclindex{93}{code}{44}, 
+		\hdclindex{468}{code}{385}, \hdclindex{533}{code}{445}, 
+		\hdclindex{605}{code}{513}, \hdclindex{606}{code}{514}, 
+		\hdclindex{607}{code}{515}, \hdclindex{608}{code}{516}, 
+		\hdclindex{609}{code}{517}
+  \item \verb*+\setlist+\pfill \hdclindex{88}{code}{40}
+  \item \verb*+\setmainfont+\pfill \hdclindex{639}{code}{545}, 
+		\hdclindex{642}{code}{548}, \hdclindex{643}{code}{549}
+  \item \verb*+\setmathfont+\pfill \hdclindex{718}{code}{619}, 
+		\hdclindex{720}{code}{621}
+  \item \verb*+\setotherlanguage+\pfill \hdclindex{630}{code}{536}, 
+		\hdclindex{631}{code}{537}, \hdclindex{632}{code}{538}, 
+		\hdclindex{633}{code}{539}
+  \item \verb*+\setuptodonotes+\pfill \hdclindex{100}{code}{51}
+  \item \verb*+\skip+\pfill \hdclindex{110}{code}{60}
+  \item {\ttfamily sloka} (env.)\pfill \hdclindex{575}{main}{486}
+  \item \verb*+\small+\pfill \hdclindex{136}{code}{76}, 
+		\hdclindex{786}{code}{685}, \hdclindex{836}{code}{731}, 
+		\hdclindex{837}{code}{732}, \hdclindex{862}{code}{757}
+  \item \verb*+\smallskip+\pfill \hdclindex{601}{code}{510}
+  \item \verb*+\space+\pfill \hdclindex{839}{code}{734}, 
+		\hdclindex{844}{code}{739}, \hdclindex{849}{code}{744}, 
+		\hdclindex{855}{code}{750}, \hdclindex{865}{code}{760}, 
+		\hdclindex{870}{code}{765}
+  \item \verb*+\ssaneng+\pfill \hdclindex{968}{main}{859}
+  \item \verb*+\sse+\pfill \hdclindex{975}{code}{865}
+  \item \verb*+\step+\pfill \hdclindex{819}{code}{716}, 
+		\hdclindex{820}{code}{717}, \hdclindex{821}{code}{718}
+  \item \verb*+\StrCompare+\pfill \hdclindex{929}{code}{821}
+  \item \verb*+\StrGobbleLeft+\pfill \hdclindex{936}{code}{828}
+  \item \verb*+\string+\pfill \hdclindex{232}{code}{160}
+  \item \verb*+\strings+\pfill \hdclindex{827}{main}{723}
+  \item \verb*+\StrLen+\pfill \hdclindex{922}{code}{814}, 
+		\hdclindex{923}{code}{815}
+  \item \verb*+\subsection+\pfill \hdclindex{515}{code}{427}
+  \item \verb*+\subsubsection+\pfill \hdclindex{520}{code}{432}
 
   \indexspace
 {\bfseries\hfil T\hfil}\nopagebreak
 
-  \item \verb*+\tabcolsep+\pfill \hdclindex{505}{code}{419}
-  \item \verb*+\TeX+\pfill \hdclindex{381}{code}{304}, 
-		\hdclindex{383}{code}{306}, \hdclindex{385}{code}{308}
-  \item \verb*+\textbullet+\pfill \hdclindex{411}{code}{333}
-  \item \verb*+\textdevanagari+\pfill \hdclindex{625}{code}{533}
-  \item \verb*+\textenglish+\pfill \hdclindex{150}{code}{85}, 
-		\hdclindex{151}{code}{86}, \hdclindex{152}{code}{87}, 
-		\hdclindex{153}{code}{88}, \hdclindex{155}{code}{90}, 
-		\hdclindex{163}{code}{97}, \hdclindex{165}{code}{99}
-  \item \verb*+\textfraction+\pfill \hdclindex{437}{code}{356}
-  \item \verb*+\textheight+\pfill \hdclindex{309}{code}{232}
-  \item \verb*+\textit+\pfill \hdclindex{322}{code}{245}, 
-		\hdclindex{341}{code}{264}, \hdclindex{346}{code}{269}, 
-		\hdclindex{352}{code}{275}
-  \item \verb*+\textsc+\pfill \hdclindex{379}{code}{302}, 
-		\hdclindex{384}{code}{307}, \hdclindex{471}{code}{387}, 
-		\hdclindex{649}{code}{553}, \hdclindex{651}{code}{555}, 
-		\hdclindex{763}{code}{660}, \hdclindex{764}{code}{661}, 
-		\hdclindex{766}{code}{663}, \hdclindex{771}{code}{668}, 
-		\hdclindex{797}{code}{694}
-  \item \verb*+\textwidth+\pfill \hdclindex{124}{code}{66}, 
-		\hdclindex{403}{code}{325}, \hdclindex{586}{code}{496}, 
-		\hdclindex{587}{code}{497}
-  \item \verb*+\thecovercitation+\pfill \hdclindex{291}{code}{215}, 
-		\hdclindex{474}{code}{389}
-  \item \verb*+\thefield+\pfill \hdclindex{815}{code}{712}, 
-		\hdclindex{816}{code}{713}, \hdclindex{817}{code}{714}, 
-		\hdclindex{819}{code}{716}, \hdclindex{825}{code}{722}
-  \item \verb*+\thefirstpage+\pfill \hdclindex{146}{code}{81}, 
-		\hdclindex{181}{code}{113}, \hdclindex{478}{code}{393}, 
-		\hdclindex{496}{code}{410}
-  \item \verb*+\thefootnote+\pfill \hdclindex{95}{code}{46}
-  \item \verb*+\thelastpage+\pfill \hdclindex{146}{code}{81}, 
-		\hdclindex{478}{code}{393}, \hdclindex{497}{code}{411}
-  \item \verb*+\thempfootnote+\pfill \hdclindex{665}{code}{568}
-  \item \verb*+\thepage+\pfill \hdclindex{152}{code}{87}, 
-		\hdclindex{153}{code}{88}
-  \item \verb*+\thispagestyle+\pfill \hdclindex{180}{code}{112}, 
-		\hdclindex{239}{code}{163}, \hdclindex{307}{code}{230}, 
-		\hdclindex{395}{code}{317}
-  \item \verb*+\tiny+\pfill \hdclindex{163}{code}{97}, 
-		\hdclindex{291}{code}{215}
-  \item \verb*+\Title+\pfill \hdclindex{525}{code}{439}
-  \item \verb*+\title+\pfill \hdclindex{120}{main}{64}
-  \item \verb*+\titlealign+\pfill \hdclindex{217}{code}{142}
-  \item \verb*+\titlefont+\pfill \hdclindex{214}{main}{142}
-  \item \verb*+\tmptocnumberline+\pfill \hdclindex{208}{code}{138}
-  \item \verb*+\todo+\pfill \hdclindex{92}{code}{44}
-  \item \verb*+\topfraction+\pfill \hdclindex{435}{code}{354}
-  \item \verb*+\toprule+\pfill \hdclindex{66}{code}{21}
-  \item \verb*+\topsep+\pfill \hdclindex{580}{code}{490}
+  \item \verb*+\tabcolsep+\pfill \hdclindex{533}{code}{445}
+  \item \verb*+\TeX+\pfill \hdclindex{405}{code}{326}, 
+		\hdclindex{407}{code}{328}, \hdclindex{409}{code}{330}
+  \item \verb*+\textbullet+\pfill \hdclindex{435}{code}{355}
+  \item \verb*+\textdevanagari+\pfill \hdclindex{684}{code}{590}
+  \item \verb*+\textenglish+\pfill \hdclindex{167}{code}{100}, 
+		\hdclindex{168}{code}{101}, \hdclindex{170}{code}{103}, 
+		\hdclindex{174}{code}{107}, \hdclindex{179}{code}{112}, 
+		\hdclindex{187}{code}{119}, \hdclindex{189}{code}{121}
+  \item \verb*+\textfraction+\pfill \hdclindex{461}{code}{378}
+  \item \verb*+\textheight+\pfill \hdclindex{333}{code}{254}
+  \item \verb*+\textit+\pfill \hdclindex{346}{code}{267}, 
+		\hdclindex{365}{code}{286}, \hdclindex{370}{code}{291}, 
+		\hdclindex{376}{code}{297}
+  \item \verb*+\textsanskrit+\pfill \hdclindex{656}{code}{562}, 
+		\hdclindex{657}{code}{563}, \hdclindex{658}{code}{564}
+  \item \verb*+\textsc+\pfill \hdclindex{160}{code}{93}, 
+		\hdclindex{171}{code}{104}, \hdclindex{175}{code}{108}, 
+		\hdclindex{403}{code}{324}, \hdclindex{408}{code}{329}, 
+		\hdclindex{495}{code}{409}, \hdclindex{503}{code}{416}, 
+		\hdclindex{710}{code}{612}, \hdclindex{712}{code}{614}, 
+		\hdclindex{836}{code}{731}, \hdclindex{837}{code}{732}, 
+		\hdclindex{839}{code}{734}, \hdclindex{844}{code}{739}, 
+		\hdclindex{870}{code}{765}
+  \item \verb*+\textwidth+\pfill \hdclindex{136}{code}{76}, 
+		\hdclindex{427}{code}{347}, \hdclindex{615}{code}{523}, 
+		\hdclindex{616}{code}{524}
+  \item \verb*+\thecovercitation+\pfill \hdclindex{315}{code}{237}, 
+		\hdclindex{498}{code}{411}
+  \item \verb*+\thefield+\pfill \hdclindex{888}{code}{783}, 
+		\hdclindex{889}{code}{784}, \hdclindex{890}{code}{785}, 
+		\hdclindex{892}{code}{787}, \hdclindex{898}{code}{793}
+  \item \verb*+\thefirstpage+\pfill \hdclindex{160}{code}{93}, 
+		\hdclindex{162}{code}{95}, \hdclindex{205}{code}{135}, 
+		\hdclindex{503}{code}{416}, \hdclindex{505}{code}{418}, 
+		\hdclindex{524}{code}{436}
+  \item \verb*+\thefootnote+\pfill \hdclindex{105}{code}{55}
+  \item \verb*+\thelastpage+\pfill \hdclindex{160}{code}{93}, 
+		\hdclindex{162}{code}{95}, \hdclindex{503}{code}{416}, 
+		\hdclindex{505}{code}{418}, \hdclindex{525}{code}{437}
+  \item \verb*+\thempfootnote+\pfill \hdclindex{729}{code}{630}
+  \item \verb*+\thepage+\pfill \hdclindex{171}{code}{104}, 
+		\hdclindex{172}{code}{105}, \hdclindex{175}{code}{108}, 
+		\hdclindex{176}{code}{109}
+  \item \verb*+\thispagestyle+\pfill \hdclindex{204}{code}{134}, 
+		\hdclindex{263}{code}{185}, \hdclindex{331}{code}{252}, 
+		\hdclindex{419}{code}{339}
+  \item \verb*+\tiny+\pfill \hdclindex{187}{code}{119}, 
+		\hdclindex{315}{code}{237}
+  \item \verb*+\Title+\pfill \hdclindex{553}{code}{465}
+  \item \verb*+\title+\pfill \hdclindex{132}{main}{74}
+  \item \verb*+\titlealign+\pfill \hdclindex{241}{code}{164}
+  \item \verb*+\titlefont+\pfill \hdclindex{238}{main}{164}
+  \item \verb*+\tmptocnumberline+\pfill \hdclindex{232}{code}{160}
+  \item \verb*+\todo+\pfill \hdclindex{102}{code}{53}
+  \item \verb*+\topfraction+\pfill \hdclindex{459}{code}{376}
+  \item \verb*+\toprule+\pfill \hdclindex{65}{code}{20}
+  \item \verb*+\topsep+\pfill \hdclindex{609}{code}{517}
 
   \indexspace
 {\bfseries\hfil U\hfil}\nopagebreak
 
-  \item \verb*+\unicode-math+\pfill \hdclindex{653}{main}{557}
-  \item \verb*+\usebibmacro+\pfill \hdclindex{831}{code}{726}, 
-		\hdclindex{837}{code}{732}, \hdclindex{840}{code}{735}, 
-		\hdclindex{843}{code}{738}
-  \item \verb*+\usepackage+\pfill \hdclindex{147}{code}{82}, 
-		\hdclindex{524}{code}{438}, \hdclindex{597}{code}{505}, 
-		\hdclindex{657}{code}{560}, \hdclindex{663}{code}{566}, 
-		\hdclindex{682}{code}{584}, \hdclindex{683}{code}{585}, 
-		\hdclindex{687}{code}{589}, \hdclindex{753}{code}{651}, 
-		\hdclindex{865}{code}{759}, \hdclindex{866}{code}{760}
+  \item \verb*+\unicode-math+\pfill \hdclindex{714}{main}{616}
+  \item \verb*+\usebibmacro+\pfill \hdclindex{904}{code}{797}, 
+		\hdclindex{910}{code}{803}, \hdclindex{913}{code}{806}, 
+		\hdclindex{916}{code}{809}
+  \item \verb*+\usepackage+\pfill \hdclindex{71}{code}{26}, 
+		\hdclindex{75}{code}{30}, \hdclindex{79}{code}{34}, 
+		\hdclindex{81}{code}{35}, \hdclindex{164}{code}{97}, 
+		\hdclindex{552}{code}{464}, \hdclindex{626}{code}{532}, 
+		\hdclindex{721}{code}{622}, \hdclindex{727}{code}{628}, 
+		\hdclindex{746}{code}{646}, \hdclindex{747}{code}{647}, 
+		\hdclindex{751}{code}{651}, \hdclindex{826}{code}{722}, 
+		\hdclindex{938}{code}{830}, \hdclindex{939}{code}{831}
 
   \indexspace
 {\bfseries\hfil V\hfil}\nopagebreak
 
-  \item \verb*+\var+\pfill \hdclindex{677}{code}{579}
-  \item \verb*+\variant+\pfill \hdclindex{679}{code}{581}
-  \item \verb*+\verb+\pfill \hdclindex{667}{code}{570}, 
-		\hdclindex{670}{code}{573}, \hdclindex{679}{code}{581}, 
-		\hdclindex{680}{code}{582}
-  \item \verb*+\vfill+\pfill \hdclindex{256}{code}{180}, 
-		\hdclindex{263}{code}{187}, \hdclindex{283}{code}{207}, 
-		\hdclindex{316}{code}{239}, \hdclindex{320}{code}{243}, 
-		\hdclindex{399}{code}{321}
-  \item \verb*+\vskip+\pfill \hdclindex{248}{code}{172}, 
-		\hdclindex{423}{code}{343}, \hdclindex{432}{code}{352}
-  \item \verb*+\vspace+\pfill \hdclindex{246}{code}{170}, 
-		\hdclindex{273}{code}{197}, \hdclindex{276}{code}{200}, 
-		\hdclindex{279}{code}{203}, \hdclindex{299}{code}{223}, 
-		\hdclindex{416}{code}{338}
+  \item \verb*+\var+\pfill \hdclindex{741}{code}{641}
+  \item \verb*+\variant+\pfill \hdclindex{743}{code}{643}
+  \item \verb*+\verb+\pfill \hdclindex{661}{code}{567}, 
+		\hdclindex{717}{code}{618}, \hdclindex{731}{code}{632}, 
+		\hdclindex{734}{code}{635}, \hdclindex{743}{code}{643}, 
+		\hdclindex{744}{code}{644}
+  \item \verb*+\vfill+\pfill \hdclindex{280}{code}{202}, 
+		\hdclindex{287}{code}{209}, \hdclindex{307}{code}{229}, 
+		\hdclindex{340}{code}{261}, \hdclindex{344}{code}{265}, 
+		\hdclindex{423}{code}{343}
+  \item \verb*+\vskip+\pfill \hdclindex{272}{code}{194}, 
+		\hdclindex{447}{code}{365}, \hdclindex{456}{code}{374}
+  \item \verb*+\vspace+\pfill \hdclindex{270}{code}{192}, 
+		\hdclindex{297}{code}{219}, \hdclindex{300}{code}{222}, 
+		\hdclindex{303}{code}{225}, \hdclindex{323}{code}{245}, 
+		\hdclindex{440}{code}{360}
 
   \indexspace
 {\bfseries\hfil W\hfil}\nopagebreak
 
-  \item \verb*+\wd+\pfill \hdclindex{426}{code}{346}, 
-		\hdclindex{567}{code}{478}
+  \item \verb*+\wd+\pfill \hdclindex{450}{code}{368}, 
+		\hdclindex{596}{code}{505}
 
   \indexspace
 {\bfseries\hfil X\hfil}\nopagebreak
 
-  \item \verb*+\xcolor+\pfill \hdclindex{71}{main}{26}
-  \item \verb*+\XeTeX+\pfill \hdclindex{380}{code}{303}
-  \item \verb*+\xspace+\pfill \hdclindex{649}{code}{553}
+  \item \verb*+\xcolor+\pfill \hdclindex{82}{main}{36}
+  \item \verb*+\XeTeX+\pfill \hdclindex{404}{code}{325}
+  \item \verb*+\xspace+\pfill \hdclindex{710}{code}{612}
 
   \indexspace
 {\bfseries\hfil Z\hfil}\nopagebreak
 
-  \item \verb*+\z@+\pfill \hdclindex{483}{code}{397}, 
-		\hdclindex{487}{code}{401}, \hdclindex{492}{code}{406}
+  \item \verb*+\z@+\pfill \hdclindex{511}{code}{423}, 
+		\hdclindex{515}{code}{427}, \hdclindex{520}{code}{432}
 
  \end{theindex}
