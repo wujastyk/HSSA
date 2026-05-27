@@ -1198,8 +1198,7 @@ Sanskrit 2003 and 2020 from Omkarananda Ashram.
 %    \begin{macrocode}
 \newenvironment{miniedition}
     {\begin{quote} 
-            \addtolength{\textwidth}{-2\rightmargin} % width of the quote environment
-            \begin{minipage}{\textwidth}
+           \begin{minipage}{\linewidth} 
                 \let\footnoterule\relax  % if you want a rule, comment out this line.
                 \hangfootnotes
                % \let\footnote\originalfootnote 
@@ -1208,6 +1207,10 @@ Sanskrit 2003 and 2020 from Omkarananda Ashram.
         \end{quote}
     }
 %    \end{macrocode}
+% \verb|\linewidth| already reflects 
+% the narrowed line width, so a minipage built to \verb|\linewidth|
+% will fit exactly without any manual adjustment needed. 
+%
 % Resetting \verb"\footnote" to \verb"\originalfootnote" is no longer needed. 
 % Standard non-reledmac \LaTeX\ footnotes are now 
 % restored by the \verb"\@minipagerestore" hook in the file 
