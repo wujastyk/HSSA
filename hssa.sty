@@ -74,7 +74,7 @@
 %
 %
 \else % XeTeX up to the \verb|\fi| at about line 120
-\newfontfamily\sanskritfont[Renderer=Harfbuzz,
+\newfontfamily\sanskritfont[%Renderer=Harfbuzz,
   Script=Devanagari,
   %Mapping=RomDev,
   FakeStretch=1.08, % improves Sanskrit 2003
@@ -89,7 +89,7 @@
 %
 % \subsubsection{Sanskrit input in IAST script, output in Devanagari}
 %    \begin{macrocode}% Sanskrit input in IAST
-\newfontfamily\devanagarifont[Renderer=Harfbuzz,
+\newfontfamily\devanagarifont[%Renderer=Harfbuzz,
 Script=Devanagari,
 Language=Sanskrit,
 Mapping=RomDev,
