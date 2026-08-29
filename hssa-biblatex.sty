@@ -165,7 +165,8 @@ minbibnames=9]
 % "5 vols" instead of "v".  See discussion with Alex Ball
 % at \url{https://github.com/alex-ball/biblatex-oxref/issues/23}.
 %    \begin{macrocode}
-\renewcommand*{\mkvolroman}[1]{#1\addspace \bibsstring{volumes}}
+\renewcommand*{\mkvolroman}[1]{v.\,#1\addspace %\bibsstring{volumes}
+}
 % to get "5 vols" in the bibliography
 %    \end{macrocode}
 % \end{macro}
